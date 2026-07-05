@@ -1,12 +1,12 @@
 <?php
 	require dirname(__DIR__).'/vendor/autoload.php'; 
-    use App\Config\errorLogs; 
+    use App\Config\errorlogs; 
     use App\Config\ResponseHTTP; 
-    
-
-    ErrorLogs::activa_error_logs(); //activamos el log de errores
+    errorlogs::activa_error_logs(); //activamos el log de errores
+    //require_once __DIR__ . '/../vendor/autoload.php'; //cargamos el autoload de composer
+    require dirname(__DIR__). '/vendor/autoload.php'; //cargamos el autoload de composer
    
-    if(!isset($_GET['route'])){
+        if(!isset($_GET['route'])){
         echo json_encode(ResponseHTTP::status404("La ruta ingresada no existe!"));
         error_log("Ruta no encontrada: " . $_GET['route']); 
     }else{

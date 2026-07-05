@@ -1,10 +1,10 @@
 <?php
 	require dirname(__DIR__).'/vendor/autoload.php'; 
-    use App\Config\ErrorLogs; 
+    use App\Config\errorLogs; 
     use App\Config\ResponseHTTP; 
     
 
-    ErrorLogs::activa_error_logs(); 
+    ErrorLogs::activa_error_logs(); //activamos el log de errores
    
     if(!isset($_GET['route'])){
         echo json_encode(ResponseHTTP::status404("La ruta ingresada no existe!"));

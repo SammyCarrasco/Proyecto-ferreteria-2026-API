@@ -11,7 +11,7 @@
         error_log("Ruta no encontrada: " . $_GET['route']); 
     }else{
         $url = explode('/', $_GET['route']);
-        $lista = ['auth', 'users', 'productos']; 
+        $lista = ['auth', 'user', 'productos']; 
         $file = dirname(__DIR__) . '/Src/Routes/' . $url[0] . '.php';
 
         if(!in_array($url[0], $lista)){

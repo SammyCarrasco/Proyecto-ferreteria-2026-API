@@ -1,29 +1,31 @@
 <?php
 
-use App\Config\ErrorLogs;
+//Este archivo nos permitite preparar los datos para nuestra conexion
+
+//referenciamos a nuestros objetos segun el nombre de espacios
+use App\Config\errorlogs;
+use App\Config\ResponseHTTP;
 use App\BD\ConnectionDB;
 use Dotenv\Dotenv;
 
-// Activamos los logs de errores 
-if (class_exists('App\Config\ErrorLogs')) {
-    ErrorLogs::activa_error_logs();
-}
+//activamos la configuración de los errores
+errorlogs::activa_error_logs();
 
-// Cargamos las variables de entorno 
+/* cargamos nuestras variables de entorno de nuestra conexion a BD*/
 $dotenv = Dotenv::createImmutable(dirname(__DIR__, 2));
 $dotenv->load();
 
-// Estructuramos los datos en el array
-$data = array(
-    'IP'       => $_ENV['IP'],
-    'user'     => $_ENV['USER'],
-    'password' => $_ENV['PASSWORD'],
-    'DB'       => $_ENV['DB'],
-    'port'     => $_ENV['PORT']
-);
+//definimos un arreglos para simplificar y pasar la cadena de caracteres necesaria para abrir la conexion PDO
+$data = [
+    "user" => $_ENV['USER'] ?? 'root',
+    "password" => $_ENV['PASSWORD'] ?? '',
+    "BD" => $_ENV['BD'] ?? 'ferreteria',
+    "IP" => $_ENV['IP'] ?? '127.0.0.1',
+    "port" => $_ENV['PORT'] ?? '3306'
+];
 
-// Preparamos la cadena de conexión PDO para MySQL
-$host = 'mysql:host=' . $data['IP'] . ';port=' . $data['port'] . ';dbname=' . $data['DB'] . ';charset=utf8mb4';
+/* conectamos a la base de datos llamando al metodo de la clase que retorna PDO*/
+$host = 'mysql:host='.$data['IP'].';'.'port='.$data['port'].';'.'dbname='.$data['BD']; //cadena necesaria
 
-// Inicializamos los parámetros en la clase 
-ConnectionDB::inicializar($host, $data['user'], $data['password']);
+//inicializamos el objeto conexión
+return ConnectionDB::connect($host, $data['user'], $data['password']);

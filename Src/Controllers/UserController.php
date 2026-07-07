@@ -2,18 +2,22 @@
 
 namespace App\Controllers;
 
-class UserController{
+// Importaciones fundamentales para que PHP encuentre las clases
+use App\Models\userModel;
+use App\Config\responseHTTP;
+
+class UserController {
     private static $method; 
     private static $route;
     private static $params;
     private static $data;
     private static $headers; 
-    private static $validar_rol = '/^[1,2,3]{1,1}$/'; //validamos el rol (1 = "", 2="", 3="")
-    private static $validar_numero = '/^[0-9]+$/'; //validamos numeros (0-9)
-    private static $validar_texto = '/^[a-zA-Z]+$/'; //validamos texto (a-z y A-Z)
+    private static $validar_rol = '/^[1,2,3]{1,1}$/'; 
+    private static $validar_numero = '/^[0-9]+$/'; 
+    private static $validar_texto = '/^[a-zA-Z ]+$/'; // Añadido espacio para nombres completos
 
 
-    public function __construct($method,$route,$params,$data,$headers){        
+    public function __construct($method, $route, $params, $data, $headers) {        
         self::$method = $method;      
         self::$route = $route;
         self::$params = $params;
@@ -21,23 +25,52 @@ class UserController{
         self::$headers = $headers;            
     }
 
-    //esta forma de poder inicializar un objeto solo se puede en PHP8 
-    //directamente definir los argumentos en el constructor e inicializarlos 
-    /* public function __construct(
-        private string $method,
-        private string $route,
-        private string $params,
-        private $$data,
-        private $headers
-    ){}*/
-    // metodo que recibe un endpoint (ruta a un recurso)
-    final public function post($endpoint){
-        // CORRECCIÓN: Cambiar $this-> por self::$ porque las variables son estáticas
-        if(self::$method == 'post' && $endpoint == self::$route){
-            echo json_encode('post');
-            exit;
+    final public function post($endpoint) {
+        
+        if (self::$method == 'post' && $endpoint == self::$route) {
+            
+            // 1. Validamos que los campos requeridos no vengan vacíos
+            if (empty(self::$data['nombre']) || empty(self::$data['dni']) || empty(self::$data['email']) || 
+                empty(self::$data['rol']) || empty(self::$data['clave']) || empty(self::$data['confirmaclave'])) {
+                
+                echo json_encode(responseHTTP::status400('Todos los campos son requeridos, proceda a llenarlos.'));
+                exit;
+            } 
+            
+            // 2. Validamos expresiones regulares para texto (Nombre)
+            else if (!preg_match(self::$validar_texto, self::$data['nombre'])) {
+                echo json_encode(responseHTTP::status400('En el campo nombre debe ingresar solo texto.'));
+                exit;
+            } 
+            
+            // 3. Validamos expresiones regulares para números (DNI)
+            else if (!preg_match(self::$validar_numero, self::$data['dni'])) {
+                echo json_encode(responseHTTP::status400('En el campo dni debe ingresar solo numeros.'));
+                exit;
+            } 
+            
+            // 4. Validamos formato de correo electrónico
+            else if (!filter_var(self::$data['email'], FILTER_VALIDATE_EMAIL)) {
+                echo json_encode(responseHTTP::status400('El correo debe tener el formato correcto.'));
+                exit;
+            } 
+            
+            // 5. Validar que el rol sea obligatoriamente Administrador o Normal
+            else if (self::$data['rol'] !== 'Administrador' && self::$data['rol'] !== 'Normal') {
+                echo json_encode(responseHTTP::status400('El rol es invalido. Debe ser Administrador o Normal.'));
+                exit;
+            }
+            
+            // 6. Si pasa todo, mandamos los datos estáticos correctos al Modelo
+            else {
+                new userModel(self::$data); // ¡Corregido de $this->data a self::$data!
+                echo json_encode(userModel::post());
+                exit;
+            }
+            
         }
     }
+
 
 
     /*Metodo para registrar un usuario en la bd 

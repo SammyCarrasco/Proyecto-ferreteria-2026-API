@@ -644,3 +644,162 @@ Stack trace:
 [06-Jul-2026 15:35:07 America/Tegucigalpa] Ruta no encontrada: user
 [06-Jul-2026 15:35:08 America/Tegucigalpa] Ruta no encontrada: user
 [06-Jul-2026 15:35:08 America/Tegucigalpa] Ruta no encontrada: user
+[06-Jul-2026 19:27:08 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:27:08 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:27:08 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 19:27:12 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:27:12 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:27:12 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 19:28:18 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:28:18 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:28:18 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 19:33:30 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:33:30 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:33:30 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 19:33:30 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:33:30 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:33:30 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 19:33:31 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:33:31 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:33:31 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 19:34:52 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:34:52 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:34:52 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 19:35:28 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:35:28 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:35:28 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 19:44:41 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:44:41 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:44:41 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 19:44:44 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:44:44 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:44:44 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 19:45:18 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:45:18 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:45:18 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 19:57:14 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:57:14 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:57:14 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 19:57:15 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:57:15 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:57:15 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 19:58:20 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:58:20 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:58:20 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 19:58:35 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$data as non static in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:58:35 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71
+[06-Jul-2026 19:58:35 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: App\Models\userModel::__construct(): Argument #1 ($data) must be of type array, null given, called in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php on line 71 and defined in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php:21
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(71): App\Models\userModel->__construct(NULL)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\user.php(38): App\Controllers\UserController->post('user')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(27): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php on line 21
+[06-Jul-2026 20:09:59 America/Tegucigalpa] Error al conectar a la base de datos: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name
+[06-Jul-2026 20:20:17 America/Tegucigalpa] Error al conectar a la base de datos: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name
+[06-Jul-2026 20:20:18 America/Tegucigalpa] Error al conectar a la base de datos: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name
+[06-Jul-2026 20:20:18 America/Tegucigalpa] Error al conectar a la base de datos: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name
+[06-Jul-2026 20:22:52 America/Tegucigalpa] Error al conectar a la base de datos: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name
+[06-Jul-2026 20:27:13 America/Tegucigalpa] Error al conectar a la base de datos: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name
+[06-Jul-2026 20:27:22 America/Tegucigalpa] Error al conectar a la base de datos: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name
+[06-Jul-2026 20:27:22 America/Tegucigalpa] Error al conectar a la base de datos: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name
+[06-Jul-2026 20:27:23 America/Tegucigalpa] Error al conectar a la base de datos: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name
+[06-Jul-2026 20:27:23 America/Tegucigalpa] Error al conectar a la base de datos: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name
+[06-Jul-2026 20:27:24 America/Tegucigalpa] Error al conectar a la base de datos: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name
+[06-Jul-2026 20:27:24 America/Tegucigalpa] Error al conectar a la base de datos: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name
+[06-Jul-2026 20:27:24 America/Tegucigalpa] Error al conectar a la base de datos: PDO::__construct(): Argument #1 ($dsn) must be a valid data source name
+[06-Jul-2026 20:36:14 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+[06-Jul-2026 20:36:20 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+[06-Jul-2026 20:36:20 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+[06-Jul-2026 20:36:21 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+[06-Jul-2026 20:36:21 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+[06-Jul-2026 20:36:21 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+[06-Jul-2026 20:36:21 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+[06-Jul-2026 20:36:21 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+[06-Jul-2026 20:40:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[06-Jul-2026 20:40:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[06-Jul-2026 20:40:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.

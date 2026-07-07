@@ -8,10 +8,10 @@ use App\Config\ResponseHTTP;
 use App\Controllers\UserController;
 
 // Obtener la clave secreta desde .env
-$key = Security::secretKey();
+//$key = Security::secretKey();
 
 // Validar el token JWT desde el header Authorization
-$jwt = Security::validateTokenExt($key);
+//$jwt = Security::validateTokenExt($key);
 
 // Si la validación pasa, devolver datos protegidos
 //echo json_encode(ResponseHTTP::status200("Acceso concedido"));

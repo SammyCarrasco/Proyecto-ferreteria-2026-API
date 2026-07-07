@@ -6,8 +6,8 @@ use App\Config\ResponseHTTP;
 use PDO;
 
 class ConnectionDB {
-    private static $host = '';
-    private static $user = '';
+    private static $host = 'localhost';
+    private static $user = 'root'; 
     private static $pass = '';
 
     final public static function inicializar($host, $user, $password) {
@@ -24,7 +24,14 @@ class ConnectionDB {
                 PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION
             ];
             
-            $pdo = new PDO(self::$host, self::$user, self::$pass, $opt);
+            // 🌟 PASO CLAVE: Creamos el formato DSN correcto incluyendo tu base de datos "ferreteria"
+            // Si self::$host ya trae un valor como "localhost", aquí lo estructuramos bien.
+            $dbName = 'ferreteria'; 
+            $dsn = "mysql:host=" . self::$host . ";dbname=" . $dbName . ";charset=utf8mb4";
+            
+            // Pasamos la variable $dsn corregida en lugar de self::$host puro
+            $pdo = new PDO($dsn, self::$user, self::$pass, $opt);
+            
             error_log('Conexión a la base de datos establecida correctamente.');
             return $pdo;
 

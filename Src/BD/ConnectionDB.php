@@ -1,50 +1,35 @@
 <?php
-
-namespace App\BD;
-
-use App\Config\ResponseHTTP;
-use PDO;
-
+namespace App\bd;
+use App\Config\ResponseHTTP; //libreria para manejar las respuestas HTTP
+use PDO; //libreria para manejar la conexion a la base de datos
+require __DIR__.'/dataDB.php'; //importamos el archivo dataDB.php para obtener los datos de conexion a la base de datos
 class ConnectionDB {
-    private static $host = 'localhost';
-    private static $user = 'root'; 
-    private static $pass = '';
+    private static $host = ''; //variable para almacenar el host de la base de datos
+    private static $user = ''; //variable para almacenar el usuario de la base de datos
+    private static $pass = ''; //variable para almacenar la contraseña de la base de datos
 
-    final public static function inicializar($host, $user, $password) {
+    final public static function inicializar( $host,  $user,   $password) {
         self::$host = $host;
         self::$user = $user;
         self::$pass = $password;
     }
 
-    // Método definitivo para obtener la conexión PDO
+    //creamos el metodo para abrir la conexion a la base de datos
     final public static function getConnection() {
-        try {
-            $opt = [
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION
-            ];
-            
-            // 🌟 PASO CLAVE: Creamos el formato DSN correcto incluyendo tu base de datos "ferreteria"
-            // Si self::$host ya trae un valor como "localhost", aquí lo estructuramos bien.
-            $dbName = 'ferreteria'; 
-            $dsn = "mysql:host=" . self::$host . ";dbname=" . $dbName . ";charset=utf8mb4";
-            
-            // Pasamos la variable $dsn corregida en lugar de self::$host puro
-            $pdo = new PDO($dsn, self::$user, self::$pass, $opt);
-            
-            error_log('Conexión a la base de datos establecida correctamente.');
+        //echo "Conectando a la base de datos: ".self::$host." con el usuario: ".self::$user." y la contraseña: ".self::$pass;
+        try{
+            $opt = [\PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC];
+            $pdo = new PDO(self::$host, self::$user, self::$pass, $opt);
+            $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+            error_log('Conexión a la base de datos establecida correctamente.'); //registramos en el archivo de logs que la conexion fue exitosa
             return $pdo;
 
-        } catch (\PDOException $e) {
-            error_log('Error al conectar a la base de datos: ' . $e->getMessage());
-            
-            // Si la clase ResponseHTTP existe, mandamos la respuesta formateada
-            if (class_exists('App\Config\ResponseHTTP')) {
-                die(json_encode(ResponseHTTP::status500()));
-            } else {
-                http_response_code(500);
-                die(json_encode(["error" => "Error interno del servidor al conectar a la BD"]));
-            }
+        }catch(\PDOException $e){
+            //ResponseHTTP::error(500, 'Error al conectar a la base de datos: ' . $e->getMessage()); //enviamos un mensaje de error si no se puede conectar a la base de datos
+            error_log('Error al conectar a la base de datos: ' . $e->getMessage()); //registramos el error en el archivo de logs
+            die(json_encode(ResponseHTTP::status500())); //terminamos la ejecucion del script
         }
     }
+    
 }
+?>

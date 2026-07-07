@@ -1,29 +1,30 @@
+
 <?php
+//este archivo prepara todos los datos necesarios para abrir mi conexion a la base de datos, y luego los envia a la clase ConnectionDB para abrir la conexion
 
-use App\Config\ErrorLogs;
-use App\BD\ConnectionDB;
-use Dotenv\Dotenv;
+use App\Config\ErrorLogs; //libreria para manejar los logs de errores
+//use App\Config\ResponseHTTP; //libreria para manejar las respuestas HTTP
+use App\bd\ConnectionDB; //importamos la clase ConnectionDB para poder crear la conexion a la base de datos
+use Dotenv\Dotenv; //importamos la libreria Dotenv para poder cargar las variables de entorno
 
-// Activamos los logs de errores 
-if (class_exists('App\Config\ErrorLogs')) {
-    ErrorLogs::activa_error_logs();
-}
+ErrorLogs::activa_error_logs(); //activamos los logs de errores
 
-// Cargamos las variables de entorno 
-$dotenv = Dotenv::createImmutable(dirname(__DIR__, 2));
-$dotenv->load();
+$dotenv = Dotenv::createImmutable(dirname(__DIR__,2)); //creamos una instancia de la clase Dotenv y le pasamos la ruta donde se encuentra el archivo .env
+$dotenv->load(); //cargamos las variables de entorno
 
-// Estructuramos los datos en el array
 $data = array(
-    'IP'       => $_ENV['IP'],
-    'user'     => $_ENV['USER'],
-    'password' => $_ENV['PASSWORD'],
-    'DB'       => $_ENV['DB'],
-    'port'     => $_ENV['PORT']
+    'IP' => $_ENV['IP'], //obtenemos el host de la base de datos desde el archivo .env
+    'user' => $_ENV['USER'], //obtenemos el usuario de la base de datos desde el archivo .env
+    'password' => $_ENV['PASSWORD'], //obtenemos la contraseña de la base de datos desde el archivo .env
+    'DB' => $_ENV['DB'], //obtenemos el nombre de la base de datos desde el archivo .env
+    'port' => $_ENV['PORT'] //obtenemos el puerto de la base de datos desde el archivo .env
 );
 
-// Preparamos la cadena de conexión PDO para MySQL
-$host = 'mysql:host=' . $data['IP'] . ';port=' . $data['port'] . ';dbname=' . $data['DB'] . ';charset=utf8mb4';
+//print_r($data); //imprimimos los datos de conexion a la base de datos para verificar que se cargaron correctamente
 
-// Inicializamos los parámetros en la clase 
-ConnectionDB::inicializar($host, $data['user'], $data['password']);
+$host = 'mysql:host='.$data['IP'].';port='.$data['port'].';dbname='.$data['DB']; //preparamos la cadena de conexion a la base de datos
+
+ConnectionDB::inicializar($host, $data['user'], $data['password']); //abrimos la conexion a la base de datos
+
+
+

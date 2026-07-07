@@ -25,7 +25,7 @@ class UserController {
         self::$headers = $headers;            
     }
 
-    final public function post($endpoint) {
+    final public function registrarAbogado($endpoint) {
         
         if (self::$method == 'post' && $endpoint == self::$route) {
             
@@ -68,6 +68,28 @@ class UserController {
                 exit;
             }
             
+        }
+    }
+
+     final public function getLogin($endpoint){
+
+    //validamos method y endpoint 
+        if(self::$method == 'get' && $endpoint == self::$route){ 
+           $email = strtolower(self::$params[1]); //pasamos el email
+           $pass = self::$params[2]; //pasamos la clave
+            //algunas validaciones requeridas
+            if(empty($email) || empty($pass)){
+                echo json_encode(responseHTTP::status400('Todos los campos son requeridos, proceda a
+                llenarlos.'));
+            }else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                echo json_encode(responseHTTP::status400('El correo debe tener el formato correcto.'));
+            }else{
+                //pasamos los val al modelo que usaremos para hacer la peticion a la BD y llamamos al metodo Login
+                UserModel::setEmail($email);
+                UserModel::setClave($pass);
+                echo json_encode(UserModel::Login());
+            }
+            exit;
         }
     }
 

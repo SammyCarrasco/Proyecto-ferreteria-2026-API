@@ -1,41 +1,32 @@
 <?php
-<<<<<<< HEAD
-	 
-    use App\Config\errorlogs; 
-    use App\Config\ResponseHTTP; 
-  
-    require dirname(__DIR__). '/vendor/autoload.php'; //cargamos el autoload de composer
-    errorlogs::activa_error_logs(); //activamos el log de errores
+	
+    //print_r($_GET); 
+    use App\Config\ErrorLogs; //importamos la clase ErrorLogs para poder usarla en este archivo
+    use App\Config\ResponseHTTP; //importamos la clase ResponseHTTP para poder usarla en este archivo
+    require dirname(__DIR__).'/vendor/autoload.php';
+
+    ErrorLogs::activa_error_logs(); //activamos el registro de errores en el archivo php-error.log   
     if(!isset($_GET['route'])){
-=======
-	require dirname(__DIR__).'/vendor/autoload.php'; 
-    use App\Config\errorlogs; 
-    use App\Config\ResponseHTTP; 
-    errorlogs::activa_error_logs(); //activamos el log de errores
-    //require_once __DIR__ . '/../vendor/autoload.php'; //cargamos el autoload de composer
-    require dirname(__DIR__). '/vendor/autoload.php'; //cargamos el autoload de composer
-   
-        if(!isset($_GET['route'])){
->>>>>>> 32991b73c151febfde8a6782ec00af82830922e9
         echo json_encode(ResponseHTTP::status404("La ruta ingresada no existe!"));
-        error_log("Ruta no encontrada: " . $_GET['route']); 
+        error_log("Ruta no encontrada: " . $_GET['route']); // Registrar el error en el archivo de registro
+        exit;
     }else{
         $url = explode('/', $_GET['route']);
-        $lista = ['auth', 'user', 'productos']; 
+        $lista = ['auth', 'users', 'productos']; // lista de rutas permitidas
         $file = dirname(__DIR__) . '/Src/Routes/' . $url[0] . '.php';
 
         if(!in_array($url[0], $lista)){
             echo json_encode(ResponseHTTP::status404("La ruta ingresada no existe!"));
-            error_log("Ruta no encontrada: " . $_GET['route']); 
-            //header("HTTP/1.0 404 Not Found");
+            error_log("Ruta no encontrada: " . $_GET['route']); // Registrar el error en el archivo de registro
             exit;
         }else{
             //echo "La ruta existe";
             if(!file_exists($file) || !is_readable($file)){
                 echo json_encode(ResponseHTTP::status404("El recurso solicitado no existe o no se puede leer!"));
-                error_log("Recurso no encontrado: " . $_GET['route']); 
+                error_log("Recurso no encontrado: " . $_GET['route']); // Registrar el error en el archivo de registro
                 exit;
             }else{
+            //echo "El recurso existe y se puede leer"
                 require $file;  
             }		
             exit;

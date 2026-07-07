@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<< HEAD
-namespace App\Config; 
-=======
 namespace App\Config;
->>>>>>> 32991b73c151febfde8a6782ec00af82830922e9
 class errorlogs{
     public static function activa_error_logs(){
          error_reporting(E_ALL); //activamos todos los errores de php

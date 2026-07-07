@@ -15,6 +15,7 @@ class ResponseHTTP{
         self::$mensaje['status'] = 'OK';
         self::$mensaje['message'] = $res; 
         self::$mensaje['date'] = date('Y-m-d H:i:s'); 
+        return self::$mensaje;
     }
 
     final public static function status201(){
@@ -40,6 +41,7 @@ class ResponseHTTP{
         self::$mensaje['status'] = 'ERROR';
         self::$mensaje['message'] = $res; 
         self::$mensaje['date'] = date('Y-m-d H:i:s'); 
+        return self::$mensaje;
     }
 
     final public static function status404($res){

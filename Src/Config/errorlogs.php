@@ -1,7 +1,7 @@
 <?php
 
-namespace App\config; 
-class error_logs{
+namespace App\Config; 
+class errorlogs{
     public static function activa_error_logs(){
          error_reporting(E_ALL); //activamos todos los errores de php
          // $log = fopen('error_log', 'a+'); //abrimos el archivo de log en modo append

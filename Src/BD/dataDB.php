@@ -3,7 +3,7 @@
 //este archivo prepara todos los datos necesarios para abrir mi conexion a la base de datos, y luego los envia a la clase ConnectionDB para abrir la conexion
 
 use App\Config\ErrorLogs; //libreria para manejar los logs de errores
-//use App\Config\ResponseHTTP; //libreria para manejar las respuestas HTTP
+use App\Config\ResponseHTTP; //libreria para manejar las respuestas HTTP
 use App\bd\ConnectionDB; //importamos la clase ConnectionDB para poder crear la conexion a la base de datos
 use Dotenv\Dotenv; //importamos la libreria Dotenv para poder cargar las variables de entorno
 

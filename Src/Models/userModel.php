@@ -51,7 +51,7 @@ class userModel extends connectionDB {
     /**
      * Método POST para registrar un empleado usando Procedimientos Almacenados
      */
-    final public static function post() {
+    final public static function registrarUsuario() {
         
         // Uso de ruta absoluta global \App\BD\sql para total compatibilidad
         if (\App\BD\sql::verificarRegistro('CALL ConsultarEmpleadoIdentidad(:identidad)', [':identidad' => self::getIdentidad()])) {

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\BD\connectionDB;
 use App\Config\responseHTTP;
+use App\Config\Security;
 
 class userModel extends connectionDB {
     // Atributos estáticos correspondientes a la tabla empleados de la ferretería
@@ -97,6 +98,43 @@ class userModel extends connectionDB {
                 ]);
                 exit;
             }
+        } 
+    }
+
+    final public static function login(){
+        try {
+            $con = self::getConnection(); 
+            $query = "CALL Login(:email)";
+            $stmt = $con->prepare($query);
+            $stmt->execute([
+                        ':email' => self::getCorreo()
+                    ]);
+                    
+            if($stmt->rowCount() == 0){ 
+                return responseHTTP::status400('Usuario o Contraseña incorrectas!!!');
+            }else{ 
+                foreach ($stmt as $val) {                 
+                    if(Security::validatePassword(self::getClave(), $val['clave'])){
+                        $payload =[
+                            'IDToken' => $val['IDToken']
+                        ];
+                        $token = Security::createTokenJwt(Security::secretKey(),$payload);
+                        $data = [
+                            'nombre' => $val['nombre'],
+                            'rol' => $val['rol'],
+                            'token' => $token,
+                        ];
+                        return($data);
+                        //retorno la data 
+                    }else{
+                        return responseHTTP::status400('Usuario o Contraseña incorrectas1!!!');
+                    }
+                }
+            }
+        } catch (\PDOException $e) {
+            error_log("userModel::Login -> ".$e);
+            die(json_encode(responseHTTP::status500()));
         }
     }
+
 }

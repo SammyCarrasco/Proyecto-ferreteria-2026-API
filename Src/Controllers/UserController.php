@@ -17,7 +17,7 @@ class UserController {
     private static $validar_texto = '/^[a-zA-Z ]+$/'; // Añadido espacio para nombres completos
 
 
-    public function __construct($method, $route, $params, $data, $headers) {        
+    public function __construct($method, $route, $params, $data, $headers) {
         self::$method = $method;      
         self::$route = $route;
         self::$params = $params;
@@ -71,6 +71,7 @@ class UserController {
         }
     }
 
+<<<<<<< HEAD
      final public function getLogin($endpoint){
 
      //validamos method y endpoint 
@@ -91,6 +92,24 @@ class UserController {
                 echo json_encode(UserModel::Login());
             }
             exit;
+=======
+    final public static function getLogin($endpoint){
+        if(self::$method == 'get' && $endpoint == self::$params[0]){
+            ///echo "ingresa";
+            $user = strtolower(self::$params[1]); 
+            $pass = self::$params[2]; 
+            if(empty($user) || empty($pass)){
+                echo json_encode(responseHTTP::status400('Todos los campos son requeridos, proceda a
+                llenarlos.'));
+            }else if(!filter_var($user, FILTER_VALIDATE_EMAIL)){
+                echo json_encode(responseHTTP::status400('El correo debe tener el formato correcto.'));
+            }else{
+                userModel::setCorreo($user);
+                userModel::setClave($pass);
+                echo json_encode(userModel::Login());
+            }
+            exit;  
+>>>>>>> 93b3d3d86a404d83fde1a1af30e9a3802fbd7ede
         }
     }
 
@@ -180,27 +199,7 @@ class UserController {
         }
     }
 
-    final public static function login($endpoint){
-        if(self::$method == 'get' && $endpoint == self::$params[0]){
-            ///echo "ingresa";
-            $user = strtolower(self::$params[1]); //pasamos el email
-            $pass = self::$params[2]; //pasamos la clave
-            //algunas validaciones requeridas
-            if(empty($user) || empty($pass)){
-                echo json_encode(responseHTTP::status400('Todos los campos son requeridos, proceda a
-                llenarlos.'));
-            }else if(!filter_var($user, FILTER_VALIDATE_EMAIL)){
-                echo json_encode(responseHTTP::status400('El correo debe tener el formato correcto.'));
-            }else{
-                //echo "llega";
-                //pasamos los val al modelo que usaremos para hacer la peticion a la BD y llamamos al metodo Login
-                userModel::setEmail($user);
-                userModel::setClave($pass);
-                echo json_encode(userModel::Login());
-            }
-            exit;  
-        }
-    }
+    
 /*
     final public static function getAllUsers($endpoint){
         //validamos method y endpoint 

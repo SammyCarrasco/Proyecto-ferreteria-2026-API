@@ -9,7 +9,7 @@
 	            "App\\": "Src"
 	        }
     },
-    "config": {
+    "Config": {
         "optimize-autoloader": true
     }
 }

@@ -16,19 +16,17 @@ class sql extends ConnectionDB {
             
             // Ejecutamos pasando el array de parámetros
             $query->execute($params);
+
             
             // Retorna TRUE si encontró registros, FALSE si no
-            return ($query->rowCount() > 0);
+           
+            return ($query->rowCount() >0);
             
-        } catch (\PDOException $e) {
-            error_log("sql::verificarRegistro -> " . $e->getMessage());
-            
-            if (class_exists('App\Config\ResponseHTTP')) {
-                die(json_encode(ResponseHTTP::status500()));
-            } else {
-                http_response_code(500);
-                die(json_encode(["error" => "Error en la consulta SQL"]));
+        } catch (\PDOException  $e) {
+            //mandamos un error y especificamos la clase y el metodo ademas de el error correspondiente
+            error_log("sql::verificarRegistro -> ".$e->getMessage());
+            //retornamos el error correspondiente del server
+            die(json_encode(responseHTTP::status500()));
             }
         }
     } 
-}

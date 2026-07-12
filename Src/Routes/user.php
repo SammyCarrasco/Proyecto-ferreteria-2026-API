@@ -1,25 +1,7 @@
 <?php
-require_once __DIR__ . "/../../vendor/autoload.php"; // carga dependencias de Composer
-require_once __DIR__ . "/../Config/Security.php";
-require_once __DIR__ . "/../Config/ResponseHTTP.php";
 
-use App\Config\Security;
 use App\Config\ResponseHTTP;
 use App\Controllers\UserController;
-
-// Obtener la clave secreta desde .env
-//$key = Security::secretKey();
-
-// Validar el token JWT desde el header Authorization
-//$jwt = Security::validateTokenExt($key);
-
-// Si la validación pasa, devolver datos protegidos
-//echo json_encode(ResponseHTTP::status200("Acceso concedido"));
-/*echo json_encode([
-    "data" => Security::getDataJwt()
-]);*/
-
-//////////////////////////////////////////////
 
 $method = strtolower($_SERVER['REQUEST_METHOD']); //capturamos el metodo que se envia
 $route = $_GET['route']; //capturamos la ruta 
@@ -30,15 +12,15 @@ $headers = getallheaders(); //capturando todas las cabeceras que nos envian
 
 //print_r($data);
 
-
-
 //print_r($route);
 $app = new UserController($method,$route,$params,$data,$headers); //instancia clase user controlador 
 //$app->getAll('user/'); //getAll trearemos todos los usuarios registrados
-$app->post('user'); //llamada al metodo post con la ruta al recurso
+//$procesado = $app->registrarUsuario('user'); //llamada al metodo post con la ruta al recurso
 //$app->getUser("user/{$params[1]}/"); //traemos la info de un usuario en particular
 //$app->patchPassword("user/password/"); //metodo para actualizar la contraseña
+//$app->getAll('user'); //getAll trearemos todos los usuarios registrados
+//$app->registrarUsuario("user"); //llamada al metodo post con la ruta al recurso
+//$app->eliminarUsuario("user"); //metodo para eliminar un usuario en particular
 
+$app->actualizarUsuario("user"); //llamada al metodo put con la ruta al recurso
 
-
-echo json_encode(responseHTTP::status404("Ruta no encontrada")); //imprimamos un error en caso de no encuentre la ruta

@@ -16,6 +16,14 @@
         $url = explode('/', $_GET['route']);
         $lista = ['auth', 'user', 'productos', 'category']; // agregamos 'category' a la lista de rutas permitidas
         $file = dirname(__DIR__) . '/Src/Routes/' . $url[0] . '.php';
+        $caso = "";
+        $file = "";
+        $caso = filter_input(INPUT_GET, 'caso');
+        if($caso != ""){
+            $file = dirname(__DIR__). '/Src/Views/' . $url[0] . '.php';
+        }else{
+            $file = dirname(__DIR__). '/Src/Routes/' . $url[0] . '.php'; 
+        }
 
         if(!in_array($url[0], $lista)){
             echo json_encode(ResponseHTTP::status404("La ruta ingresada no existe!"));

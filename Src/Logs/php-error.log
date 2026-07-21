@@ -215,3 +215,10 @@ Stack trace:
 [11-Jul-2026 23:29:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [11-Jul-2026 23:44:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [11-Jul-2026 23:44:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 16:49:26 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[21-Jul-2026 16:52:23 America/Tegucigalpa] Ruta no encontrada: producto
+[21-Jul-2026 16:52:29 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[21-Jul-2026 16:54:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 17:41:24 America/Tegucigalpa] Recurso no encontrado: productos
+[21-Jul-2026 17:42:08 America/Tegucigalpa] Recurso no encontrado: productos
+[21-Jul-2026 17:43:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.

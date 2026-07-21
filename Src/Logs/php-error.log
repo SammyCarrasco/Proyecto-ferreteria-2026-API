@@ -215,3 +215,63 @@ Stack trace:
 [11-Jul-2026 23:29:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [11-Jul-2026 23:44:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [11-Jul-2026 23:44:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 25
+[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 25
+[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 25
+[20-Jul-2026 22:32:21 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:38:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:39:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:55:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:56:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:56:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:59:00 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:59:49 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 23:00:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.

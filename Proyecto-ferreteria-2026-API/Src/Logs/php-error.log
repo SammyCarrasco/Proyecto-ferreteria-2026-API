@@ -1,0 +1,329 @@
+[11-Jul-2026 21:28:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 21:28:12 America/Tegucigalpa] userModel::actualizarUsuario -> PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:148
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php(148): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(168): App\Models\userModel::actualizarUsuario('8')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[11-Jul-2026 21:37:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 21:37:25 America/Tegucigalpa] userModel::actualizarUsuario -> PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmarclave' in 'field list' in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:148
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php(148): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(168): App\Models\userModel::actualizarUsuario('8')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[11-Jul-2026 21:38:18 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 21:38:18 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\Models\userModel::$confirmarclave in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(168): App\Models\userModel::actualizarUsuario('8')
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php on line 155
+[11-Jul-2026 21:42:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 21:42:48 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\Models\userModel::$confirmarclave in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(168): App\Models\userModel::actualizarUsuario('8')
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php on line 155
+[11-Jul-2026 21:46:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 21:46:33 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\Models\userModel::$confirmarclave in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(168): App\Models\userModel::actualizarUsuario('8')
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php on line 155
+[11-Jul-2026 21:47:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 21:47:45 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\Models\userModel::$confirmarclave in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:155
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(168): App\Models\userModel::actualizarUsuario('8')
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php on line 155
+[11-Jul-2026 22:01:40 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\Models\userModel::$confirmarclave in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:27
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(166): App\Models\userModel->__construct(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php on line 27
+[11-Jul-2026 22:02:19 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\Models\userModel::$confirmarclave in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:27
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(166): App\Models\userModel->__construct(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php on line 27
+[11-Jul-2026 22:03:23 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\Models\userModel::$confirmarclave in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:27
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(166): App\Models\userModel->__construct(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php on line 27
+[11-Jul-2026 22:05:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:05:59 America/Tegucigalpa] userModel::actualizarUsuario -> PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmarclave' in 'field list' in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:148
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php(148): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(168): App\Models\userModel::actualizarUsuario('8')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[11-Jul-2026 22:08:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:08:46 America/Tegucigalpa] userModel::actualizarUsuario -> PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmarclave' in 'field list' in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:148
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php(148): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(168): App\Models\userModel::actualizarUsuario('8')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[11-Jul-2026 22:15:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:15:12 America/Tegucigalpa] userModel::actualizarUsuario -> PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmarclave' in 'field list' in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:148
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php(148): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(168): App\Models\userModel::actualizarUsuario('8')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[11-Jul-2026 22:22:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:22:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:22:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:31:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:31:43 America/Tegucigalpa] userModel::actualizarUsuario -> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE ferreteria.ActualizarEmpleado; expected 7, got 8 in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:148
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php(148): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(168): App\Models\userModel::actualizarUsuario('9')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[11-Jul-2026 22:34:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:34:09 America/Tegucigalpa] userModel::actualizarUsuario -> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE ferreteria.ActualizarEmpleado; expected 7, got 9 in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:148
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php(148): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(168): App\Models\userModel::actualizarUsuario('9')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[11-Jul-2026 22:36:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:36:14 America/Tegucigalpa] userModel::actualizarUsuario -> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE ferreteria.ActualizarEmpleado; expected 7, got 9 in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:149
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php(149): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(168): App\Models\userModel::actualizarUsuario('9')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[11-Jul-2026 22:42:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:42:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:42:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:42:30 America/Tegucigalpa] userModel::registrarUsuario -> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmaclave' in 'field list'
+[11-Jul-2026 22:44:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:44:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:44:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:44:09 America/Tegucigalpa] userModel::registrarUsuario -> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmaclave' in 'field list'
+[11-Jul-2026 22:44:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:44:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:44:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:44:45 America/Tegucigalpa] userModel::registrarUsuario -> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmaclave' in 'field list'
+[11-Jul-2026 22:45:13 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:45:13 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:45:13 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:45:13 America/Tegucigalpa] userModel::registrarUsuario -> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmaclave' in 'field list'
+[11-Jul-2026 22:46:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:46:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:46:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:46:50 America/Tegucigalpa] userModel::registrarUsuario -> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmaclave' in 'field list'
+[11-Jul-2026 22:47:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:47:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:47:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:47:55 America/Tegucigalpa] userModel::registrarUsuario -> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmaclave' in 'field list'
+[11-Jul-2026 22:50:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:50:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:50:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:50:12 America/Tegucigalpa] userModel::registrarUsuario -> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmaclave' in 'field list'
+[11-Jul-2026 22:51:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:51:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:51:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:51:19 America/Tegucigalpa] userModel::registrarUsuario -> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmaclave' in 'field list'
+[11-Jul-2026 22:51:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:51:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:51:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:51:27 America/Tegucigalpa] userModel::registrarUsuario -> SQLSTATE[42S22]: Column not found: 1054 Unknown column 'confirmaclave' in 'field list'
+[11-Jul-2026 22:56:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:56:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:56:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 22:58:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 23:05:59 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\Controllers\UserController::$endpoint in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php:134
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user/10/')
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php on line 134
+[11-Jul-2026 23:06:11 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Access to undeclared static property App\Controllers\UserController::$endpoint in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php:134
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user/10/')
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php on line 134
+[11-Jul-2026 23:13:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 23:13:06 America/Tegucigalpa] userModel::actualizarUsuario -> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE ferreteria.ActualizarEmpleado; expected 7, got 8 in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:149
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php(149): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(168): App\Models\userModel::actualizarUsuario('10')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[11-Jul-2026 23:15:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 23:15:22 America/Tegucigalpa] userModel::actualizarUsuario -> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE ferreteria.ActualizarEmpleado; expected 7, got 8 in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:149
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php(149): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(168): App\Models\userModel::actualizarUsuario('10')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[11-Jul-2026 23:17:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 23:17:07 America/Tegucigalpa] userModel::actualizarUsuario -> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE ferreteria.ActualizarEmpleado; expected 7, got 8 in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:149
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php(149): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(167): App\Models\userModel::actualizarUsuario('10')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[11-Jul-2026 23:21:36 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 23:21:36 America/Tegucigalpa] userModel::actualizarUsuario -> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE ferreteria.ActualizarEmpleado; expected 7, got 8 in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:149
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php(149): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(167): App\Models\userModel::actualizarUsuario('10')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[11-Jul-2026 23:23:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 23:23:48 America/Tegucigalpa] userModel::actualizarUsuario -> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE ferreteria.ActualizarEmpleado; expected 7, got 8 in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php:149
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\userModel.php(149): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(167): App\Models\userModel::actualizarUsuario('10')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::actualizarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[11-Jul-2026 23:26:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 23:29:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 23:29:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 23:44:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[11-Jul-2026 23:44:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+<<<<<<< HEAD
+[21-Jul-2026 08:59:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 08:59:14 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[21-Jul-2026 08:59:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 08:59:15 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[21-Jul-2026 08:59:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 08:59:16 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[21-Jul-2026 09:00:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 09:00:25 America/Tegucigalpa[21-Jul-2026 08:54:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 08:54:32 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE ferreteria.RegistrarCliente; expected 3, got 4 in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:58
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(58): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+] clienteModel::registrarCliente PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+[21-Jul-2026 09:04:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 09:21:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 09:24:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 09:25:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+=======
+[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 25
+[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 25
+[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
+[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
+[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 25
+[20-Jul-2026 22:32:21 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:38:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:39:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:55:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:56:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:56:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:59:00 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 22:59:49 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 23:00:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+>>>>>>> 1884600d1084e13839ae9729487f97abbf28f8b6
+[21-Jul-2026 13:20:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 13:27:21 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 13:44:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 14:00:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 14:00:47 America/Tegucigalpa] cotizacionDetalleModel::eliminarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: El detalle de cotización no existe.

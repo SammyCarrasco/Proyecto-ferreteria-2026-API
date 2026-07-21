@@ -215,110 +215,25 @@ Stack trace:
 [11-Jul-2026 23:29:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [11-Jul-2026 23:44:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [11-Jul-2026 23:44:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-<<<<<<< HEAD
-[21-Jul-2026 08:59:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[21-Jul-2026 08:59:14 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
-Stack trace:
-#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
-#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
-#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
-#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(31): require('C:\\xampp\\htdocs...')
-#4 {main}
-[21-Jul-2026 08:59:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[21-Jul-2026 08:59:15 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
-Stack trace:
-#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
-#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
-#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
-#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(31): require('C:\\xampp\\htdocs...')
-#4 {main}
-[21-Jul-2026 08:59:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[21-Jul-2026 08:59:16 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
-Stack trace:
-#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
-#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
-#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
-#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(31): require('C:\\xampp\\htdocs...')
-#4 {main}
-[21-Jul-2026 09:00:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[21-Jul-2026 09:00:25 America/Tegucigalpa[21-Jul-2026 08:54:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[21-Jul-2026 08:54:32 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE ferreteria.RegistrarCliente; expected 3, got 4 in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:58
-Stack trace:
-#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(58): PDOStatement->execute(Array)
-#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
-#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
-#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(31): require('C:\\xampp\\htdocs...')
-#4 {main}
-] clienteModel::registrarCliente PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
-Stack trace:
-#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
-#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
-#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
-#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(31): require('C:\\xampp\\htdocs...')
-#4 {main}
-[21-Jul-2026 09:04:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[21-Jul-2026 09:21:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[21-Jul-2026 09:24:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[21-Jul-2026 09:25:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-=======
-[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:17:58 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
-[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:05 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
-[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:10 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
-[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:20:56 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
-[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:21:30 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
-[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
-[20-Jul-2026 22:28:10 America/Tegucigalpa] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 25
-[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
-[20-Jul-2026 22:28:58 America/Tegucigalpa] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 25
-[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $method in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $route in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $params in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Warning:  Undefined variable $headers in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\category.php on line 11
-[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Deprecated:  strtolower(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 16
-[20-Jul-2026 22:28:59 America/Tegucigalpa] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\CategoryController.php on line 25
-[20-Jul-2026 22:32:21 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[20-Jul-2026 22:38:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[20-Jul-2026 22:39:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[20-Jul-2026 22:55:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[20-Jul-2026 22:56:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[20-Jul-2026 22:56:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[20-Jul-2026 22:59:00 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[20-Jul-2026 22:59:49 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
-[20-Jul-2026 23:00:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
->>>>>>> 1884600d1084e13839ae9729487f97abbf28f8b6
+[20-Jul-2026 18:24:32 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[20-Jul-2026 18:52:51 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[20-Jul-2026 18:52:53 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[20-Jul-2026 18:53:01 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+[20-Jul-2026 18:53:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 18:54:37 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 18:54:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[20-Jul-2026 19:00:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 08:15:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 08:16:03 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 13:18:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 13:18:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 13:18:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 13:24:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 13:25:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 13:25:29 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 13:26:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 13:27:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 13:27:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 13:27:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 13:27:24 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 13:28:02 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.

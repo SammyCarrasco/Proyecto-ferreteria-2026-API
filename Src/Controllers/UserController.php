@@ -14,7 +14,7 @@ class UserController {
     private static $params;
     private static $data;
     private static $headers; 
-    private static $validar_rol = '/^[1,2,3]{1,1}$/'; 
+    private static $validar_rol = '/^(Administrador|Normal|1|2|3)$/i'; 
     private static $validar_numero = '/^[0-9]+$/'; 
     private static $validar_texto = '/^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$/';
 
@@ -30,7 +30,6 @@ class UserController {
     final public static function registrarUsuario($endpoint){     
         if(self::$method == 'post' && $endpoint == self::$params[0]){
             // Security::validateTokenJwt(self::$headers, Security::secretKey());
-            
             if (empty(self::$data['nombre']) || empty(self::$data['dni']) || empty(self::$data['email']) || 
                 empty(self::$data['rol']) || empty(self::$data['clave']) || empty(self::$data['confirmarclave'])) {
                 echo json_encode(responseHTTP::status400('Todos los campos son requeridos, proceda a llenarlos.'));

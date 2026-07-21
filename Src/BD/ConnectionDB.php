@@ -1,8 +1,11 @@
 <?php
 namespace App\BD;
+
 use App\Config\ResponseHTTP; //libreria para manejar las respuestas HTTP
 use PDO; //libreria para manejar la conexion a la base de datos
+
 require __DIR__.'/dataDB.php'; //importamos el archivo dataDB.php para obtener los datos de conexion a la base de datos
+
 class ConnectionDB {
     private static $host = ''; //variable para almacenar el host de la base de datos
     private static $user = ''; //variable para almacenar el usuario de la base de datos
@@ -21,6 +24,7 @@ class ConnectionDB {
             $opt = [\PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC];
             $pdo = new PDO(self::$host, self::$user, self::$pass, $opt);
             $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+            
             error_log('Conexión a la base de datos establecida correctamente.'); //registramos en el archivo de logs que la conexion fue exitosa
             return $pdo;
 

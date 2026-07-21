@@ -4,6 +4,7 @@
     use App\Config\ErrorLogs; //importamos la clase ErrorLogs para poder usarla en este archivo
     use App\Config\ResponseHTTP; //importamos la clase ResponseHTTP para poder usarla en este archivo
     
+    
 
     ErrorLogs::activa_error_logs(); //activamos el registro de errores en el archivo php-error.log
    
@@ -13,7 +14,7 @@
         exit;
     }else{
         $url = explode('/', $_GET['route']);
-        $lista = ['auth', 'user', 'productos','clientes']; // lista de rutas permitidas
+        $lista = ['auth', 'user', 'productos', 'category']; // agregamos 'category' a la lista de rutas permitidas
         $file = dirname(__DIR__) . '/Src/Routes/' . $url[0] . '.php';
 
         if(!in_array($url[0], $lista)){

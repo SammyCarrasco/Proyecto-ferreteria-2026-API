@@ -32,7 +32,7 @@ class UserController {
        //echo self::$params[0];
         //validaciones
         if(self::$method == 'post' && $endpoint == self::$params[0]){
-           //security::validateTokenJwt(self::$headers, Security::secretKey()); //validamos JWT, enviando header y clave secreta    
+        //security::validateTokenJwt(self::$headers, Security::secretKey()); //validamos JWT, enviando header y clave secreta    
         //validamos que los campos no vengan vacios
 
                 if (empty(self::$data['nombre']) || empty(self::$data['dni']) || empty(self::$data['email']) || 

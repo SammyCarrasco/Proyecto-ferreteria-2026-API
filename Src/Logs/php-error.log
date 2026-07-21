@@ -215,3 +215,77 @@ Stack trace:
 [11-Jul-2026 23:29:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [11-Jul-2026 23:44:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [11-Jul-2026 23:44:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 13:10:53 America/Tegucigalpa] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Config\ResponseHTTP::status404(), 0 passed in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\auth.php on line 19 and exactly 1 expected in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\responseHTTP.php:47
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\auth.php(19): App\Config\ResponseHTTP::status404()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\responseHTTP.php on line 47
+[12-Jul-2026 13:11:02 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 13:13:18 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 13:20:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 13:20:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 13:20:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 13:22:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 13:22:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 13:22:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 20:33:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 20:35:56 America/Tegucigalpa] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\Security.php on line 86
+[12-Jul-2026 20:35:56 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\Security.php on line 86 and defined in C:\xampp\htdocs\Proyecto ferreteria 2026 API\vendor\firebase\php-jwt\src\JWT.php:96
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\Security.php(86): Firebase\JWT\JWT::decode(NULL, Object(Firebase\JWT\Key))
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(35): App\Config\Security::validateTokenJwt(Array, '12345HOLAMUNDO/...')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::registrarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\vendor\firebase\php-jwt\src\JWT.php on line 96
+[12-Jul-2026 20:36:42 America/Tegucigalpa] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Config\ResponseHTTP::status404(), 0 passed in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\auth.php on line 19 and exactly 1 expected in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\responseHTTP.php:47
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\auth.php(19): App\Config\ResponseHTTP::status404()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\responseHTTP.php on line 47
+[12-Jul-2026 20:39:00 America/Tegucigalpa] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\Security.php on line 86
+[12-Jul-2026 20:39:00 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\Security.php on line 86 and defined in C:\xampp\htdocs\Proyecto ferreteria 2026 API\vendor\firebase\php-jwt\src\JWT.php:96
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\Security.php(86): Firebase\JWT\JWT::decode(NULL, Object(Firebase\JWT\Key))
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(35): App\Config\Security::validateTokenJwt(Array, '12345HOLAMUNDO/...')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::registrarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\vendor\firebase\php-jwt\src\JWT.php on line 96
+[12-Jul-2026 20:39:15 America/Tegucigalpa] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\Security.php on line 86
+[12-Jul-2026 20:39:15 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\Security.php on line 86 and defined in C:\xampp\htdocs\Proyecto ferreteria 2026 API\vendor\firebase\php-jwt\src\JWT.php:96
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\Security.php(86): Firebase\JWT\JWT::decode(NULL, Object(Firebase\JWT\Key))
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(35): App\Config\Security::validateTokenJwt(Array, '12345HOLAMUNDO/...')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::registrarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\vendor\firebase\php-jwt\src\JWT.php on line 96
+[12-Jul-2026 20:40:35 America/Tegucigalpa] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\Security.php on line 86
+[12-Jul-2026 20:40:35 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\Security.php on line 86 and defined in C:\xampp\htdocs\Proyecto ferreteria 2026 API\vendor\firebase\php-jwt\src\JWT.php:96
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Config\Security.php(86): Firebase\JWT\JWT::decode(NULL, Object(Firebase\JWT\Key))
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php(35): App\Config\Security::validateTokenJwt(Array, '12345HOLAMUNDO/...')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\user.php(25): App\Controllers\UserController::registrarUsuario('user')
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(31): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\vendor\firebase\php-jwt\src\JWT.php on line 96
+[12-Jul-2026 20:42:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 20:42:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 20:47:47 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$method as non static in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php on line 228
+[12-Jul-2026 20:47:47 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$method in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php on line 228
+[12-Jul-2026 20:48:01 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$method as non static in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php on line 228
+[12-Jul-2026 20:48:01 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$method in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php on line 228
+[12-Jul-2026 20:48:05 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$method as non static in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php on line 228
+[12-Jul-2026 20:48:05 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$method in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php on line 228
+[12-Jul-2026 20:49:19 America/Tegucigalpa] PHP Notice:  Accessing static property App\Controllers\UserController::$method as non static in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php on line 228
+[12-Jul-2026 20:49:19 America/Tegucigalpa] PHP Warning:  Undefined property: App\Controllers\UserController::$method in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\UserController.php on line 228
+[12-Jul-2026 20:49:29 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 20:49:29 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 20:49:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 20:49:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 20:49:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[12-Jul-2026 21:05:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 11:38:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.

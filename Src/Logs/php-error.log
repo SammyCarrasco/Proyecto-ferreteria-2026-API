@@ -222,3 +222,23 @@ Stack trace:
 [21-Jul-2026 17:41:24 America/Tegucigalpa] Recurso no encontrado: productos
 [21-Jul-2026 17:42:08 America/Tegucigalpa] Recurso no encontrado: productos
 [21-Jul-2026 17:43:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 19:57:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 19:57:07 America/Tegucigalpa] cotizacionDetalleModel::eliminarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: El detalle de cotización no existe.
+[21-Jul-2026 22:19:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 22:26:08 America/Tegucigalpa] Ruta no encontrada: venta
+[21-Jul-2026 22:27:14 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\VentaController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\venta.php:12
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\venta.php on line 12
+[21-Jul-2026 22:27:16 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\VentaController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\venta.php:12
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\venta.php on line 12
+[21-Jul-2026 22:28:09 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\VentaController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\venta.php:12
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\venta.php on line 12
+[21-Jul-2026 22:31:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.

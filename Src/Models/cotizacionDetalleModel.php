@@ -38,6 +38,8 @@ class cotizacionDetalleModel extends connectionDB {
     final public static function agregarProducto() {
         try {
             $con = self::getConnection();
+           
+                    
             $query = "CALL sp_registrar_cotizacion_detalle(:id_cotizacion, :id_producto, :id_almacen, :cantidad, :precio_unitario)";
             $stmt = $con->prepare($query);
             $stmt->execute([

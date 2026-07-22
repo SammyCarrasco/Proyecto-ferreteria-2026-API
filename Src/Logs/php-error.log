@@ -222,3 +222,67 @@ Stack trace:
 [21-Jul-2026 17:41:24 America/Tegucigalpa] Recurso no encontrado: productos
 [21-Jul-2026 17:42:08 America/Tegucigalpa] Recurso no encontrado: productos
 [21-Jul-2026 17:43:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 18:21:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 18:23:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 18:23:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 18:27:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 18:35:18 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 18:49:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 18:49:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 18:53:13 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 18:54:03 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 18:54:03 America/Tegucigalpa] CategoryModel::post -> SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'patitos' for key 'nombre'
+[21-Jul-2026 18:54:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 18:55:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 18:55:59 America/Tegucigalpa] CategoryModel::post -> SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'patits' for key 'nombre'
+[21-Jul-2026 18:56:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 18:56:14 America/Tegucigalpa] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CategoryController.php:29
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\category.php(14): App\Controllers\CategoryController->execute('category')
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(40): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CategoryController.php on line 29
+[21-Jul-2026 18:56:18 America/Tegucigalpa] PHP Warning:  Undefined array key "nombre" in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CategoryController.php on line 29
+[21-Jul-2026 18:56:18 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 18:56:18 America/Tegucigalpa] CategoryModel::post -> SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'nombre'
+[21-Jul-2026 18:58:21 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 19:13:09 America/Tegucigalpa] Ruta no encontrada: clientes
+[21-Jul-2026 19:50:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 21:53:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 21:53:59 America/Tegucigalpa] Error al conectar a la base de datos: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[21-Jul-2026 21:54:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 22:33:23 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 22:33:23 America/Tegucigalpa] cotizacionDetalleModel::eliminarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: El detalle de cotización no existe.
+[21-Jul-2026 22:34:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 22:34:39 America/Tegucigalpa] cotizacionDetalleModel::agregarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: La cotización no existe.
+[21-Jul-2026 22:39:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 22:39:32 America/Tegucigalpa] cotizacionDetalleModel::agregarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: La cotización no existe.
+[21-Jul-2026 22:54:02 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 22:54:02 America/Tegucigalpa] cotizacionDetalleModel::agregarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: La cotización no existe.
+[21-Jul-2026 22:54:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 22:54:11 America/Tegucigalpa] cotizacionDetalleModel::agregarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: La cotización no existe.
+[21-Jul-2026 22:54:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 22:54:17 America/Tegucigalpa] cotizacionDetalleModel::agregarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: La cotización no existe.
+[21-Jul-2026 23:00:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:00:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:00:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:00:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:00:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:01:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:01:37 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:01:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:04:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:04:33 America/Tegucigalpa] cotizacionDetalleModel::agregarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: La cotización no existe.
+[21-Jul-2026 23:10:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:10:22 America/Tegucigalpa] cotizacionDetalleModel::agregarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: La cotización no existe.
+[21-Jul-2026 23:19:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:19:07 America/Tegucigalpa] cotizacionDetalleModel::agregarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: La cotización no existe.
+[21-Jul-2026 23:19:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:19:43 America/Tegucigalpa] cotizacionDetalleModel::agregarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: La cotización no existe.
+[21-Jul-2026 23:25:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:25:32 America/Tegucigalpa] cotizacionDetalleModel::agregarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: Existencias insuficientes en el stock disponible para este almacén.
+[21-Jul-2026 23:25:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:25:51 America/Tegucigalpa] cotizacionDetalleModel::agregarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: Existencias insuficientes en el stock disponible para este almacén.
+[21-Jul-2026 23:28:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:28:22 America/Tegucigalpa] cotizacionDetalleModel::agregarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: Existencias insuficientes en el stock disponible para este almacén.
+[21-Jul-2026 23:34:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.

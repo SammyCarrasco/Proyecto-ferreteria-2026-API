@@ -26,8 +26,8 @@ class CategoryController {
 
         // POST: Crear Categoría
         if (self::$method === 'post') {
-            if (empty(self::$data['nombre'])) {
-                echo json_encode(ResponseHTTP::status400('El nombre de la categoría es obligatorio'));
+            if (empty(self::$data['nombre']) || empty(self::$data['descripcion'])) {
+                echo json_encode(ResponseHTTP::status400('El nombre y descripción de la categoría es obligatorio'));
                 exit;
             }
             new CategoryModel(self::$data);

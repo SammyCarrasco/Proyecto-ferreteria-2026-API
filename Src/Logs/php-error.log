@@ -222,6 +222,7 @@ Stack trace:
 [21-Jul-2026 17:41:24 America/Tegucigalpa] Recurso no encontrado: productos
 [21-Jul-2026 17:42:08 America/Tegucigalpa] Recurso no encontrado: productos
 [21-Jul-2026 17:43:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+<<<<<<< HEAD
 [21-Jul-2026 18:21:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [21-Jul-2026 18:23:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [21-Jul-2026 18:23:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
@@ -286,3 +287,92 @@ Stack trace:
 [21-Jul-2026 23:28:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [21-Jul-2026 23:28:22 America/Tegucigalpa] cotizacionDetalleModel::agregarProducto -> SQLSTATE[45000]: <<Unknown error>>: 1644 Error: Existencias insuficientes en el stock disponible para este almacén.
 [21-Jul-2026 23:34:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+=======
+[21-Jul-2026 19:24:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 19:24:51 America/Tegucigalpa] productoModel::getCatalogo -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.sp_obtener_catalogo_productos does not exist
+[21-Jul-2026 20:11:25 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\AdminProductoController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php on line 10
+[21-Jul-2026 20:37:03 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\AdminProductoController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php on line 10
+[21-Jul-2026 20:50:30 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\AdminProductoController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php on line 10
+[21-Jul-2026 20:50:31 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\AdminProductoController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php on line 10
+[21-Jul-2026 20:50:31 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\AdminProductoController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php on line 10
+[21-Jul-2026 20:50:31 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\AdminProductoController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php on line 10
+[21-Jul-2026 21:14:42 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\AdminProductoController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php on line 10
+[21-Jul-2026 21:16:36 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\AdminProductoController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php on line 10
+[21-Jul-2026 21:17:10 America/Tegucigalpa] Ruta no encontrada: index.php
+[21-Jul-2026 21:18:22 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\AdminProductoController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php on line 10
+[21-Jul-2026 21:20:42 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\AdminProductoController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php on line 10
+[21-Jul-2026 21:23:18 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\AdminProductoController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php on line 10
+[21-Jul-2026 21:28:59 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\AdminProductoController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php on line 10
+[21-Jul-2026 21:29:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 21:36:52 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 21:37:11 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Controllers\AdminProductoController" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php:10
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(40): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\adminproductos.php on line 10
+[21-Jul-2026 21:46:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 21:51:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 21:54:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 21:57:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 22:00:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 22:01:02 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 22:02:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 22:02:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:15:01 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:15:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:15:43 America/Tegucigalpa] AdminProductoModel::getOne -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarProducto does not exist
+[21-Jul-2026 23:26:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:33:24 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:33:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:34:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:35:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[21-Jul-2026 23:35:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+>>>>>>> 3b95d7699893c4f229695988ae785fc5f9dd4b50

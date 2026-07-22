@@ -92,7 +92,6 @@ class Security {
             //private static $jwt_data;//Propiedad para guardar los datos decodificados del JWT 
 
             self::$jwt_data = $data; //le pasamos el jwt decodificado y lo retornamos
-            
             return self::$jwt_data; //retorna el JWT decodificado completo (iat, exp, data)
             exit;
         } catch (\Exception $e) {

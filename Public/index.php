@@ -15,7 +15,7 @@
     }else{
         $url = explode('/', $_GET['route']);
 
-        $lista = ['auth', 'user', 'productos', 'category', 'reportes', 'cotizacionDetalle', 'adminproductos', 'venta']; // agregamos 'category', 'reportes', 'cotizacionDetalle' y 'venta' a la lista de rutas permitidas
+        $lista = ['auth', 'user', 'productos', 'category', 'reportes', 'cotizacionDetalle', 'adminproductos', 'venta', 'Cotizacion']; // agregamos 'category', 'reportes', 'cotizacionDetalle' y 'venta' a la lista de rutas permitidas
 
         $file = dirname(__DIR__) . '/Src/Routes/' . $url[0] . '.php';
         $caso = "";

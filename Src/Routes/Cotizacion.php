@@ -44,13 +44,19 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 $controller = new CotizacionController($pdo);
-$accion = $_GET['accion'] ?? 'seleccionar_cliente';
+
+//leer los datos del body JSON
+$input = json_decode(file_get_contents("php://input"), true) ?? [];
+
+//capturar las acciones desde el JSON
+$accionRaw = $input['accion'] ?? $_GET['accion'] ?? '' ;
+$accion = strtolower($accionRaw);
 
 // Mapeo dinámico de acciones a métodos del controlador
 $mapaAcciones = [
     'seleccionar_cliente' => 'seleccionarCliente',
     'buscar_productos'    => 'buscarProductos',
-    'validar_cantidad'    => 'validarCantidad',
+    'registrar_cantidades'    => 'registrarCantidades',
     'calcular_total'      => 'calcularTotal',
     'reservar_inventario' => 'reservarInventario'
 ];

@@ -376,3 +376,46 @@ Stack trace:
 [21-Jul-2026 23:35:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [21-Jul-2026 23:35:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 >>>>>>> 3b95d7699893c4f229695988ae785fc5f9dd4b50
+[22-Jul-2026 17:04:19 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionModel::obtenerProductoPorId() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:93
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->registrarCantidades()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 93
+[22-Jul-2026 17:04:46 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionModel::obtenerProductoPorId() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:93
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->registrarCantidades()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 93
+[22-Jul-2026 17:05:52 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionModel::obtenerProductoPorId() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:94
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->registrarCantidades()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 94
+[22-Jul-2026 17:05:59 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionModel::obtenerProductoPorId() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:94
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->registrarCantidades()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 94
+[22-Jul-2026 17:06:44 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionModel::obtenerProductoPorId() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:94
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->registrarCantidades()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 94
+[22-Jul-2026 17:10:40 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionModel::obtenerProductoPorId() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->registrarCantidades()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 101
+[22-Jul-2026 17:12:44 America/Tegucigalpa] PHP Warning:  Undefined variable $info in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 106
+[22-Jul-2026 17:15:01 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionModel::obtenerProductoPorId() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:92
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->registrarCantidades()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 92

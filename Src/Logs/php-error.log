@@ -398,3 +398,127 @@ Stack trace:
 [22-Jul-2026 17:10:54 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [22-Jul-2026 17:12:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [22-Jul-2026 17:12:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 20:08:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 20:15:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 20:15:15 America/Tegucigalpa] InventarioModel::asociarProducto SQLSTATE[45000]: <<Unknown error>>: 1644 Error: El producto no existe.
+[22-Jul-2026 20:17:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:20:20 America/Tegucigalpa] Ruta no encontrada: clientes
+[22-Jul-2026 21:21:13 America/Tegucigalpa] Ruta no encontrada: clientes
+[22-Jul-2026 21:21:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:21:47 America/Tegucigalpa] clienteModel::getAll PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarClientes does not exist in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php:87
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php(87): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\ClienteController.php(42): App\Models\clienteModel::getAll()
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\clientes.php(24): App\Controllers\ClienteController->getAll()
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#4 {main}
+[22-Jul-2026 21:24:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:24:26 America/Tegucigalpa] clienteModel::getAll PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarClientes does not exist in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php:87
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php(87): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\ClienteController.php(42): App\Models\clienteModel::getAll()
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\clientes.php(24): App\Controllers\ClienteController->getAll()
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#4 {main}
+[22-Jul-2026 21:24:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:24:35 America/Tegucigalpa] clienteModel::getAll PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarClientes does not exist in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php:87
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php(87): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\ClienteController.php(42): App\Models\clienteModel::getAll()
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\clientes.php(24): App\Controllers\ClienteController->getAll()
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#4 {main}
+[22-Jul-2026 21:24:36 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:24:36 America/Tegucigalpa] clienteModel::getAll PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarClientes does not exist in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php:87
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php(87): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\ClienteController.php(42): App\Models\clienteModel::getAll()
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\clientes.php(24): App\Controllers\ClienteController->getAll()
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#4 {main}
+[22-Jul-2026 21:28:02 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:39:54 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:39:54 America/Tegucigalpa] clienteModel::eliminarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ferreteria`.`cotizaciones`, CONSTRAINT `cotizaciones_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`) ON UPDATE CASCADE) in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php(151): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\ClienteController.php(66): App\Models\clienteModel::eliminarCliente('1')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\clientes.php(26): App\Controllers\ClienteController->eliminarCliente()
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#4 {main}
+[22-Jul-2026 21:39:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:39:58 America/Tegucigalpa] clienteModel::eliminarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ferreteria`.`cotizaciones`, CONSTRAINT `cotizaciones_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`) ON UPDATE CASCADE) in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php(151): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\ClienteController.php(66): App\Models\clienteModel::eliminarCliente('2')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\clientes.php(26): App\Controllers\ClienteController->eliminarCliente()
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#4 {main}
+[22-Jul-2026 21:41:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:41:42 America/Tegucigalpa] clienteModel::eliminarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ferreteria`.`cotizaciones`, CONSTRAINT `cotizaciones_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`) ON UPDATE CASCADE) in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php(151): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\ClienteController.php(66): App\Models\clienteModel::eliminarCliente('1')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\clientes.php(26): App\Controllers\ClienteController->eliminarCliente()
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#4 {main}
+[22-Jul-2026 21:41:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:42:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:42:58 America/Tegucigalpa] clienteModel::eliminarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ferreteria`.`cotizaciones`, CONSTRAINT `cotizaciones_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`) ON UPDATE CASCADE) in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php(151): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\ClienteController.php(66): App\Models\clienteModel::eliminarCliente('1')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\clientes.php(26): App\Controllers\ClienteController->eliminarCliente()
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#4 {main}
+[22-Jul-2026 21:43:02 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:43:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:43:08 America/Tegucigalpa] clienteModel::eliminarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ferreteria`.`cotizaciones`, CONSTRAINT `cotizaciones_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`) ON UPDATE CASCADE) in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php(151): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\ClienteController.php(66): App\Models\clienteModel::eliminarCliente('2')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\clientes.php(26): App\Controllers\ClienteController->eliminarCliente()
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#4 {main}
+[22-Jul-2026 21:43:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:43:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:43:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:43:44 America/Tegucigalpa] clienteModel::eliminarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ferreteria`.`cotizaciones`, CONSTRAINT `cotizaciones_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`) ON UPDATE CASCADE) in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php(151): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\ClienteController.php(66): App\Models\clienteModel::eliminarCliente('1')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\clientes.php(26): App\Controllers\ClienteController->eliminarCliente()
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#4 {main}
+[22-Jul-2026 21:43:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:43:59 America/Tegucigalpa] clienteModel::eliminarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ferreteria`.`cotizaciones`, CONSTRAINT `cotizaciones_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`) ON UPDATE CASCADE) in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Models\clienteModel.php(151): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\ClienteController.php(66): App\Models\clienteModel::eliminarCliente('2')
+#2 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\clientes.php(26): App\Controllers\ClienteController->eliminarCliente()
+#3 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#4 {main}
+[22-Jul-2026 21:46:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:46:51 America/Tegucigalpa] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\ClienteController.php on line 53
+[22-Jul-2026 21:46:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:48:00 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:48:10 America/Tegucigalpa] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\ClienteController.php on line 53
+[22-Jul-2026 21:48:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 21:48:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:11:03 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:11:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:12:18 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:14:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:16:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:16:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:17:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:17:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:18:01 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:18:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:20:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:20:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:21:23 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:21:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:21:48 America/Tegucigalpa] InventarioModel::asociarProducto SQLSTATE[45000]: <<Unknown error>>: 1644 Error: Ya existe ese producto en el almacén.
+[22-Jul-2026 22:21:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[23-Jul-2026 15:24:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[23-Jul-2026 15:24:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.

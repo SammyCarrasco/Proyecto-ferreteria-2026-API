@@ -419,3 +419,97 @@ Stack trace:
 #1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
 #2 {main}
   thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 92
+[22-Jul-2026 18:05:11 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:34
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 34
+[22-Jul-2026 18:05:18 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:30
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 30
+[22-Jul-2026 18:05:24 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:30
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 30
+[22-Jul-2026 18:05:25 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:30
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 30
+[22-Jul-2026 18:07:44 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:34
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 34
+[22-Jul-2026 18:09:30 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:34
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 34
+[22-Jul-2026 18:09:46 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:30
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 30
+[22-Jul-2026 18:13:49 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:30
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 30
+[22-Jul-2026 18:18:47 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::seleccionar_cliente() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php:66
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php on line 66
+[22-Jul-2026 18:18:49 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::seleccionar_cliente() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php:66
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php on line 66
+[22-Jul-2026 18:19:33 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:30
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 30
+[22-Jul-2026 18:19:34 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:30
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 30
+[22-Jul-2026 18:19:50 America/Tegucigalpa] PHP Warning:  Undefined variable $seleccionarCliente in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php on line 66
+[22-Jul-2026 18:19:50 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Method name must be a string in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php:66
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php on line 66
+[22-Jul-2026 18:20:58 America/Tegucigalpa] PHP Warning:  Undefined variable $seleccionarCliente in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php on line 66
+[22-Jul-2026 18:20:58 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Method name must be a string in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php:66
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php on line 66
+[22-Jul-2026 18:20:59 America/Tegucigalpa] PHP Warning:  Undefined variable $seleccionarCliente in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php on line 66
+[22-Jul-2026 18:20:59 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Method name must be a string in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php:66
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php on line 66
+[22-Jul-2026 18:25:16 America/Tegucigalpa] PHP Warning:  Undefined variable $seleccionarCliente in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php on line 66
+[22-Jul-2026 18:25:16 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Method name must be a string in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php:66
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require()
+#1 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php on line 66

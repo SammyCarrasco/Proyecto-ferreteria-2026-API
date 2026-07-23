@@ -1,10 +1,14 @@
 <?php
 // Src/Controllers/CotizacionController.php
 
-require_once __DIR__ . '/../Models/CotizacionModel.php';
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+require_once  __DIR__ . '/../Models/CotizacionModel.php';
 
 class CotizacionController {
-    private CotizacionModel $model;
+    private $model;
 
     public function __construct(PDO $pdo) {
         $this->model = new CotizacionModel($pdo);
@@ -247,5 +251,17 @@ public function calcularTotal() {
         "errores"             => $errores
     ]);
     return;
+}
+
+private function responder($codigoEstado, $exito, $mensaje, $datos = null) {
+    http_response_code($codigoEstado);
+    header('Content-Type: application/json; charset=utf-8');
+    echo json_encode([
+        'status' => $codigoEstado,
+        'success' => $exito,
+        'message' => $mensaje,
+        'data' => $datos
+    ]);
+    exit();
 }
 }

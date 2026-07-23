@@ -54,6 +54,17 @@ class CotizacionModel {
         return $resultado;
     }
 
+    // ... otros métodos de la clase ...
+
+    public function obtenerProductoPorId($idProducto) {
+        $sql = "SELECT nombre FROM productos WHERE id_producto = :id";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute(['id' => $idProducto]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+ 
+
     /**
      * Obtiene precio unitario y stock disponible de un producto.
      */

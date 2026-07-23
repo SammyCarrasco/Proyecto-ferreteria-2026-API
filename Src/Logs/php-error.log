@@ -665,3 +665,49 @@ Stack trace:
 =======
 >>>>>>> 8a01bd339f1aaf302a67472b3312c970c00cc059
 >>>>>>> 9ae64efa682f0fa54560a820c6493ddd3f2f102e
+[22-Jul-2026 22:02:49 America/Tegucigalpa] Ruta no encontrada: Cotizacion
+[22-Jul-2026 22:04:04 America/Tegucigalpa] Ruta no encontrada: Cotizacion.php
+[22-Jul-2026 22:04:23 America/Tegucigalpa] Ruta no encontrada: Cotizacion
+[22-Jul-2026 22:19:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:20:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:21:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:24:57 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Config\ResponseHTTP::status405() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:68
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(24): App\Controllers\CotizacionController->execute('cotizacion')
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 68
+[22-Jul-2026 22:25:04 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Config\ResponseHTTP::status405() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:68
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(24): App\Controllers\CotizacionController->execute('cotizacion')
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 68
+[22-Jul-2026 22:25:23 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Config\ResponseHTTP::status405() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:68
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(24): App\Controllers\CotizacionController->execute('cotizacion')
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 68
+[22-Jul-2026 22:26:27 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Config\ResponseHTTP::status405() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:68
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(24): App\Controllers\CotizacionController->execute('cotizacion')
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 68
+[22-Jul-2026 22:27:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:27:19 America/Tegucigalpa] CotizacionModel::reservarInventario SQLSTATE[45000]: <<Unknown error>>: 1644 Stock disponible insuficiente para realizar la reserva.
+[22-Jul-2026 22:28:02 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:28:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:29:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:29:57 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:30:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:30:35 America/Tegucigalpa] CotizacionModel::reservarInventario SQLSTATE[45000]: <<Unknown error>>: 1644 Stock disponible insuficiente para realizar la reserva.
+[22-Jul-2026 22:30:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:30:50 America/Tegucigalpa] CotizacionModel::reservarInventario SQLSTATE[45000]: <<Unknown error>>: 1644 Stock disponible insuficiente para realizar la reserva.
+[22-Jul-2026 22:30:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:30:59 America/Tegucigalpa] CotizacionModel::reservarInventario SQLSTATE[45000]: <<Unknown error>>: 1644 Stock disponible insuficiente para realizar la reserva.
+[22-Jul-2026 22:31:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:31:59 America/Tegucigalpa] CotizacionModel::reservarInventario SQLSTATE[45000]: <<Unknown error>>: 1644 Stock disponible insuficiente para realizar la reserva.
+[22-Jul-2026 22:36:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:37:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.

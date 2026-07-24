@@ -64,4 +64,8 @@ $mapaAcciones = [
 // Ejecutar la acción si existe en el mapa; de lo contrario, ejecutar por defecto seleccionarCliente
 $metodoController = $mapaAcciones[$accion] ?? 'seleccionarCliente';
 $controller->$metodoController();
+
+
+
+
 ?>

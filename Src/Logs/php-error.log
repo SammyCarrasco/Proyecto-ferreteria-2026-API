@@ -598,3 +598,113 @@ Stack trace:
 #1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
 #2 {main}
   thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 34
+[23-Jul-2026 20:42:11 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:34
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 34
+[23-Jul-2026 20:45:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[23-Jul-2026 20:45:54 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:30
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 30
+[23-Jul-2026 20:46:07 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:30
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 30
+[23-Jul-2026 20:49:35 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 20
+[23-Jul-2026 20:49:41 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 20
+[23-Jul-2026 20:50:03 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 20
+[23-Jul-2026 20:50:12 America/Tegucigalpa] Ruta no encontrada: Cotizacion
+[23-Jul-2026 20:50:17 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 20
+[23-Jul-2026 20:50:34 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:34
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 34
+[23-Jul-2026 20:50:52 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:34
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 34
+[23-Jul-2026 20:51:12 America/Tegucigalpa] Ruta no encontrada: Cotizacion
+[23-Jul-2026 20:51:23 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:34
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 34
+[23-Jul-2026 20:51:31 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:34
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 34
+[23-Jul-2026 20:51:36 America/Tegucigalpa] Ruta no encontrada: cotizacion
+[23-Jul-2026 20:51:41 America/Tegucigalpa] Ruta no encontrada: cotizacion
+[23-Jul-2026 20:51:46 America/Tegucigalpa] Ruta no encontrada: cotizacion
+[23-Jul-2026 20:51:53 America/Tegucigalpa] Ruta no encontrada: cotizacion
+[23-Jul-2026 20:52:02 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:34
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 34
+[23-Jul-2026 20:52:07 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:34
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 34
+[23-Jul-2026 20:53:33 America/Tegucigalpa] Ruta no encontrada: cotizacion
+[23-Jul-2026 20:53:41 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:34
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 34
+[23-Jul-2026 20:54:13 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:34
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 34
+[23-Jul-2026 20:55:11 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 20
+[23-Jul-2026 20:55:21 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method CotizacionController::responder() in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php:20
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Routes\Cotizacion.php(66): CotizacionController->seleccionarCliente()
+#1 C:\xampp\htdocs\Proyecto ferreteria 2026 API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 20

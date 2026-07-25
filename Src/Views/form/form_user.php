@@ -1,3 +1,6 @@
+<!-- Cargar SweetAlert2 para alertas elegantes -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <div class="container-fluid">
     <!-- Encabezado -->
     <div class="d-flex justify-content-between align-items-center mb-4">
@@ -5,7 +8,7 @@
             <h4 class="mb-0 fw-bold text-dark"><i class="bi bi-people-fill text-primary me-2"></i>Gestión de Empleados</h4>
             <small class="text-muted">Administración y registro de vendedores y personal del sistema</small>
         </div>
-        <button class="btn btn-primary" id="btnNuevoEmpleado" data-bs-toggle="modal" data-bs-target="#modalEmpleado">
+        <button class="btn btn-primary" id="btnNuevoEmpleado">
             <i class="bi bi-person-plus-fill me-1"></i> Nuevo Empleado
         </button>
     </div>
@@ -41,12 +44,12 @@
 </div>
 
 <!-- Modal para Crear / Editar Empleado -->
-<div class="modal fade" id="modalEmpleado" tabindex="-1" aria-hidden="true">
+<div class="modal fade" id="modalEmpleado" tabindex="-1" aria-hidden="true" style="background: rgba(0,0,0,0.5);">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border-0 shadow">
             <div class="modal-header bg-primary text-white">
                 <h5 class="modal-title" id="modalEmpleadoLabel"><i class="bi bi-person-plus me-2"></i>Registrar Empleado</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" id="btnCerrarModalX" aria-label="Close"></button>
             </div>
             <form id="formEmpleado">
                 <div class="modal-body">
@@ -68,11 +71,11 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="rol" class="form-label">Rol del Sistema</label>
+                        <label for="rol" class="form-label font-weight-bold">Rol del Sistema</label>
                         <select class="form-select" id="rol" name="rol" required>
                             <option value="" disabled selected>Seleccione un rol...</option>
-                            <option value="Normal">Normal (Vendedor)</option>
                             <option value="Administrador">Administrador</option>
+                            <option value="Normal">Normal</option>
                         </select>
                     </div>
 
@@ -89,7 +92,7 @@
                 </div>
 
                 <div class="modal-footer bg-light">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-secondary" id="btnCancelarModal">Cancelar</button>
                     <button type="submit" class="btn btn-primary" id="btnGuardarEmpleado">
                         <i class="bi bi-save me-1"></i> Guardar Empleado
                     </button>
@@ -100,11 +103,23 @@
 </div>
 
 <script>
-    $(document).ready(function () {
+    (function () {
+        let empleadosData = [];
 
+        function abrirModal() {
+            $('#modalEmpleado').css('display', 'block').addClass('show');
+            $('body').addClass('modal-open');
+        }
+
+        function cerrarModal() {
+            $('#modalEmpleado').css('display', 'none').removeClass('show');
+            $('body').removeClass('modal-open');
+        }
+
+        // 1. LISTAR EMPLEADOS
         function listarEmpleados() {
             $.ajax({
-                url: 'user', // Llama a Src/Routes/user.php
+                url: 'user',
                 type: 'GET',
                 headers: {
                     'Authorization': 'Bearer ' + localStorage.getItem('token')
@@ -112,27 +127,28 @@
                 dataType: 'json',
                 success: function (response) {
                     let html = '';
-                    let lista = response.data || response;
+                    empleadosData = response.data || response;
 
-                    if (Array.isArray(lista) && lista.length > 0) {
-                        lista.forEach((emp, index) => {
-                            let badgeRol = emp.rol === 'Administrador' 
+                    if (Array.isArray(empleadosData) && empleadosData.length > 0) {
+                        empleadosData.forEach((emp, index) => {
+                            let esAdmin = (emp.rol === 'Administrador' || emp.rol == '1' || emp.id_rol == '1');
+                            let badgeRol = esAdmin
                                 ? '<span class="badge bg-danger-subtle text-danger">Administrador</span>' 
                                 : '<span class="badge bg-info-subtle text-info">Normal</span>';
 
                             html += `
                                 <tr>
                                     <td>${index + 1}</td>
-                                    <td>${emp.identidad || '-'}</td>
+                                    <td>${emp.dni || emp.identidad || '-'}</td>
                                     <td class="fw-semibold">${emp.nombre}</td>
-                                    <td>${emp.correo}</td>
+                                    <td>${emp.email || emp.correo}</td>
                                     <td>${badgeRol}</td>
                                     <td>${emp.fecha_registro || '-'}</td>
                                     <td class="text-end">
-                                        <button class="btn btn-sm btn-outline-primary me-1 btn-editar" data-id="${emp.id_empleado}">
+                                        <button type="button" class="btn btn-sm btn-outline-primary me-1 btn-editar" data-id="${emp.id_empleado || emp.id}">
                                             <i class="bi bi-pencil-square"></i>
                                         </button>
-                                        <button class="btn btn-sm btn-outline-danger btn-eliminar" data-id="${emp.id_empleado}">
+                                        <button type="button" class="btn btn-sm btn-outline-danger btn-eliminar" data-id="${emp.id_empleado || emp.id}">
                                             <i class="bi bi-trash"></i>
                                         </button>
                                     </td>
@@ -145,49 +161,85 @@
                     $('#tbodyEmpleados').html(html);
                 },
                 error: function () {
-                    $('#tbodyEmpleados').html('<tr><td colspan="7" class="text-center py-4 text-danger"><i class="bi bi-exclamation-triangle me-2"></i>Error al consultar los empleados desde la API.</td></tr>');
+                    $('#tbodyEmpleados').html('<tr><td colspan="7" class="text-center py-4 text-danger"><i class="bi bi-exclamation-triangle me-2"></i>Error al consultar los empleados.</td></tr>');
                 }
             });
         }
 
-        // Cargar lista al inicio
         listarEmpleados();
 
-        // Resetear modal al presionar 'Nuevo Empleado'
-        $('#btnNuevoEmpleado').on('click', function () {
+        // 2. BOTÓN NUEVO EMPLEADO
+        $(document).off('click', '#btnNuevoEmpleado').on('click', '#btnNuevoEmpleado', function (e) {
+            e.preventDefault();
             $('#formEmpleado')[0].reset();
             $('#id_empleado').val('');
             $('#modalEmpleadoLabel').html('<i class="bi bi-person-plus me-2"></i>Registrar Empleado');
             $('#clave, #confirmaclave').prop('required', true);
+            abrirModal();
         });
 
-        // Guardar o Editar Empleado
-        $('#formEmpleado').on('submit', function (e) {
+        // 3. CERRAR MODAL
+        $(document).off('click', '#btnCancelarModal, #btnCerrarModalX').on('click', '#btnCancelarModal, #btnCerrarModalX', function (e) {
+            e.preventDefault();
+            cerrarModal();
+        });
+
+        // 4. BOTÓN EDITAR
+        $(document).off('click', '.btn-editar').on('click', '.btn-editar', function (e) {
+            e.preventDefault();
+            let id = $(this).data('id');
+            let emp = empleadosData.find(e => (e.id_empleado == id || e.id == id));
+
+            if (emp) {
+                $('#id_empleado').val(emp.id_empleado || emp.id);
+                $('#identidad').val(emp.dni || emp.identidad);
+                $('#nombre').val(emp.nombre);
+                $('#correo').val(emp.email || emp.correo);
+
+                // Seleccionar correctamente el valor del rol
+                let valRol = emp.rol;
+                if (valRol == '1') valRol = 'Administrador';
+                if (valRol == '2') valRol = 'Normal';
+                $('#rol').val(valRol);
+
+                $('#clave, #confirmaclave').val('');
+                $('#modalEmpleadoLabel').html('<i class="bi bi-pencil-square me-2"></i>Editar Empleado');
+                abrirModal();
+            }
+        });
+
+        // 5. GUARDAR Y EDITAR (SUBMIT)
+        $(document).off('submit', '#formEmpleado').on('submit', '#formEmpleado', function (e) {
             e.preventDefault();
 
+            let id = $('#id_empleado').val();
             let clave = $('#clave').val();
             let confirmaclave = $('#confirmaclave').val();
+            let rolSeleccionado = $('#rol').val();
 
             if (clave !== confirmaclave) {
-                alert('Las contraseñas no coinciden. Por favor verifique.');
+                Swal.fire('Atención', 'Las contraseñas no coinciden.', 'warning');
                 return;
             }
 
-            let id = $('#id_empleado').val();
-            let metodo = id ? 'PUT' : 'POST';
+            // Calculamos tanto el texto como el valor numérico para que el model PHP no lo ignore
+            let idRolNum = (rolSeleccionado === 'Administrador' || rolSeleccionado === '1') ? '1' : '2';
 
             let payload = {
-                id_empleado: id,
-                identidad: $('#identidad').val().trim(),
                 nombre: $('#nombre').val().trim(),
-                correo: $('#correo').val().trim(),
-                rol: $('#rol').val(),
+                dni: $('#identidad').val().trim(),
+                email: $('#correo').val().trim(),
+                rol: rolSeleccionado,
+                id_rol: idRolNum,
                 clave: clave,
-                confirmaclave: confirmaclave
+                confirmarclave: confirmaclave
             };
 
+            let urlDestino = id ? 'user/' + id : 'user';
+            let metodo = id ? 'PUT' : 'POST';
+
             $.ajax({
-                url: 'user',
+                url: urlDestino,
                 type: metodo,
                 headers: {
                     'Authorization': 'Bearer ' + localStorage.getItem('token'),
@@ -196,17 +248,72 @@
                 data: JSON.stringify(payload),
                 dataType: 'json',
                 success: function (res) {
-                    $('#modalEmpleado').modal('hide');
+                    cerrarModal();
                     listarEmpleados();
+                    Swal.fire({
+                        icon: 'success',
+                        title: '¡Éxito!',
+                        text: id ? 'Empleado actualizado correctamente.' : 'Empleado registrado con éxito.',
+                        timer: 2000,
+                        showConfirmButton: false
+                    });
                 },
                 error: function (xhr) {
                     let msg = 'Error al procesar la solicitud.';
-                    if (xhr.responseJSON && xhr.responseJSON.message) {
+                    if (xhr.responseJSON && xhr.responseJSON.data) {
+                        msg = xhr.responseJSON.data;
+                    } else if (xhr.responseJSON && xhr.responseJSON.message) {
                         msg = xhr.responseJSON.message;
                     }
-                    alert(msg);
+                    Swal.fire('Error', msg, 'error');
                 }
             });
         });
-    });
+
+        // 6. BOTÓN ELIMINAR (CON ALERTA ELABORADA SWEETALERT2)
+        $(document).off('click', '.btn-eliminar').on('click', '.btn-eliminar', function (e) {
+            e.preventDefault();
+            let id = $(this).data('id');
+
+            Swal.fire({
+                title: '¿Está seguro?',
+                text: 'Esta acción no se puede deshacer y eliminará al empleado del sistema.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#dc3545',
+                cancelButtonColor: '#6c757d',
+                confirmButtonText: '<i class="bi bi-trash"></i> Sí, eliminar',
+                cancelButtonText: 'Cancelar',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: 'user/' + id,
+                        type: 'DELETE',
+                        headers: {
+                            'Authorization': 'Bearer ' + localStorage.getItem('token')
+                        },
+                        dataType: 'json',
+                        success: function (res) {
+                            listarEmpleados();
+                            Swal.fire(
+                                '¡Eliminado!',
+                                'El empleado ha sido eliminado correctamente.',
+                                'success'
+                            );
+                        },
+                        error: function (xhr) {
+                            let msg = 'No se pudo eliminar el empleado.';
+                            if (xhr.responseJSON && xhr.responseJSON.data) {
+                                msg = xhr.responseJSON.data;
+                            } else if (xhr.responseJSON && xhr.responseJSON.message) {
+                                msg = xhr.responseJSON.message;
+                            }
+                            Swal.fire('Error', msg, 'error');
+                        }
+                    });
+                }
+            });
+        });
+    })();
 </script>

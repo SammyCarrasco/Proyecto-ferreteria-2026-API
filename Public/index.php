@@ -33,7 +33,15 @@
     if ($modulo === 'login') {
         $file = dirname(__DIR__) . '/Src/Views/login.php';
     } else if ($caso !== null && $caso !== false && $caso !== "") {
-        $file = dirname(__DIR__) . '/Src/Views/' . $modulo . '.php';
+        // 1. Busca primero en la subcarpeta form con el prefijo form_ (ej: Src/Views/form/form_user.php)
+        $fileForm = dirname(__DIR__) . '/Src/Views/form/form_' . $modulo . '.php';
+
+        if (file_exists($fileForm)) {
+            $file = $fileForm;
+        } else {
+            // 2. Si no existe en form/, busca directamente en Src/Views/modulo.php
+            $file = dirname(__DIR__) . '/Src/Views/' . $modulo . '.php';
+        }
     } else {
         $file = dirname(__DIR__) . '/Src/Routes/' . $modulo . '.php'; 
     }

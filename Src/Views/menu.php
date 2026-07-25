@@ -72,36 +72,75 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script>
-        $(document).ready(function () {
+<script>
+    $(document).ready(function () {
+        // Mostrar datos de sesión en la barra superior
+        if (typeof SESSION_NOMBRE !== 'undefined') {
             $('#user-info').text(SESSION_NOMBRE + ' (' + SESSION_ROL + ')');
+        }
 
-            $('#btn-logout').on('click', function(e) {
-                e.preventDefault();
-                localStorage.clear();
-                window.location.href = 'login';
-            });
-
-            if (window.location.hash) {
-                let mod = window.location.hash.replace('#', '');
-                let link = $('.nav-link[data-modulo="' + mod + '"]');
-                if (link.length) link.trigger('click');
-            }
+        // Botón Salir
+        $('#btn-logout').on('click', function(e) {
+            e.preventDefault();
+            localStorage.clear();
+            window.location.href = 'login';
         });
 
-        $(document).on('click', '.nav-link', function () {
-            let modulo = $(this).data('modulo');
-            let fragmento = $(this).data('fragmento');
-            let etiqueta = $(this).text().trim();
+        // Cargar módulo por defecto si viene en la URL hash (ej. #user)
+        if (window.location.hash) {
+            let mod = window.location.hash.replace('#', '');
+            let link = $('.nav-link[data-modulo="' + mod + '"]');
+            if (link.length) link.trigger('click');
+        }
+    });
 
-            $('.nav-link').removeClass('active');
-            $(this).addClass('active');
-            $('#titulo-modulo').text(etiqueta);
+    // Función principal para cargar las vistas dinámicas en el contenedor
+    function cargarModulo(modulo, fragmento) {
+        $('#contenido-dinamico').html(`
+            <div class="text-center py-5">
+                <div class="spinner-border text-primary" role="status"></div>
+                <p class="mt-2 text-muted">Cargando módulo...</p>
+            </div>
+        `);
 
-            if (typeof cargarModulo === 'function') {
-                cargarModulo(modulo, fragmento);
+        // Petición AJAX al módulo con el parámetro caso=1
+        $.ajax({
+            url: modulo + '?caso=1',
+            type: 'GET',
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.getItem('token')
+            },
+            success: function (data) {
+                $('#contenido-dinamico').html(data);
+            },
+            error: function (xhr) {
+                console.error("Error al cargar la vista:", xhr);
+                $('#contenido-dinamico').html(`
+                    <div class="alert alert-danger shadow-sm my-3">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                        <strong>Error (${xhr.status}):</strong> No se pudo cargar la vista del módulo <b>${modulo}</b>.
+                    </div>
+                `);
             }
         });
-    </script>
+    }
+
+    // Evento de clic en los enlaces del menú lateral
+    $(document).on('click', '.nav-link', function (e) {
+        e.preventDefault();
+
+        let modulo = $(this).data('modulo');
+        let fragmento = $(this).data('fragmento');
+        let etiqueta = $(this).text().trim();
+
+        if (!modulo) return; // Ignora clicks en ítems sin data-modulo
+
+        $('.nav-link').removeClass('active');
+        $(this).addClass('active');
+        $('#titulo-modulo').text(etiqueta);
+
+        cargarModulo(modulo, fragmento);
+    });
+</script>
 </body>
 </html>

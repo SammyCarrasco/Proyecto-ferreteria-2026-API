@@ -807,4 +807,299 @@ Stack trace:
   thrown in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Controllers\CotizacionController.php on line 20
 =======
 >>>>>>> 9ae64efa682f0fa54560a820c6493ddd3f2f102e
+<<<<<<< HEAD
 >>>>>>> 4f2876a7d35b02371ecf65eacaba5efc073fafa7
+=======
+[22-Jul-2026 22:02:49 America/Tegucigalpa] Ruta no encontrada: Cotizacion
+[22-Jul-2026 22:04:04 America/Tegucigalpa] Ruta no encontrada: Cotizacion.php
+[22-Jul-2026 22:04:23 America/Tegucigalpa] Ruta no encontrada: Cotizacion
+[22-Jul-2026 22:19:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:20:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:21:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:24:57 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Config\ResponseHTTP::status405() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:68
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(24): App\Controllers\CotizacionController->execute('cotizacion')
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 68
+[22-Jul-2026 22:25:04 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Config\ResponseHTTP::status405() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:68
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(24): App\Controllers\CotizacionController->execute('cotizacion')
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 68
+[22-Jul-2026 22:25:23 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Config\ResponseHTTP::status405() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:68
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(24): App\Controllers\CotizacionController->execute('cotizacion')
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 68
+[22-Jul-2026 22:26:27 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Config\ResponseHTTP::status405() in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php:68
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Routes\Cotizacion.php(24): App\Controllers\CotizacionController->execute('cotizacion')
+#1 C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Public\index.php(42): require('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\ProyectoFerreteriaAPI\Proyecto-ferreteria-2026-API\Src\Controllers\CotizacionController.php on line 68
+[22-Jul-2026 22:27:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:27:19 America/Tegucigalpa] CotizacionModel::reservarInventario SQLSTATE[45000]: <<Unknown error>>: 1644 Stock disponible insuficiente para realizar la reserva.
+[22-Jul-2026 22:28:02 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:28:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:29:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:29:57 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:30:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:30:35 America/Tegucigalpa] CotizacionModel::reservarInventario SQLSTATE[45000]: <<Unknown error>>: 1644 Stock disponible insuficiente para realizar la reserva.
+[22-Jul-2026 22:30:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:30:50 America/Tegucigalpa] CotizacionModel::reservarInventario SQLSTATE[45000]: <<Unknown error>>: 1644 Stock disponible insuficiente para realizar la reserva.
+[22-Jul-2026 22:30:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:30:59 America/Tegucigalpa] CotizacionModel::reservarInventario SQLSTATE[45000]: <<Unknown error>>: 1644 Stock disponible insuficiente para realizar la reserva.
+[22-Jul-2026 22:31:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:31:59 America/Tegucigalpa] CotizacionModel::reservarInventario SQLSTATE[45000]: <<Unknown error>>: 1644 Stock disponible insuficiente para realizar la reserva.
+[22-Jul-2026 22:36:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[22-Jul-2026 22:37:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+>>>>>>> 34e0426ca6000d26e03aeb9cfa17b1852bd55ed9
+[24-Jul-2026 12:55:38 America/Tegucigalpa] Ruta no encontrada: cotizacion
+[24-Jul-2026 12:55:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 12:57:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 13:00:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 13:00:41 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:05:29 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:06:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:07:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:08:37 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:10:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:12:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:14:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:14:59 America/Tegucigalpa] Ruta no encontrada: cemento.jpg
+[24-Jul-2026 14:14:59 America/Tegucigalpa] Ruta no encontrada: cinta.jpg
+[24-Jul-2026 14:14:59 America/Tegucigalpa] Ruta no encontrada: martillo.jpg
+[24-Jul-2026 14:26:29 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:26:29 America/Tegucigalpa] Ruta no encontrada: cemento.jpg
+[24-Jul-2026 14:26:29 America/Tegucigalpa] Ruta no encontrada: cinta.jpg
+[24-Jul-2026 14:26:29 America/Tegucigalpa] Ruta no encontrada: martillo.jpg
+[24-Jul-2026 14:26:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:26:39 America/Tegucigalpa] Ruta no encontrada: cemento.jpg
+[24-Jul-2026 14:26:39 America/Tegucigalpa] Ruta no encontrada: cinta.jpg
+[24-Jul-2026 14:26:39 America/Tegucigalpa] Ruta no encontrada: martillo.jpg
+[24-Jul-2026 14:27:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:27:31 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:27:31 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.jpg
+[24-Jul-2026 14:27:31 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:28:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:28:34 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.jpg
+[24-Jul-2026 14:28:34 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:28:34 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:31:24 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:31:24 America/Tegucigalpa] Ruta no encontrada: martillo.jpg
+[24-Jul-2026 14:31:24 America/Tegucigalpa] Ruta no encontrada: cemento.jpg
+[24-Jul-2026 14:31:24 America/Tegucigalpa] Ruta no encontrada: cinta.jpg
+[24-Jul-2026 14:31:29 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:31:29 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:31:29 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:31:29 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.jpg
+[24-Jul-2026 14:31:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:31:30 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.jpg
+[24-Jul-2026 14:31:30 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:31:30 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:34:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:34:39 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:34:39 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:34:39 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:34:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:34:40 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:34:40 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:34:40 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:39:29 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:39:29 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:39:29 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:39:29 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:39:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:39:53 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:39:53 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:39:53 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:40:23 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:40:23 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:40:23 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:40:23 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:41:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:41:33 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento
+[24-Jul-2026 14:41:33 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:41:33 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:41:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:41:34 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:41:34 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento
+[24-Jul-2026 14:41:34 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:42:10 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento
+[24-Jul-2026 14:42:24 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:42:50 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:42:52 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:42:56 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png.png
+[24-Jul-2026 14:43:03 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:43:13 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:43:17 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:43:20 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:43:51 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:46:13 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:46:14 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:46:16 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:46:22 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento
+[24-Jul-2026 14:46:26 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:48:25 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:48:52 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:48:53 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:52:02 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:52:02 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:52:02 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:52:02 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:54:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:54:19 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:54:19 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:54:19 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:55:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:55:55 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:55:55 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:55:55 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:56:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:56:39 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:56:39 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:56:39 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:57:01 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:57:01 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:57:01 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:57:01 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:57:02 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:57:02 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:57:02 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 14:57:02 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cemento.png
+[24-Jul-2026 14:58:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 14:58:42 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 14:58:42 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 15:01:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 15:01:50 America/Tegucigalpa] Ruta no encontrada: uploads/productos/cinta.jpg
+[24-Jul-2026 15:01:50 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 15:02:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 15:02:47 America/Tegucigalpa] Ruta no encontrada: uploads/productos/martillo.jpg
+[24-Jul-2026 15:05:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 15:05:57 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 15:06:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 16:55:51 America/Tegucigalpa] Ruta no encontrada: views/menu
+[24-Jul-2026 16:55:55 America/Tegucigalpa] Ruta no encontrada: views/menu.php
+[24-Jul-2026 17:21:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 17:22:29 America/Tegucigalpa] Ruta no encontrada: Views/login.php
+[24-Jul-2026 17:32:54 America/Tegucigalpa] Ruta no encontrada: index.php
+[24-Jul-2026 17:47:00 America/Tegucigalpa] Recurso no encontrado: auth
+[24-Jul-2026 17:49:31 America/Tegucigalpa] Ruta no encontrada: login
+[24-Jul-2026 17:49:46 America/Tegucigalpa] Recurso no encontrado: auth
+[24-Jul-2026 17:54:20 America/Tegucigalpa] Ruta no encontrada: login
+[24-Jul-2026 17:54:20 America/Tegucigalpa] Ruta no encontrada: js/jquery.min.js
+[24-Jul-2026 17:54:24 America/Tegucigalpa] Ruta no encontrada: login
+[24-Jul-2026 17:54:24 America/Tegucigalpa] Ruta no encontrada: js/jquery.min.js
+[24-Jul-2026 17:54:42 America/Tegucigalpa] Ruta no encontrada: login
+[24-Jul-2026 17:54:42 America/Tegucigalpa] Ruta no encontrada: js/jquery.min.js
+[24-Jul-2026 17:54:44 America/Tegucigalpa] Ruta no encontrada: login
+[24-Jul-2026 17:54:45 America/Tegucigalpa] Ruta no encontrada: js/jquery.min.js
+[24-Jul-2026 17:55:12 America/Tegucigalpa] Ruta no encontrada: login
+[24-Jul-2026 17:55:12 America/Tegucigalpa] Ruta no encontrada: js/jquery.min.js
+[24-Jul-2026 17:57:52 America/Tegucigalpa] Ruta no encontrada: login
+[24-Jul-2026 17:57:52 America/Tegucigalpa] Ruta no encontrada: js/jquery.min.js
+[24-Jul-2026 18:01:18 America/Tegucigalpa] Ruta no encontrada: login
+[24-Jul-2026 18:03:45 America/Tegucigalpa] Ruta no encontrada: login
+[24-Jul-2026 18:05:06 America/Tegucigalpa] Ruta no encontrada: login
+[24-Jul-2026 18:13:13 America/Tegucigalpa] Ruta no encontrada: login
+[24-Jul-2026 18:13:16 America/Tegucigalpa] Ruta no encontrada: login
+[24-Jul-2026 18:13:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 18:13:32 America/Tegucigalpa] Ruta no encontrada: sesion_guardar.php
+[24-Jul-2026 18:17:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 18:17:26 America/Tegucigalpa] Ruta no encontrada: sesion_guardar.php
+[24-Jul-2026 18:17:28 America/Tegucigalpa] Ruta no encontrada: login
+[24-Jul-2026 18:17:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 18:17:41 America/Tegucigalpa] Ruta no encontrada: sesion_guardar.php
+[24-Jul-2026 18:21:54 America/Tegucigalpa] Ruta no encontrada: login
+[24-Jul-2026 18:21:54 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:38:23 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:38:23 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:38:23 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:38:57 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:38:57 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:38:57 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:38:57 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:38:57 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:38:57 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:39:04 America/Tegucigalpa] Recurso no encontrado: menu
+[24-Jul-2026 18:39:08 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:39:08 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:39:08 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:39:19 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:39:19 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:39:19 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:39:31 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:39:31 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:39:31 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:39:47 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:39:56 America/Tegucigalpa] Ruta no encontrada: login.php
+[24-Jul-2026 18:40:10 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:40:10 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:40:10 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:43:13 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:43:13 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:43:13 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:44:49 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:44:49 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:44:49 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:44:50 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:44:50 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:44:50 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:44:50 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:44:50 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:44:50 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:44:52 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:44:52 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:44:52 America/Tegucigalpa] Ruta no encontrada: js/login.js
+[24-Jul-2026 18:46:16 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:46:16 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:46:26 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:48:45 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:49:35 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:49:35 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:49:42 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:49:59 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:52:09 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:52:10 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:52:10 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:52:11 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:52:11 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:52:12 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:52:13 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:52:14 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:52:18 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\login.php on line 1
+[24-Jul-2026 18:52:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 18:52:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 18:52:31 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\sesion_guardar.php on line 2
+[24-Jul-2026 18:52:31 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\sesion_guardar.php on line 2
+[24-Jul-2026 18:56:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 18:56:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 18:56:50 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\menu.php on line 2
+[24-Jul-2026 18:56:50 America/Tegucigalpa] Ruta no encontrada: js/jquery.min.js
+[24-Jul-2026 18:56:50 America/Tegucigalpa] Ruta no encontrada: js/funciones.js
+[24-Jul-2026 18:56:50 America/Tegucigalpa] Ruta no encontrada: js/jquery.min.js
+[24-Jul-2026 18:56:50 America/Tegucigalpa] Ruta no encontrada: js/funciones.js
+[24-Jul-2026 18:57:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 18:57:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 18:57:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 18:57:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 18:57:15 America/Tegucigalpa] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\Proyecto ferreteria 2026 API\Src\Views\menu.php on line 2
+[24-Jul-2026 18:57:15 America/Tegucigalpa] Ruta no encontrada: js/jquery.min.js
+[24-Jul-2026 18:57:15 America/Tegucigalpa] Ruta no encontrada: js/funciones.js
+[24-Jul-2026 18:57:15 America/Tegucigalpa] Ruta no encontrada: js/jquery.min.js
+[24-Jul-2026 18:57:15 America/Tegucigalpa] Ruta no encontrada: js/funciones.js
+[24-Jul-2026 19:02:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 19:02:19 America/Tegucigalpa] Ruta no encontrada: js/jquery.min.js
+[24-Jul-2026 19:02:19 America/Tegucigalpa] Ruta no encontrada: js/funciones.js
+[24-Jul-2026 19:08:02 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 19:08:02 America/Tegucigalpa] Ruta no encontrada: js/funciones.js
+[24-Jul-2026 19:08:02 America/Tegucigalpa] Ruta no encontrada: js/jquery.min.js
+[24-Jul-2026 19:08:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 19:08:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 19:08:24 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 19:08:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[24-Jul-2026 19:08:27 America/Tegucigalpa] Ruta no encontrada: js/jquery.min.js
+[24-Jul-2026 19:08:27 America/Tegucigalpa] Ruta no encontrada: js/funciones.js

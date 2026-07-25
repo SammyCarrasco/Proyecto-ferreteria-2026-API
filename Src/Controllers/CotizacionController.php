@@ -1,267 +1,128 @@
 <?php
-// Src/Controllers/CotizacionController.php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+namespace App\Controllers;
 
-require_once  __DIR__ . '/../Models/CotizacionModel.php';
+use App\Models\CotizacionModel;
+use App\Config\ResponseHTTP;
 
 class CotizacionController {
-    private $model;
+    private $method;
+    private $route;
+    private $params;
+    private $data;
+    private $headers;
 
-    public function __construct(PDO $pdo) {
-        $this->model = new CotizacionModel($pdo);
+    public function __construct($method, $route, $params, $data, $headers) {
+        $this->method  = strtolower($method);
+        $this->route   = $route;
+        $this->params  = $params;
+        $this->data    = is_array($data) ? $data : (array)$data;
+        $this->headers = $headers;
     }
 
     /**
-     * Procesa la selección del cliente para el flujo de la cotización.
+     * Valida el campo id_cliente para la selección.
      */
-    public function seleccionarCliente(): void {
-        $input = json_decode(file_get_contents("php://input"), true);
+    private function validarCliente() {
+        if (empty($this->data['id_cliente']) || !is_numeric($this->data['id_cliente'])) {
+            return [
+                "status"  => false,
+                "message" => "El campo 'id_cliente' es obligatorio y debe ser un entero válido."
+            ];
+        }
+        return ["status" => true];
+    }
 
-        if (!isset($input['id_cliente']) || empty($input['id_cliente'])) {
-            $this->responder(400, false, "Se requiere el 'id_cliente' para realizar la selección.");
+    /**
+     * Valida el criterio para la búsqueda de productos.
+     */
+    private function validarBusqueda() {
+        $criterio = $this->data['criterio'] ?? $this->data['criterio_producto'] ?? $this->data['busqueda'] ?? null;
+        if (empty($criterio)) {
+            return [
+                "status"  => false,
+                "message" => "Se requiere 'criterio_producto' o 'busqueda'."
+            ];
+        }
+        return ["status" => true];
+    }
+
+    /**
+     * Valida la lista de productos para el cálculo/reserva.
+     */
+    private function validarProductos() {
+        if (empty($this->data['productos']) || !is_array($this->data['productos'])) {
+            return [
+                "status"  => false,
+                "message" => "Se requiere una lista válida en el arreglo 'productos'."
+            ];
+        }
+        return ["status" => true];
+    }
+
+    /**
+     * Controlador frontal basado en acciones o métodos HTTP.
+     */
+    public function execute($resource = '') {
+        if ($this->method !== 'post') {
+            echo json_encode(ResponseHTTP::status405("Método no permitido. Utiliza el método POST."));
             return;
         }
 
-        $idCliente = (int)$input['id_cliente'];
+        $accionRaw = $this->data['accion'] ?? $_GET['accion'] ?? '';
+        $accion    = strtolower($accionRaw);
 
-        try {
-            $existe = $this->model->seleccionarCliente($idCliente);
-
-            if ($existe) {
-                $this->responder(200, true, "Cliente seleccionado correctamente.", [
-                    "id_cliente" => $idCliente
-                ]);
-            } else {
-                $this->responder(404, false, "Error: El cliente con ID {$idCliente} no existe en la base de datos.");
-            }
-        } catch (PDOException $e) {
-            $this->responder(500, false, "Error al verificar el cliente: " . $e->getMessage());
-        }
-    }
-
-    /**
-     * Procesa la búsqueda de productos.
-     */
-    public function buscarProductos(): void {
-        //lee el JSON
-        $input = json_decode(file_get_contents("php://input"), true) ?? [];
-
-        $criterio = $input['criterio_producto'] ?? $input ['busqueda'] ?? null;
-
-        if(!$criterio){
-            http_response_code(400);
-            echo json_encode([
-                "exito" => false,
-                "mensaje" => "Se requiere 'nombre_producto'"
-            ]);
-            return;
-        }
-        //consultar productos
-        $productos = $this->model->buscarProductos($criterio);
-
-        //respuesta mostrando la busqueda de productos
-        http_response_code(200);
-        echo json_encode([
-             "exito" => true,
-            "total_encontrados" => count($productos),
-        ]);
-    }   
-
-public function registrarCantidades() {
-    // 1. Leer el JSON del request
-    $input = json_decode(file_get_contents("php://input"), true) ?? [];
-    $productos = $input['productos'] ?? [];
-
-    if (empty($productos) || !is_array($productos)) {
-        http_response_code(400);
-        echo json_encode([
-            "exito" => false,
-            "mensaje" => "Se requiere la lista 'productos'."
-        ]);
-        return;
-    }
-
-    $resumen = [];
-
-    foreach ($productos as $item) {
-        $idProducto = $item['id_producto'] ?? null;
-        $cantidad   = $item['cantidad'] ?? null;
-        $precio     = $item['precio'] ?? $item['precio_unitario'] ?? null;
-
-        if ($idProducto !== null && $cantidad !== null && $precio !== null) {
-            $nombre = "Producto " . $idProducto;
-
-            //Buscar en cualquier modelo instanciado dentro de la clase
-        
-            foreach (get_object_vars($this) as $modelo) {
-                if (is_object($modelo)) {
-                    if (method_exists($modelo, 'obtenerProductoPorId')) {
-                       $info = $modelo->obtenerProductoPorId($idProducto);
-                       if (!empty($info['nombre'])) {
-                            $nombre = $info['nombre'];
-                            break;
-                        }
-                    } elseif (method_exists($modelo, 'obtenerPorId')) {
-                        $info = $modelo->obtenerPorId($idProducto);
-                        if (!empty($info['nombre'])) {
-                            $nombre = $info['nombre'];
-                            break;
-                        }
-                    }
+        switch ($accion) {
+            case 'seleccionar_cliente':
+                $val = $this->validarCliente();
+                if (!$val['status']) {
+                    echo json_encode(ResponseHTTP::status400($val['message']));
+                    break;
                 }
-            }
-            
+                new CotizacionModel($this->data);
+                echo json_encode(CotizacionModel::seleccionarCliente());
+                break;
 
-            $resumen[] = [
-                "nombre"          => $nombre,
-                "cantidad"        => (int)$cantidad,
-                "precio_unitario" => (float)$precio
-            ];
-        }
-    }
-
-    // 2. Imprimir la respuesta JSON
-    header('Content-Type: application/json');
-    http_response_code(200);
-    echo json_encode([
-        "exito" => true,
-        "mensaje" => "Registro de cantidades completado.",
-        "data"  => $resumen
-    ]);
-    exit; // Asegura que no haya salida adicional
-}
-
-public function calcularTotal() {
-    $datos = json_decode(file_get_contents('php://input'), true);
-    $productos = $datos['productos'] ?? [];
-    $resumen = [];
-    $totalGeneral = 0;
-
-    foreach ($productos as $item) {
-        $idProducto = $item['id_producto'] ?? null;
-        $cantidad   = $item['cantidad'] ?? null;
-        $precio     = $item['precio'] ?? $item['precio_unitario'] ?? null;
-
-        if ($idProducto !== null && $cantidad !== null && $precio !== null) {
-            $nombre = "Producto " . $idProducto;
-
-            // Consultar el nombre real desde el modelo
-            $modelo = $this->cotizacionModel ?? $this->model ?? null;
-            if ($modelo && method_exists($modelo, 'obtenerProductoPorId')) {
-                $info = $modelo->obtenerProductoPorId($idProducto);
-                if (!empty($info['nombre'])) {
-                    $nombre = $info['nombre'];
+            case 'buscar_productos':
+                $val = $this->validarBusqueda();
+                if (!$val['status']) {
+                    echo json_encode(ResponseHTTP::status400($val['message']));
+                    break;
                 }
-            }
+                new CotizacionModel($this->data);
+                echo json_encode(CotizacionModel::buscarProductos());
+                break;
 
-            $cantidadInt = (int)$cantidad;
-            $precioFloat = (float)$precio;
-            $subtotal    = $cantidadInt * $precioFloat;
-
-            $totalGeneral += $subtotal;
-
-            $resumen[] = [
-                "nombre"          => $nombre,
-                "cantidad"        => $cantidadInt,
-                "precio_unitario" => $precioFloat,
-                "total"           => $subtotal
-            ];
-        }
-    }
-
-    echo json_encode([
-        "exito"         => true,
-        "mensaje"       => "total a pagar",
-        "data"          => $resumen,
-        "total_general" => $totalGeneral
-    ]);
-    return;
-}
-    /**
-     * Procesa la reserva de inventario para una lista de productos.
-     */
-    public function reservarInventario() {
-    $datos = json_decode(file_get_contents('php://input'), true);
-    $idCliente = $datos['id_cliente'] ?? null;
-    $productos = $datos['productos'] ?? [];
-    $resumen = [];
-    $errores = [];
-
-    if (empty($productos)) {
-        echo json_encode([
-            "exito"   => false,
-            "mensaje" => "No se enviaron productos para reservar."
-        ]);
-        return;
-    }
-
-    foreach ($productos as $item) {
-        $idProducto = $item['id_producto'] ?? null;
-        $cantidad   = $item['cantidad'] ?? null;
-
-        if ($idProducto !== null && $cantidad !== null) {
-            $cantidadInt = (int)$cantidad;
-            $nombre = "Producto " . $idProducto;
-
-            // Instancia del modelo
-            $modelo = $this->cotizacionModel ?? $this->model ?? null;
-
-            // Obtener el nombre del producto
-            if ($modelo && method_exists($modelo, 'obtenerProductoPorId')) {
-                $info = $modelo->obtenerProductoPorId($idProducto);
-                if (!empty($info['nombre'])) {
-                    $nombre = $info['nombre'];
+            case 'registrar_cantidades':
+                $val = $this->validarProductos();
+                if (!$val['status']) {
+                    echo json_encode(ResponseHTTP::status400($val['message']));
+                    break;
                 }
-            }
+                echo json_encode(CotizacionModel::registrarCantidades($this->data['productos']));
+                break;
 
-            // Ejecutar la reserva en el modelo/base de datos
-            $reservaExitosa = false;
-            if ($modelo && method_exists($modelo, 'reservarStock')) {
-                $reservaExitosa = $modelo->reservarStock($idProducto, $cantidadInt, $idCliente);
-            } else {
-                // Alternativa fallback si la lógica aún no está conectada a la BD
-                $reservaExitosa = true; 
-            }
+            case 'calcular_total':
+                $val = $this->validarProductos();
+                if (!$val['status']) {
+                    echo json_encode(ResponseHTTP::status400($val['message']));
+                    break;
+                }
+                echo json_encode(CotizacionModel::calcularTotal($this->data['productos']));
+                break;
 
-            if ($reservaExitosa) {
-                $resumen[] = [
-                    "id_producto"        => $idProducto,
-                    "nombre"             => $nombre,
-                    "cantidad_reservada" => $cantidadInt,
-                    "estado"             => "Reservado"
-                ];
-            } else {
-                $errores[] = [
-                    "id_producto" => $idProducto,
-                    "nombre"      => $nombre,
-                    "mensaje"     => "Stock insuficiente o error al reservar"
-                ];
-            }
+            case 'reservar_inventario':
+                $val = $this->validarProductos();
+                if (!$val['status']) {
+                    echo json_encode(ResponseHTTP::status400($val['message']));
+                    break;
+                }
+                echo json_encode(CotizacionModel::reservarInventario($this->data['productos']));
+                break;
+
+            default:
+                echo json_encode(ResponseHTTP::status400("Acción no válida o no especificada."));
+                break;
         }
     }
-
-    // Respuesta JSON
-    echo json_encode([
-        "exito"               => empty($errores),
-        "mensaje"             => empty($errores) ? "Reserva de inventario completada con éxito." : "Proceso completado con algunas advertencias.",
-        "productos_reservados" => $resumen,
-        "errores"             => $errores
-    ]);
-    return;
-}
-
-private function responder($codigoEstado, $exito, $mensaje, $datos = null) {
-    http_response_code($codigoEstado);
-    header('Content-Type: application/json; charset=utf-8');
-    echo json_encode([
-        'status' => $codigoEstado,
-        'success' => $exito,
-        'message' => $mensaje,
-        'data' => $datos
-    ]);
-    exit();
-}
 }

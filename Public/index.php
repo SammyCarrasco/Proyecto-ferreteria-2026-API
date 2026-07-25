@@ -20,8 +20,8 @@
     $modulo = basename($url[0], '.php');
 
     $lista = ['auth', 'user', 'productos', 'category', 'reportes', 'cotizacionDetalle',
-     'adminproductos', 'venta', 'inventario', 'almacenes', 
-     'clientes', 'Cotizacion', 'login', 'menu', 'sesion_guardar'];
+     'adminproductos', 'venta', 'inventario', 'almacenes', 'catalogo', 
+     'clientes', 'Cotizacion', 'login', 'menu', 'sesion_guardar', 'form'];
 
     if (!in_array($modulo, $lista)) {
         echo json_encode(ResponseHTTP::status404("La ruta ingresada no existe!"));

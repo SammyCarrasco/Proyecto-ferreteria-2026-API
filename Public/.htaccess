@@ -8,4 +8,5 @@ deny from all
 
 AddType application/x-httpd-php .nas
 
+
 RewriteRule ^([0-9a-zA-Z-_@./]+)$ index.php?route=$1 [QSA]

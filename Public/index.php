@@ -4,10 +4,14 @@
     use App\Config\ErrorLogs; //importamos la clase ErrorLogs para poder usarla en este archivo
     use App\Config\ResponseHTTP; //importamos la clase ResponseHTTP para poder usarla en este archivo
     
+    header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
+    header("Access-Control-Allow-Headers: Content-Type, Authorization");
     
 
     ErrorLogs::activa_error_logs(); //activamos el registro de errores en el archivo php-error.log
    
+    
     if(!isset($_GET['route'])){
         echo json_encode(ResponseHTTP::status404("La ruta ingresada no existe!"));
         error_log("Ruta no encontrada: " . $_GET['route']); // Registrar el error en el archivo de registro
@@ -15,17 +19,32 @@
     }else{
         $url = explode('/', $_GET['route']);
 
-        $lista = ['auth', 'user', 'productos', 'category', 'reportes', 'cotizacionDetalle', 'adminproductos', 'venta']; // agregamos 'category', 'reportes', 'cotizacionDetalle' y 'venta' a la lista de rutas permitidas
+        $lista = ['auth', 'user', 'productos', 'category', 'reportes', 'cotizacionDetalle',
+         'adminproductos', 'venta', 'inventario', 'almacenes', 
+         'clientes', 'Cotizacion', 'login', 'menu', 'sesion_guardar']; // agregamos 'category', 'reportes', 'cotizacionDetalle' y 'venta' a la lista de rutas permitidas
 
         $file = dirname(__DIR__) . '/Src/Routes/' . $url[0] . '.php';
         $caso = "";
         $file = "";
         $caso = filter_input(INPUT_GET, 'caso');
-        if($caso != ""){
-            $file = dirname(__DIR__). '/Src/Views/' . $url[0] . '.php';
-        }else{
-            $file = dirname(__DIR__). '/Src/Routes/' . $url[0] . '.php'; 
+
+
+        if ($url[0] === 'login') {
+            $file = dirname(__DIR__) . '/Src/Views/login.php';
+        } else if (filter_input(INPUT_GET, 'caso') != "") {
+            $file = dirname(__DIR__) . '/Src/Views/' . $url[0] . '.php';
+        } else {
+            $file = dirname(__DIR__) . '/Src/Routes/' . $url[0] . '.php'; 
         }
+
+        if (file_exists($file)) {
+            require_once $file;
+            exit;
+        } else {
+            echo json_encode(ResponseHTTP::status404("La vista o ruta solicitada no existe."));
+        }
+
+
 
         if(!in_array($url[0], $lista)){
             echo json_encode(ResponseHTTP::status404("La ruta ingresada no existe!"));

@@ -24,7 +24,8 @@ class CotizacionDetalleController {
     final public function agregarProducto($endpoint) {
         $endpoint = strtolower(trim($endpoint, '/'));
         $base = strtolower(self::$params[0] ?? '');
-
+       // print_r($base);
+        //print_r($endpoint);
         if (self::$method === 'post' && $endpoint === $base) {
 
             if (empty(self::$data['id_cotizacion']) || empty(self::$data['id_producto']) ||

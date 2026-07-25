@@ -55,24 +55,24 @@ class UserController {
     }
 
     /* 2. LOGIN (GET / AUTH) */
-    final public function getLogin($endpoint){
-        if(self::$method == 'get' && $endpoint == self::$params[0]){
-            $email = strtolower(self::$params[1] ?? '');
-            $pass  = self::$params[2] ?? ''; 
+        final public function getLogin($endpoint){
+            if(self::$method == 'post' && $endpoint == self::$params[0]){
+                // Leemos desde self::$data que ya contiene el json_decode(php://input)
+                $email = strtolower(self::$data['email'] ?? '');
+                $pass  = self::$data['clave'] ?? ''; 
 
-            if(empty($email) || empty($pass)){
-                echo json_encode(responseHTTP::status400('Todos los campos son requeridos, proceda a llenarlos.'));
-            } else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-                echo json_encode(responseHTTP::status400('El correo debe tener el formato correcto.'));
-            } else {
-                userModel::setCorreo($email);
-                userModel::setClave($pass);
-                echo json_encode(userModel::login());
+                if(empty($email) || empty($pass)){
+                    echo json_encode(responseHTTP::status400('Todos los campos son requeridos.'));
+                } else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                    echo json_encode(responseHTTP::status400('El correo debe tener un formato válido.'));
+                } else {
+                    userModel::setCorreo($email);
+                    userModel::setClave($pass);
+                    echo json_encode(userModel::login());
+                }
+                exit;  
             }
-            exit;  
         }
-    }
-
     /* 3. ACTUALIZAR EMPLEADO (PUT) */
     final public static function actualizarUsuario($endpoint){   
         if(self::$method == 'put' && self::$params[0] == $endpoint){ 

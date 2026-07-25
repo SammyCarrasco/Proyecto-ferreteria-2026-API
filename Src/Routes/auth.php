@@ -16,7 +16,7 @@ $app = new UserController($method,$route,$params,$data,$headers); //instancia cl
 //$app-> registrarUsuario();//llamamos al metodo registrarUsuario de la clase UserController
 
 $app->getLogin("auth"); //llamamos al metodo login de la clase UserController
-echo json_encode(responseHTTP::status404());
+
 /*
 
 // Ruta absoluta directa para XAMPP sin enredos de puntos

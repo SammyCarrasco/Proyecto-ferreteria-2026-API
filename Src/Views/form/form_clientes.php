@@ -128,7 +128,8 @@
 
 <script>
 const token = localStorage.getItem('token');
-const ENDPOINT = 'http://localhost:8012/Proyecto-ferreteria-2026-API/public/clientes';
+const ENDPOINT = 'clientes';
+//const ENDPOINT = 'http://localhost:8012/Proyecto-ferreteria-2026-API/public/clientes';
 // ABRIR MODAL NUEVO
 
 function abrirModalNuevo(){

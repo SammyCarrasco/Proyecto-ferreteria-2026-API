@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <style>
         body { background: #f4f6f9; }
-        .sidebar {
-            width: 250px; min-height: 100vh; background: #1e2537; position: fixed; left: 0; top: 0;
-            overflow-y: auto; padding-top: 15px;
-        }
+      .sidebar {
+    width: 250px; height: 100vh; background: #1e2537; position: fixed; left: 0; top: 0;
+    overflow-y: auto; padding-top: 15px;
+}
+            
         .sidebar .brand { color: #fff; padding: 10px 20px 20px; font-weight: 600; font-size: 18px; border-bottom: 1px solid #2c3450; }
         .sidebar .grupo-titulo { color: #6b7488; font-size: 11px; text-transform: uppercase; padding: 15px 20px 5px; letter-spacing: .5px; }
         .sidebar .nav-link { color: #c2c7d0; padding: 10px 20px; display: flex; align-items: center; gap: 10px; cursor: pointer; border-left: 3px solid transparent; }

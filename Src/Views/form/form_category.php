@@ -68,7 +68,7 @@
     </div>
 </div>
 
-<!-- Librería de SweetAlert2 por si acaso no está en el layout global -->
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
@@ -292,7 +292,7 @@
         guardarCategoria(e);
     });
 
-    // Eventos directos del modal
+    
     window.abrirModalNueva = abrirModalNueva;
     window.cerrarModal = cerrarModal;
 })();

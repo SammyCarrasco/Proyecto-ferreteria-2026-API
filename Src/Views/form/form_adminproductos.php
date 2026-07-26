@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <div class="container-fluid">
-    <!-- Encabezado -->
+    <!--encabezado-->
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h4 class="mb-0 fw-bold text-dark">
@@ -13,7 +13,7 @@
         </button>
     </div>
  
-    <!-- Consultar -->
+    <!--consultar-->
     <div class="card border-0 shadow-sm mb-3">
         <div class="card-body d-flex flex-wrap gap-2 align-items-end">
             <div>
@@ -30,7 +30,7 @@
         <div id="resultadoProductoId" class="px-3 pb-3"></div>
     </div>
  
-    <!-- Tabla -->
+    <!--tabla-->
     <div class="card border-0 shadow-sm">
         <div class="card-body">
             <div class="table-responsive">
@@ -49,7 +49,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Carga dinámicamente -->
+                        <!-- carga dinamicamente -->
                     </tbody>
                 </table>
             </div>
@@ -57,7 +57,7 @@
     </div
 </div>
  
-<!-- Modal Producto -->
+<!--modal producto-->
 <div class="modal fade" id="modalProductoAdmin" tabindex="-1" aria-labelledby="modalProductoAdminLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content border-0 shadow">
@@ -120,7 +120,7 @@
     </div>
 </div>
  
-<!-- Librería de SweetAlert2 por si acaso no está en el layout global -->
+<!--libreria de SweetAlert2 por si no esta en el layout global-->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
 const tokenProductos = localStorage.getItem('token');
@@ -137,7 +137,6 @@ function abrirModalNuevoProducto() {
     modal.style.display = 'block';
     document.body.classList.add('modal-open');
 }
- 
 function cerrarModalProducto() {
     const modal = document.getElementById('modalProductoAdmin');
     modal.classList.remove('show');
@@ -147,7 +146,6 @@ function cerrarModalProducto() {
     const backdrop = document.querySelector('.modal-backdrop');
     if (backdrop) backdrop.remove();
 }
- 
 function cargarCategoriasSelect() {
     $.ajax({
         url: ENDPOINT_CATEGORIAS,
@@ -169,7 +167,6 @@ function cargarCategoriasSelect() {
         }
     });
 }
- 
 function cargarProductosTodos() {
     $('#resultadoProductoId').html('');
     $('#buscarIdProducto').val('');
@@ -189,7 +186,6 @@ function cargarProductosTodos() {
         }
     });
 }
- 
 function renderTablaProductos(data) {
     let html = '';
     if (!Array.isArray(data) || data.length === 0) {
@@ -223,7 +219,6 @@ function renderTablaProductos(data) {
     });
     $('#tablaProductosAdmin tbody').html(html);
 }
- 
 function prepararEdicionProducto(p) {
     document.getElementById('id_producto').value = p.id_producto;
     document.getElementById('codigo').value = p.codigo;
@@ -240,7 +235,6 @@ function prepararEdicionProducto(p) {
     modal.style.display = 'block';
     document.body.classList.add('modal-open');
 }
- 
 function guardarProductoAdmin(e) {
     e.preventDefault();
     const id = document.getElementById('id_producto').value;
@@ -293,7 +287,6 @@ function guardarProductoAdmin(e) {
         }
     });
 }
- 
 function eliminarProductoAdmin(id, nombre) {
     Swal.fire({
         title: '¿Eliminar producto?',
@@ -337,7 +330,6 @@ function eliminarProductoAdmin(id, nombre) {
         }
     });
 }
- 
 function consultarProductoPorId() {
     const id = document.getElementById('buscarIdProducto').value;
     const cont = document.getElementById('resultadoProductoId');
@@ -372,7 +364,6 @@ function consultarProductoPorId() {
         }
     });
 }
- 
 // Carga inicial
 cargarCategoriasSelect();
 cargarProductosTodos();

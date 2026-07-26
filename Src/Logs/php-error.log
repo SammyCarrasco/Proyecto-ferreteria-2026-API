@@ -1072,3 +1072,518 @@ Stack trace:
 [25-Jul-2026 13:14:13 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [25-Jul-2026 13:15:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [25-Jul-2026 13:15:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:24:17 America/Tegucigalpa] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\xampp\htdocs\Proyecto-ferreteria-2026-API\.env]. in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\bd\dataDB.php(18): Dotenv\Dotenv->load()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\bd\ConnectionDB.php(7): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php(9): Composer\Autoload\ClassLoader->loadClass('App\\BD\\connecti...')
+#6 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(69): Composer\Autoload\ClassLoader->loadClass('App\\Models\\user...')
+#9 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\auth.php(18): App\Controllers\UserController->getLogin('auth')
+#10 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[25-Jul-2026 17:24:22 America/Tegucigalpa] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\xampp\htdocs\Proyecto-ferreteria-2026-API\.env]. in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\bd\dataDB.php(18): Dotenv\Dotenv->load()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\bd\ConnectionDB.php(7): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php(9): Composer\Autoload\ClassLoader->loadClass('App\\BD\\connecti...')
+#6 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(69): Composer\Autoload\ClassLoader->loadClass('App\\Models\\user...')
+#9 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\auth.php(18): App\Controllers\UserController->getLogin('auth')
+#10 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[25-Jul-2026 17:24:51 America/Tegucigalpa] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\xampp\htdocs\Proyecto-ferreteria-2026-API\.env]. in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\bd\dataDB.php(18): Dotenv\Dotenv->load()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\bd\ConnectionDB.php(7): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php(9): Composer\Autoload\ClassLoader->loadClass('App\\BD\\connecti...')
+#6 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(69): Composer\Autoload\ClassLoader->loadClass('App\\Models\\user...')
+#9 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\auth.php(18): App\Controllers\UserController->getLogin('auth')
+#10 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[25-Jul-2026 17:25:31 America/Tegucigalpa] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\xampp\htdocs\Proyecto-ferreteria-2026-API\.env]. in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\bd\dataDB.php(18): Dotenv\Dotenv->load()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\bd\ConnectionDB.php(7): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php(9): Composer\Autoload\ClassLoader->loadClass('App\\BD\\connecti...')
+#6 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(69): Composer\Autoload\ClassLoader->loadClass('App\\Models\\user...')
+#9 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\auth.php(18): App\Controllers\UserController->getLogin('auth')
+#10 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[25-Jul-2026 17:25:33 America/Tegucigalpa] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\xampp\htdocs\Proyecto-ferreteria-2026-API\.env]. in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\bd\dataDB.php(18): Dotenv\Dotenv->load()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\bd\ConnectionDB.php(7): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php(9): Composer\Autoload\ClassLoader->loadClass('App\\BD\\connecti...')
+#6 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(69): Composer\Autoload\ClassLoader->loadClass('App\\Models\\user...')
+#9 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\auth.php(18): App\Controllers\UserController->getLogin('auth')
+#10 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[25-Jul-2026 17:27:27 America/Tegucigalpa] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [C:\xampp\htdocs\Proyecto-ferreteria-2026-API\.env]. in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Store\FileStore.php:68
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\bd\dataDB.php(18): Dotenv\Dotenv->load()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\bd\ConnectionDB.php(7): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\userModel.php(9): Composer\Autoload\ClassLoader->loadClass('App\\BD\\connecti...')
+#6 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(576): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\UserController.php(69): Composer\Autoload\ClassLoader->loadClass('App\\Models\\user...')
+#9 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\auth.php(18): App\Controllers\UserController->getLogin('auth')
+#10 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\vendor\vlucas\phpdotenv\src\Store\FileStore.php on line 68
+[25-Jul-2026 17:37:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:38:41 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:38:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:04:54 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:05:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:16:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:20:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:20:37 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:23:01 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:24:24 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:24:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:25:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:25:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:25:29 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:25:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:25:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:25:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:25:54 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:26:13 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:26:13 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:26:24 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:26:24 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:26:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:26:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:26:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:26:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:26:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:26:54 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:26:54 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:29:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:30:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:30:19 America/Tegucigalpa] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php on line 53
+[25-Jul-2026 18:30:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:30:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:30:53 America/Tegucigalpa] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php on line 64
+[25-Jul-2026 18:30:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:30:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:30:59 America/Tegucigalpa] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php on line 64
+[25-Jul-2026 18:30:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:30:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:34:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:35:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:35:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:37:57 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:37:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:38:29 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:31:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:35:18 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:35:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:00 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:01 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:01 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123456789' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:36:02 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:02 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123456789' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:36:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:04 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123456789' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:36:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:04 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123456789' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:36:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:04 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123456789' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:36:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:05 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123456789' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:36:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:05 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123456789' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:36:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:05 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123456789' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:36:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:05 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123456789' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:36:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:06 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123456789' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:36:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:06 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123456789' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:36:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:41 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:41 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:41 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:36:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:37:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:37:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:37:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:37:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:37:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:37:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:37:45 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12345678' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:37:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:37:46 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12345678' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:37:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:37:46 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12345678' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:37:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:37:46 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12345678' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:37:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:37:46 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12345678' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:37:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:37:46 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '12345678' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:37:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:38:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:38:41 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:38:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:38:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:39:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:49:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:50:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:50:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:51:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:51:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:52:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:52:29 America/Tegucigalpa] clienteModel::eliminarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ferreteria`.`cotizaciones`, CONSTRAINT `cotizaciones_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`) ON UPDATE CASCADE) in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(151): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(66): App\Models\clienteModel::eliminarCliente('1')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(26): App\Controllers\ClienteController->eliminarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 19:59:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 19:59:33 America/Tegucigalpa] clienteModel::eliminarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ferreteria`.`cotizaciones`, CONSTRAINT `cotizaciones_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`) ON UPDATE CASCADE) in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(151): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(66): App\Models\clienteModel::eliminarCliente('1')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(26): App\Controllers\ClienteController->eliminarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:07:24 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:07:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:07:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:07:41 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:08:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:08:52 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:09:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:09:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:09:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:09:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:09:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:09:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:16:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:20:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:20:49 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:21:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:21:13 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:24:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:24:21 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:24:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:24:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:24:23 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:24:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:24:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:25:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:25:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:25:30 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '34568567' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:25:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:25:31 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '34568567' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:25:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:25:31 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '34568567' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:25:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:25:31 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '34568567' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:25:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:25:32 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '34568567' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:25:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:25:32 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '34568567' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:25:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:25:32 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '34568567' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:25:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:32:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:32:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:32:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:32:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:32:32 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123454321' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:32:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:32:34 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123454321' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:32:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:32:34 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123454321' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:32:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:32:34 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123454321' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:32:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:32:34 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123454321' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:32:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:32:35 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123454321' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:32:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:32:35 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123454321' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:32:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:32:35 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123454321' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:32:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:32:36 America/Tegucigalpa] clienteModel::registrarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '123454321' for key 'rtn' in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:54
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(54): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(29): App\Models\clienteModel::registrarCliente()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(23): App\Controllers\ClienteController->registrarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 20:32:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:42:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:42:21 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 20:50:13 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:02:00 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:02:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:02:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:02:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:03:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:03:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:03:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:03:43 America/Tegucigalpa] CategoryModel::delete -> SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ferreteria`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`id_categoria`) REFERENCES `categorias` (`id_categoria`) ON UPDATE CASCADE)
+[25-Jul-2026 21:03:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:03:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:08:52 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:09:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:23:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:23:57 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:24:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:24:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:25:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:25:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:25:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:25:41 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:29:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:30:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:30:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:30:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:30:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:30:41 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:30:41 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:58:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 21:58:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 22:00:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 22:00:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 22:00:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 22:00:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 22:01:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 22:01:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.

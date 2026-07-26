@@ -127,6 +127,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
+(function(){
 const token = localStorage.getItem('token');
 const ENDPOINT = 'clientes';
 //const ENDPOINT = 'http://localhost:8012/Proyecto-ferreteria-2026-API/public/clientes';
@@ -392,5 +393,37 @@ function eliminarCliente(id,nombre){
 
 // CARGA INICIAL
 
-cargarClientes();
+function iniciarClientes(){
+
+    console.log("Inicializando módulo clientes...");
+
+    cargarClientes();
+
+}
+
+
+// Ejecutar cada vez que se abra la vista
+iniciarClientes();
+
+
+// Hacer visibles las funciones usadas en botones HTML
+window.abrirModalNuevo = abrirModalNuevo;
+window.cerrarModal = cerrarModal;
+window.guardarCliente = guardarCliente;
+window.prepararEdicion = prepararEdicion;
+window.eliminarCliente = eliminarCliente;
+
+// REINICIAR TABLA CUANDO SE VUELVE A CARGAR LA VISTA
+
+$(document).off('click', '#tablaClientes')
+.on('click', '#tablaClientes', function(){
+
+    if($('#tablaClientes tbody').children().length === 0){
+
+        cargarClientes();
+
+    }
+
+});
+})();
 </script>

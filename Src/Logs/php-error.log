@@ -1926,3 +1926,32 @@ Stack trace:
 [26-Jul-2026 11:52:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [26-Jul-2026 11:53:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [26-Jul-2026 11:53:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:35:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:35:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:35:36 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:35:36 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:40:29 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:40:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:40:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:40:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:40:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:40:58 America/Tegucigalpa] AdminProductoModel::getOne -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarProductoPorId does not exist
+[26-Jul-2026 12:41:01 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:41:01 America/Tegucigalpa] AdminProductoModel::getOne -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarProductoPorId does not exist
+[26-Jul-2026 12:41:03 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:41:03 America/Tegucigalpa] AdminProductoModel::getOne -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarProductoPorId does not exist
+[26-Jul-2026 12:41:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:41:04 America/Tegucigalpa] AdminProductoModel::getOne -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarProductoPorId does not exist
+[26-Jul-2026 12:41:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:41:13 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:41:13 America/Tegucigalpa] AdminProductoModel::getOne -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarProductoPorId does not exist
+[26-Jul-2026 12:41:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:41:26 America/Tegucigalpa] AdminProductoModel::getOne -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarProductoPorId does not exist
+[26-Jul-2026 12:41:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:41:26 America/Tegucigalpa] AdminProductoModel::getOne -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarProductoPorId does not exist
+[26-Jul-2026 12:41:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:41:27 America/Tegucigalpa] AdminProductoModel::getOne -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarProductoPorId does not exist
+[26-Jul-2026 12:41:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:41:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:41:33 America/Tegucigalpa] AdminProductoModel::getOne -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarProductoPorId does not exist
+[26-Jul-2026 12:41:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.

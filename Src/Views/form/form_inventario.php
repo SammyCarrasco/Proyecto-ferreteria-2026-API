@@ -1,3 +1,6 @@
+<!-- Cargar SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <div class="container-fluid">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
@@ -18,13 +21,14 @@
                             <th>#</th>
                             <th>Producto</th>
                             <th>Almacén</th>
-                            <th>Stock</th>
+                            <th>Stock Disponible</th>
+                            <th>Stock Reservado</th>
                             <th class="text-end">Acciones</th>
                         </tr>
                     </thead>
                     <tbody id="tbodyInventario">
                         <tr>
-                            <td colspan="5" class="text-center py-4 text-muted">
+                            <td colspan="6" class="text-center py-4 text-muted">
                                 <div class="spinner-border spinner-border-sm text-primary me-2"></div>
                                 Cargando inventario...
                             </td>
@@ -59,8 +63,13 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="stock" class="form-label">Stock</label>
-                        <input type="number" class="form-control" id="stock" name="stock" required>
+                        <label for="stock_disponible" class="form-label">Stock Disponible</label>
+                        <input type="number" class="form-control" id="stock_disponible" name="stock_disponible" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="stock_reservado" class="form-label">Stock Reservado</label>
+                        <input type="number" class="form-control" id="stock_reservado" name="stock_reservado" required>
                     </div>
                 </div>
                 <div class="modal-footer bg-light">
@@ -103,24 +112,25 @@
                                 <td>${index + 1}</td>
                                 <td>${inv.producto || inv.id_producto}</td>
                                 <td>${inv.almacen || inv.id_almacen}</td>
-                                <td>${inv.stock || inv.stock_disponible}</td>
+                                <td>${inv.stock_disponible}</td>
+                                <td>${inv.stock_reservado}</td>
                                 <td class="text-end">
-                                    <button class="btn btn-sm btn-outline-primary me-1 btn-editar" data-id="${inv.id_inventario || (inv.id_producto+'-'+inv.id_almacen)}">
+                                    <button class="btn btn-sm btn-outline-primary me-1 btn-editar" data-id="${inv.id_inventario}">
                                         <i class="bi bi-pencil-square"></i>
                                     </button>
-                                    <button class="btn btn-sm btn-outline-danger btn-eliminar" data-id="${inv.id_inventario || (inv.id_producto+'-'+inv.id_almacen)}">
+                                    <button class="btn btn-sm btn-outline-danger btn-eliminar" data-producto="${inv.id_producto}" data-almacen="${inv.id_almacen}">
                                         <i class="bi bi-trash"></i>
                                     </button>
                                 </td>
                             </tr>`;
                     });
                 } else {
-                    html = '<tr><td colspan="5" class="text-center py-4 text-muted">No se encontraron registros de inventario.</td></tr>';
+                    html = '<tr><td colspan="6" class="text-center py-4 text-muted">No se encontraron registros de inventario.</td></tr>';
                 }
                 $('#tbodyInventario').html(html);
             },
             error: function () {
-                $('#tbodyInventario').html('<tr><td colspan="5" class="text-center text-danger">Error al consultar inventario.</td></tr>');
+                $('#tbodyInventario').html('<tr><td colspan="6" class="text-center text-danger">Error al consultar inventario.</td></tr>');
             }
         });
     }
@@ -140,25 +150,27 @@
     // 4. EDITAR
     $(document).on('click', '.btn-editar', function () {
         let id = $(this).data('id');
-        let inv = inventarioData.find(i => (i.id_inventario == id || (i.id_producto+'-'+i.id_almacen) == id));
+        let inv = inventarioData.find(i => i.id_inventario == id);
         if (inv) {
-            $('#id_inventario').val(inv.id_inventario || (inv.id_producto+'-'+inv.id_almacen));
+            $('#id_inventario').val(inv.id_inventario);
             $('#id_producto').val(inv.id_producto);
             $('#id_almacen').val(inv.id_almacen);
-            $('#stock').val(inv.stock || inv.stock_disponible);
+            $('#stock_disponible').val(inv.stock_disponible);
+            $('#stock_reservado').val(inv.stock_reservado);
             $('#modalInventarioLabel').html('Editar Inventario');
             abrirModalInventario();
         }
     });
 
-    // 5. GUARDAR
+    // 5. GUARDAR (POST/PUT)
     $(document).on('submit', '#formInventario', function (e) {
         e.preventDefault();
         let id = $('#id_inventario').val();
         let payload = {
             id_producto: $('#id_producto').val(),
             id_almacen: $('#id_almacen').val(),
-            stock: $('#stock').val()
+            stock_disponible: $('#stock_disponible').val(),
+            stock_reservado: $('#stock_reservado').val()
         };
         let urlDestino = id ? 'inventario/' + id : 'inventario';
         let metodo = id ? 'PUT' : 'POST';
@@ -176,15 +188,21 @@
                 listarInventario();
                 Swal.fire('Éxito', id ? 'Inventario actualizado.' : 'Producto asociado al almacén.', 'success');
             },
-            error: function () {
-                Swal.fire('Error', 'No se pudo guardar el inventario.', 'error');
+            error: function (xhr) {
+                let msg = 'No se pudo guardar el inventario.';
+                if (xhr.responseJSON && xhr.responseJSON.message) {
+                    msg = xhr.responseJSON.message;
+                }
+                Swal.fire('Error', msg, 'error');
             }
         });
     });
 
-    // 6. ELIMINAR
+    // 6. ELIMINAR (DELETE con clave compuesta)
     $(document).on('click', '.btn-eliminar', function () {
-        let id = $(this).data('id');
+        let id_producto = $(this).data('producto');
+        let id_almacen = $(this).data('almacen');
+
         Swal.fire({
             title: '¿Eliminar?',
             text: 'Esta acción no se puede deshacer.',
@@ -195,15 +213,26 @@
         }).then((result) => {
             if (result.isConfirmed) {
                 $.ajax({
-                    url: 'inventario/' + id,
+                    url: 'inventario',
                     type: 'DELETE',
-                    headers: { 'Authorization': 'Bearer ' + localStorage.getItem('token') },
+                    headers: {
+                        'Authorization': 'Bearer ' + localStorage.getItem('token'),
+                        'Content-Type': 'application/json'
+                    },
+                    data: JSON.stringify({
+                        id_producto: id_producto,
+                        id_almacen: id_almacen
+                    }),
                     success: function () {
                         listarInventario();
-                        Swal.fire('Eliminado', 'Registro eliminado.', 'success');
+                        Swal.fire('Eliminado', 'Registro eliminado correctamente.', 'success');
                     },
-                    error: function () {
-                        Swal.fire('Error', 'No se pudo eliminar el inventario.', 'error');
+                    error: function (xhr) {
+                        let msg = 'No se pudo eliminar el inventario.';
+                        if (xhr.responseJSON && xhr.responseJSON.message) {
+                            msg = xhr.responseJSON.message;
+                        }
+                        Swal.fire('Error', msg, 'error');
                     }
                 });
             }

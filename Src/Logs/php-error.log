@@ -2022,9 +2022,44 @@ Stack trace:
 [26-Jul-2026 13:15:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [26-Jul-2026 13:15:21 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [26-Jul-2026 13:15:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+<<<<<<< HEAD
+[26-Jul-2026 13:27:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:37:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:37:10 America/Tegucigalpa] AlmacenModel::getAll SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarAlmacenes does not exist
+[26-Jul-2026 13:37:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:37:12 America/Tegucigalpa] InventarioModel::getStock SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarInventario does not exist
+[26-Jul-2026 14:08:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 14:08:44 America/Tegucigalpa] AlmacenModel::getAll SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarAlmacenes does not exist
+[26-Jul-2026 14:08:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 14:08:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 14:08:49 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 14:08:49 America/Tegucigalpa] InventarioModel::getStock SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarInventario does not exist
+[26-Jul-2026 14:08:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 14:08:51 America/Tegucigalpa] AlmacenModel::getAll SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarAlmacenes does not exist
+[26-Jul-2026 14:08:52 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 14:08:52 America/Tegucigalpa] InventarioModel::getStock SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarInventario does not exist
+[26-Jul-2026 14:09:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 14:09:38 America/Tegucigalpa] InventarioModel::asociarProducto SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.AsociarProductoAlmacen does not exist
+[26-Jul-2026 14:09:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 14:09:38 America/Tegucigalpa] InventarioModel::asociarProducto SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.AsociarProductoAlmacen does not exist
+[26-Jul-2026 14:13:37 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 14:13:37 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 14:13:37 America/Tegucigalpa] InventarioModel::asociarProducto SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.AsociarProductoAlmacen does not exist
+[26-Jul-2026 14:13:37 America/Tegucigalpa] InventarioModel::asociarProducto SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.AsociarProductoAlmacen does not exist
+[26-Jul-2026 14:13:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 14:13:45 America/Tegucigalpa] AlmacenModel::getAll SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarAlmacenes does not exist
+[26-Jul-2026 14:14:00 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 14:14:00 America/Tegucigalpa] AlmacenModel::registrarAlmacen SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.RegistrarAlmacen does not exist
+[26-Jul-2026 14:14:00 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 14:14:00 America/Tegucigalpa] AlmacenModel::registrarAlmacen SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.RegistrarAlmacen does not exist
+[26-Jul-2026 14:14:01 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 14:14:01 America/Tegucigalpa] AlmacenModel::registrarAlmacen SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.RegistrarAlmacen does not exist
+[26-Jul-2026 14:14:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+=======
 [26-Jul-2026 14:12:36 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [26-Jul-2026 14:12:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [26-Jul-2026 14:12:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+<<<<<<< HEAD
 [26-Jul-2026 14:22:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [26-Jul-2026 14:22:52 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [26-Jul-2026 14:22:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
@@ -2034,3 +2069,6 @@ Stack trace:
 [26-Jul-2026 14:23:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [26-Jul-2026 14:24:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [26-Jul-2026 14:24:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+=======
+>>>>>>> 2e36e3bd4ebe40fe22716a7e69a08dc3e0bea72d
+>>>>>>> 599d5665c2c3620a9a7a6a108a6e8b4e536d4196

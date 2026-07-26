@@ -160,11 +160,22 @@ class clienteModel extends connectionDB {
 
         }catch(\PDOException $e){
 
-            error_log("clienteModel::eliminarCliente ".$e);
+    error_log("clienteModel::eliminarCliente ".$e);
 
-            return responseHTTP::status500();
 
-        }
+    if($e->getCode()=="23000"){
+
+        return [
+            "status"=>"ERROR",
+            "message"=>"No se puede eliminar el cliente porque tiene registros asociados."
+        ];
+
+    }
+
+
+    return responseHTTP::status500();
+
+}
 
     }
 }

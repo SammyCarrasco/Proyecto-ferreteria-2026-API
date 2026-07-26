@@ -1587,3 +1587,58 @@ Stack trace:
 [25-Jul-2026 22:00:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [25-Jul-2026 22:01:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [25-Jul-2026 22:01:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 22:07:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 22:07:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 22:07:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 22:07:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 22:08:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 22:08:09 America/Tegucigalpa] clienteModel::eliminarCliente PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ferreteria`.`cotizaciones`, CONSTRAINT `cotizaciones_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`) ON UPDATE CASCADE) in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:151
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(151): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(66): App\Models\clienteModel::eliminarCliente('1')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(26): App\Controllers\ClienteController->eliminarCliente()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[25-Jul-2026 22:08:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 22:09:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 22:09:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:42:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:43:03 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:43:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:43:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:43:21 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:43:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:51:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:51:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:52:01 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:52:03 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:52:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:54:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:54:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:54:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:54:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:55:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:55:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:55:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:55:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:58:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:58:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:58:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:58:52 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:58:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:59:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:59:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:59:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 12:59:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:02:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:03:29 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:03:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:03:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:07:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:07:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:07:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:07:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:07:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:07:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:08:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 13:08:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.

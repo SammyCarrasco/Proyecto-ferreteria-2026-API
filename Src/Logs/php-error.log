@@ -2072,3 +2072,185 @@ Stack trace:
 =======
 >>>>>>> 2e36e3bd4ebe40fe22716a7e69a08dc3e0bea72d
 >>>>>>> 599d5665c2c3620a9a7a6a108a6e8b4e536d4196
+[25-Jul-2026 15:31:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:33:01 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:33:01 America/Tegucigalpa] CategoryModel::get -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarCategorias does not exist
+[25-Jul-2026 15:33:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:33:20 America/Tegucigalpa] InventarioModel::getStock SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarInventario does not exist
+[25-Jul-2026 15:33:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:33:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:33:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:33:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:33:31 America/Tegucigalpa] CategoryModel::get -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarCategorias does not exist
+[25-Jul-2026 15:33:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:33:33 America/Tegucigalpa] AlmacenModel::getAll SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarAlmacenes does not exist
+[25-Jul-2026 15:33:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:33:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:33:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:34:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:34:22 America/Tegucigalpa] productoModel::getCatalogo -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.sp_obtener_catalogo_productos does not exist
+[25-Jul-2026 15:34:24 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:34:24 America/Tegucigalpa] InventarioModel::getStock SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarInventario does not exist
+[25-Jul-2026 15:34:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:34:25 America/Tegucigalpa] CategoryModel::get -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarCategorias does not exist
+[25-Jul-2026 15:34:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:34:26 America/Tegucigalpa] AlmacenModel::getAll SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarAlmacenes does not exist
+[25-Jul-2026 15:34:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:34:27 America/Tegucigalpa] CategoryModel::get -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarCategorias does not exist
+[25-Jul-2026 15:34:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:34:27 America/Tegucigalpa] AdminProductoModel::get -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarProductos does not exist
+[25-Jul-2026 15:34:29 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:34:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:34:30 America/Tegucigalpa] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.sp_reporte_facturas does not exist in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\ReportesModel.php:40
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\ReportesModel.php(40): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ReportesController.php(69): App\Models\ReportesModel::obtenerFacturas(NULL, NULL)
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\reportes.php(15): App\Controllers\ReportesController->reportefacturas('reportes')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\ReportesModel.php on line 40
+[25-Jul-2026 15:35:24 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:35:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 15:35:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:12:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:12:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:12:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:12:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:13:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:13:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:13:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:13:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:14:03 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:14:03 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:14:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:14:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:14:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:14:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:14:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:19:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:19:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:19:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:19:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:19:21 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:19:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:19:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:19:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:19:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:29:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:29:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:29:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:29:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:29:41 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:29:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:29:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:29:52 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:29:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:29:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:30:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:30:22 America/Tegucigalpa] CotizacionModel::reservarInventario Error Crítico: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 16:52:52 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:52:52 America/Tegucigalpa] CotizacionModel::reservarInventario Error Crítico: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 16:54:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:54:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:54:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:54:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:54:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:54:41 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:54:49 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:54:49 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:55:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:55:07 America/Tegucigalpa] CotizacionModel::reservarInventario Error Crítico: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 16:59:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 16:59:10 America/Tegucigalpa] CotizacionModel::reservarInventario Error Crítico: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 17:07:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:08:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:08:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:08:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:08:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:08:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:08:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:08:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:09:03 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:09:03 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:09:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:09:17 America/Tegucigalpa] CotizacionModel::reservarInventario Error Crítico: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 17:09:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:09:35 America/Tegucigalpa] CotizacionModel::reservarInventario Error Crítico: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 17:14:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:14:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:14:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:14:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:15:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:15:04 America/Tegucigalpa] CotizacionModel::reservarInventario Error Crítico: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 17:21:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:21:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:21:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:21:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:22:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:22:08 America/Tegucigalpa] CotizacionModel::reservarInventario Error Crítico: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 17:26:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:26:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:26:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:27:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:27:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:27:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:27:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:27:37 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:27:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:27:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:27:48 America/Tegucigalpa] CotizacionModel::reservarInventario Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 17:31:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:31:40 America/Tegucigalpa] CotizacionModel::reservarInventario Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 17:32:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:32:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:33:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:33:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:33:37 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:33:37 America/Tegucigalpa] CotizacionModel::reservarInventario Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 17:38:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:38:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:38:23 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:38:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:38:32 America/Tegucigalpa] CotizacionModel::reservarInventario Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 17:40:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:40:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:40:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:41:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:41:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:41:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:41:23 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:41:23 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:41:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:41:36 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:41:36 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:42:54 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:42:54 America/Tegucigalpa] CotizacionModel::reservarInventario Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 17:47:52 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:48:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:48:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:49:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:49:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:49:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:49:22 America/Tegucigalpa] CotizacionModel::reservarInventario Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 17:54:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:54:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:54:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:54:30 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:54:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 17:54:40 America/Tegucigalpa] CotizacionModel::reservarInventario Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+[25-Jul-2026 18:00:01 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:00:01 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:00:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:00:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:00:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:00:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:00:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:01:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:01:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:01:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:01:27 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:01:49 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:01:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:01:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:02:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[25-Jul-2026 18:02:31 America/Tegucigalpa] CotizacionModel::reservarInventario Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'

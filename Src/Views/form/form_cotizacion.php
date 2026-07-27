@@ -7,9 +7,9 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h4 class="mb-0 fw-bold text-dark">
-                <i class="bi bi-file-earmark-text text-primary me-2"></i>Módulo de Cotizaciones
+                <i class="bi bi-file-earmark-text text-primary me-2"></i><span data-i18n="modulo_cotizaciones">Módulo de Cotizaciones</span>
             </h4>
-            <small class="text-muted">Proceso de registro y validación por etapas</small>
+            <small class="text-muted" data-i18n="proceso_registro_validacion">Proceso de registro y validación por etapas</small>
         </div>
     </div>
 
@@ -17,13 +17,13 @@
     <div class="card border-0 shadow-sm mb-4 border-start border-primary border-4">
         <div class="card-body">
             <h6 class="card-title fw-bold text-primary mb-3">
-                <i class="bi bi-1-circle-fill me-2"></i> Selección deL Cliente
+                <i class="bi bi-1-circle-fill me-2"></i> <span data-i18n="seleccion_del_cliente">Selección del Cliente</span>
             </h6>
 
             <form id="formSeleccionarCliente" onsubmit="return false;">
                 <div class="row g-3 align-items-end">
                     <div class="col-md-4">
-                        <label for="id_cliente" class="form-label font-weight-bold">ID del Cliente</label>
+                        <label for="id_cliente" class="form-label font-weight-bold" data-i18n="id_del_cliente">ID del Cliente</label>
                         <div class="input-group">
                             <span class="input-group-text bg-light"><i class="bi bi-person-vcard"></i></span>
                             <input type="number" class="form-control" id="id_cliente" name="id_cliente" placeholder="Ej. 1" required min="1">
@@ -32,13 +32,13 @@
 
                     <div class="col-md-3">
                         <button type="button" class="btn btn-primary w-100" id="btnValidarCliente">
-                            <i class="bi bi-person-check-fill me-1"></i> Validar Cliente
+                            <i class="bi bi-person-check-fill me-1"></i> <span data-i18n="validar_cliente">Validar Cliente</span>
                         </button>
                     </div>
 
                     <div class="col-md-5">
                         <div id="estadoCliente" class="p-2 text-center rounded bg-light text-muted border">
-                            <i class="bi bi-info-circle me-1"></i> Ingrese el ID para continuar
+                            <i class="bi bi-info-circle me-1"></i> <span data-i18n="ingrese_id_continuar">Ingrese el ID para continuar</span>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
     <div class="card border-0 shadow-sm mb-4 border-start border-info border-4" id="cardPaso2" style="opacity: 0.5; pointer-events: none;">
         <div class="card-body">
             <h6 class="card-title fw-bold text-info mb-3">
-                <i class="bi bi-2-circle-fill me-2"></i>Búsqueda de Productos
+                <i class="bi bi-2-circle-fill me-2"></i><span data-i18n="busqueda_de_productos">Búsqueda de Productos</span>
             </h6>
 
             <form id="formBuscarProductos" class="mb-3" onsubmit="return false;">
@@ -63,7 +63,7 @@
                     </div>
                     <div class="col-md-3">
                         <button type="button" class="btn btn-info text-white w-100" id="btnBuscarProducto">
-                            <i class="bi bi-search me-1"></i> Buscar
+                            <i class="bi bi-search me-1"></i> <span data-i18n="buscar">Buscar</span>
                         </button>
                     </div>
                 </div>
@@ -74,15 +74,15 @@
                 <table class="table table-hover align-middle" id="tablaBusquedaProductos">
                     <thead class="table-light">
                         <tr>
-                            <th>ID</th>
-                            <th>Producto</th>
-                            <th>Precio</th>
-                            <th class="text-center">Acción</th>
+                            <th data-i18n="id">ID</th>
+                            <th data-i18n="producto">Producto</th>
+                            <th data-i18n="precio">Precio</th>
+                            <th class="text-center" data-i18n="accion">Acción</th>
                         </tr>
                     </thead>
                     <tbody id="tbodyBusqueda">
                         <tr>
-                            <td colspan="4" class="text-center text-muted">Realice una búsqueda para mostrar productos</td>
+                            <td colspan="4" class="text-center text-muted" data-i18n="realice_busqueda_mostrar_productos">Realice una búsqueda para mostrar productos</td>
                         </tr>
                     </tbody>
                 </table>
@@ -94,26 +94,26 @@
     <div class="card border-0 shadow-sm mb-4 border-start border-warning border-4" id="cardPaso3" style="opacity: 0.5; pointer-events: none;">
         <div class="card-body">
             <h6 class="card-title fw-bold text-warning mb-3">
-                <i class="bi bi-3-circle-fill me-2"></i>Cantidades y Totales
+                <i class="bi bi-3-circle-fill me-2"></i><span data-i18n="cantidades_y_totales">Cantidades y Totales</span>
             </h6>
 
             <div class="table-responsive">
                 <table class="table table-bordered align-middle">
                     <thead class="table-light">
                         <tr>
-                            <th>Producto</th>
+                            <th data-i18n="producto">Producto</th>
                             <style>
                                 /* Ajuste rápido de la columna */
                             </style>
-                            <th style="width: 150px;">Cantidad</th>
-                            <th>Precio U.</th>
-                            <th>Subtotal</th>
-                            <th style="width: 50px;">Acción</th>
+                            <th style="width: 150px;" data-i18n="cantidad">Cantidad</th>
+                            <th data-i18n="precio_u">Precio U.</th>
+                            <th data-i18n="subtotal">Subtotal</th>
+                            <th style="width: 50px;" data-i18n="accion">Acción</th>
                         </tr>
                     </thead>
                     <tbody id="tbodyCotizacion">
                         <tr id="rowVacia">
-                            <td colspan="5" class="text-center text-muted">No hay productos agregados a la cotización</td>
+                            <td colspan="5" class="text-center text-muted" data-i18n="no_hay_productos_agregados">No hay productos agregados a la cotización</td>
                         </tr>
                     </tbody>
                 </table>
@@ -121,18 +121,18 @@
 
             <div class="d-flex justify-content-between align-items-center mt-3 p-3 bg-light rounded border">
                 <button type="button" class="btn btn-warning fw-bold text-dark" id="btnCalcularTotal">
-                    <i class="bi bi-calculator me-1"></i> Calcular Total
+                    <i class="bi bi-calculator me-1"></i> <span data-i18n="calcular_total">Calcular Total</span>
                 </button>
                 <div class="text-end">
                     <div>
-                        <small class="text-muted me-2">Subtotal Neto:</small>
+                        <small class="text-muted me-2" data-i18n="subtotal_neto">Subtotal Neto:</small>
                         <span class="fw-bold me-3" id="lblSubtotal">L 0.00</span>
                         
-                        <small class="text-muted me-2">ISV (15%):</small>
+                        <small class="text-muted me-2" data-i18n="isv_15">ISV (15%):</small>
                         <span class="fw-bold me-3 text-primary" id="lblISV">L 0.00</span>
                     </div>
                     <div class="mt-1">
-                        <span class="fs-6 fw-bold me-2">Total General:</span>
+                        <span class="fs-6 fw-bold me-2" data-i18n="total_general">Total General:</span>
                         <span class="fs-4 fw-bold text-success" id="lblTotalGeneral">L 0.00</span>
                     </div>
                 </div>
@@ -146,7 +146,7 @@
         <div class="card-body">
             <div class="mb-3">
                 <h6 class="card-title fw-bold text-success mb-1">
-                    <i class="bi bi-5-circle-fill me-2"></i>Registro de Cotización
+                    <i class="bi bi-5-circle-fill me-2"></i><span data-i18n="registro_de_cotizacion">Registro de Cotización</span>
                 </h6>
                 <small class="text-muted"></small>
             </div>
@@ -156,16 +156,16 @@
                 <table class="table table-bordered table-striped align-middle border text-center">
                     <thead class="table-dark">
                         <tr>
-                            <th>fecha</th>
-                            <th>total</th>
-                            <th>estado</th>
-                            <th>id_cliente</th>
-                            <th>id_empleado</th>
+                            <th data-i18n="fecha">fecha</th>
+                            <th data-i18n="total">total</th>
+                            <th data-i18n="estado">estado</th>
+                            <th data-i18n="id_cliente_col">id_cliente</th>
+                            <th data-i18n="id_empleado_col">id_empleado</th>
                         </tr>
                     </thead>
                     <tbody id="tbodyResumenPaso5">
                         <tr>
-                            <td colspan="5" class="text-center text-muted py-3">Calcule los totales en el Paso 3 y 4 para generar el registro de la cotización</td>
+                            <td colspan="5" class="text-center text-muted py-3" data-i18n="calcule_totales_para_generar_registro">Calcule los totales en el Paso 3 y 4 para generar el registro de la cotización</td>
                         </tr>
                     </tbody>
                 </table>
@@ -177,14 +177,26 @@
                     <span class="badge bg-success fs-6" id="badgeTotalPaso5">Total a Guardar: L 0.00</span>
                 </div>
                 <button type="button" class="btn btn-success btn-lg fw-bold" id="btnReservarInventario">
-                    <i class="bi bi-box-seam me-1"></i> Confirmar y Reservar
+                    <i class="bi bi-box-seam me-1"></i> <span data-i18n="confirmar_y_reservar">Confirmar y Reservar</span>
                 </button>
             </div>
         </div>
     </div>
 </div>
 
+<script src="js/idiomas.js"></script>
 <script>
+
+                let idiomaActual = localStorage.getItem('idioma') || 'es';
+                $('#btn-idioma-texto').text(idiomaActual === 'es' ? 'English' : 'Español');
+
+                $('#btn-idioma').on('click', function (e) {
+                    e.preventDefault();
+                    let nuevo = (localStorage.getItem('idioma') || 'es') === 'es' ? 'en' : 'es';
+                    localStorage.setItem('idioma', nuevo);
+                    location.reload();
+                });
+
     (function () {
         let idClienteValido = null;
         let carritoProductos = []; 

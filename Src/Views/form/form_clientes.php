@@ -5,16 +5,16 @@
         <div>
             <h4 class="mb-0 fw-bold text-dark">
                 <i class="bi bi-people-fill text-primary me-2"></i>
-                Gestión de Clientes
+                <span data-i18n="gestion_de_clientes">Gestión de Clientes</span>
             </h4>
-            <small class="text-muted">
+            <small class="text-muted" data-i18n="administracion_y_registro_clientes">
                 Administración y registro de clientes
             </small>
         </div>
 
         <button type="button" class="btn btn-primary" onclick="abrirModalNuevo()">
             <i class="bi bi-plus-lg me-1"></i>
-            Nuevo Cliente
+            <span data-i18n="nuevo_cliente">Nuevo Cliente</span>
         </button>
     </div>
 
@@ -26,12 +26,12 @@
                     <thead class="table-light">
                         <tr>
                             <th>#</th>
-                            <th>ID</th>
-                            <th>RTN</th>
-                            <th>Nombre</th>
-                            <th>Teléfono</th>
-                            <th>Fecha Registro</th>
-                            <th class="text-center">
+                            <th data-i18n="id">ID</th>
+                            <th data-i18n="rtn">RTN</th>
+                            <th data-i18n="nombre">Nombre</th>
+                            <th data-i18n="telefono">Teléfono</th>
+                            <th data-i18n="fecha_registro">Fecha Registro</th>
+                            <th class="text-center" data-i18n="acciones">
                                 Acciones
                             </th>
                         </tr>
@@ -54,7 +54,7 @@
         <div class="modal-content border-0 shadow">
 
             <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title fw-bold" id="modalClienteLabel">
+                <h5 class="modal-title fw-bold" id="modalClienteLabel" data-i18n="nuevo_cliente">
                     Nuevo Cliente
                 </h5>
                 <button type="button"
@@ -69,7 +69,7 @@
 
                     <div class="mb-3">
                         <label class="form-label fw-bold">
-                            RTN
+                            <span data-i18n="rtn">RTN</span>
                             <span class="text-danger">*</span>
                         </label>
                         <input type="text"
@@ -80,7 +80,7 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label fw-bold">
-                            Nombre
+                            <span data-i18n="nombre">Nombre</span>
                             <span class="text-danger">*</span>
                         </label>
                         <input type="text"
@@ -90,7 +90,7 @@
                                placeholder="Nombre del cliente">
                     </div>
                     <div class="mb-3">
-                        <label class="form-label fw-bold">
+                        <label class="form-label fw-bold" data-i18n="telefono">
                             Teléfono
                         </label>
                         <input type="text"
@@ -102,14 +102,15 @@
                 <div class="modal-footer bg-light">
                     <button type="button"
                             class="btn btn-secondary"
-                            onclick="cerrarModal()">
+                            onclick="cerrarModal()"
+                            data-i18n="cancelar">
                         Cancelar
                     </button>
                     <button type="submit"
                             class="btn btn-primary"
                             id="btnGuardarCliente">
                         <i class="bi bi-save me-1"></i>
-                        Guardar
+                        <span data-i18n="guardar">Guardar</span>
                     </button>
                 </div>
             </form>
@@ -118,8 +119,19 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+<script src="js/idiomas.js"></script>
 <script>
+
+                let idiomaActual = localStorage.getItem('idioma') || 'es';
+                $('#btn-idioma-texto').text(idiomaActual === 'es' ? 'English' : 'Español');
+
+                $('#btn-idioma').on('click', function (e) {
+                    e.preventDefault();
+                    let nuevo = (localStorage.getItem('idioma') || 'es') === 'es' ? 'en' : 'es';
+                    localStorage.setItem('idioma', nuevo);
+                    location.reload();
+                });
+
 (function(){
     const token = localStorage.getItem('token');
     

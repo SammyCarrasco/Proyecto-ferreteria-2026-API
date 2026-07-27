@@ -79,7 +79,7 @@
                 </tr>
             </thead>
             <tbody id="cot-detalle-body">
-                <tr><td colspan="6" class="text-center text-muted"><span data-i18n="sin_productos_agregados_todavia">Sin productos agregados todavía.</td></span></tr>
+                <tr><td colspan="6" class="text-center text-muted"><span data-i18n="sin_productos_agregados_todavia">Sin productos agregados todavía.</span></td></tr>
             </tbody>
         </table>
         <div class="alert alert-warning py-2 small" id="cot-detalle-vacio-aviso" style="display:none;"><span data-i18n="cotizacion_ya_facturada_no_modificar">

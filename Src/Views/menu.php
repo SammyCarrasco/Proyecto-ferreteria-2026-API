@@ -24,6 +24,7 @@
 <body>
 
     <script>
+        
         const SESSION_TOKEN = localStorage.getItem('token');
         const SESSION_ROL = localStorage.getItem('rol') || 'Normal';
         const SESSION_NOMBRE = localStorage.getItem('nombre') || 'Usuario';
@@ -45,7 +46,9 @@
         
         <div class="grupo-titulo" data-i18n="grupo_inventario">Inventario</div>
         <a class="nav-link" data-modulo="catalogo" data-fragmento="form/form_catalogo.php"><i class="bi bi-grid-3x3-gap"></i> <span data-i18n="menu_catalogo">Catálogo</span></a>
-        <a class="nav-link" data-modulo="productos" data-fragmento="form/form_productos.php" data-solo-admin="1"><i class="bi bi-box-seam"></i> <span data-i18n="menu_productos">Productos</span></a>
+        
+        <!--<a class="nav-link" data-modulo="productos" data-fragmento="form/form_productos.php" data-solo-admin="1"><i class="bi bi-box-seam"></i> <span data-i18n="menu_productos">Productos</span></a> -->
+
         <a class="nav-link" data-modulo="category" data-fragmento="form/form_category.php" data-solo-admin="1"><i class="bi bi-tags"></i> <span data-i18n="menu_categorias">Categorías</span></a>
         <a class="nav-link" data-modulo="inventario" data-fragmento="form/form_inventario.php" data-solo-admin="1"><i class="bi bi-archive"></i> <span data-i18n="menu_inventario">Inventario</span></a>
         <a class="nav-link" data-modulo="almacenes" data-fragmento="form/form_almacenes.php" data-solo-admin="1"><i class="bi bi-building"></i> <span data-i18n="menu_almacenes">Almacenes</span></a>
@@ -59,7 +62,7 @@
     <div class="topbar">
         <span id="titulo-modulo" data-i18n="menu_panel_principal">Panel principal</span>
             <a href="#" id="btn-idioma" class="text-decoration-none">🌐 <span id="btn-idioma-texto"></span></a>
-            
+
         <span>
             <span id="user-info"></span>
             &nbsp;|&nbsp;

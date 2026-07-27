@@ -3,12 +3,12 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h4 class="mb-0 fw-bold text-dark">
-                <i class="bi bi-tags-fill text-primary me-2"></i>Gestión de Categorías
+                <i class="bi bi-tags-fill text-primary me-2"></i><span data-i18n="gestion_de_categorias">Gestión de Categorías</span>
             </h4>
-            <small class="text-muted">Administración y registro de categorías de productos</small>
+            <small class="text-muted"><span data-i18n="administracion_registro_categorias">Administración y registro de categorías de productos</span></small>
         </div>
         <button type="button" class="btn btn-primary" onclick="abrirModalNueva()">
-            <i class="bi bi-plus-lg me-1"></i> Nueva Categoría
+            <i class="bi bi-plus-lg me-1"></i> <span data-i18n="nueva_categoria">Nueva Categoría</span>
         </button>
     </div>
 
@@ -20,10 +20,10 @@
                     <thead class="table-light">
                         <tr>
                             <th>#</th>
-                            <th>ID</th>
-                            <th>Nombre</th>
-                            <th>Descripción</th>
-                            <th class="text-center">Acciones</th>
+                            <th data-i18n="id">ID</th>
+                            <th data-i18n="nombre">Nombre</th>
+                            <th data-i18n="descripcion">Descripción</th>
+                            <th class="text-center" data-i18n="acciones">Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -40,7 +40,7 @@
     <div class="modal-dialog">
         <div class="modal-content border-0 shadow">
             <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title fw-bold" id="modalCategoriaLabel">Nueva Categoría</h5>
+                <h5 class="modal-title fw-bold" id="modalCategoriaLabel" data-i18n="nueva_categoria">Nueva Categoría</h5>
                 <button type="button" class="btn-close btn-close-white" onclick="cerrarModal()"></button>
             </div>
             <form id="formCategoria" onsubmit="guardarCategoria(event)">
@@ -48,19 +48,19 @@
                     <input type="hidden" id="id_categoria" name="id_categoria">
 
                     <div class="mb-3">
-                        <label for="nombre" class="form-label fw-bold">Nombre <span class="text-danger">*</span></label>
+                        <label for="nombre" class="form-label fw-bold"><span data-i18n="nombre">Nombre</span> <span class="text-danger">*</span></label>
                         <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Ej. Herramientas">
                     </div>
 
                     <div class="mb-3">
-                        <label for="descripcion" class="form-label fw-bold">Descripción <span class="text-danger">*</span></label>
+                        <label for="descripcion" class="form-label fw-bold"><span data-i18n="descripcion">Descripción</span> <span class="text-danger">*</span></label>
                         <textarea class="form-control" id="descripcion" name="descripcion" rows="3" required placeholder="Descripción..."></textarea>
                     </div>
                 </div>
                 <div class="modal-footer bg-light">
-                    <button type="button" class="btn btn-secondary" onclick="cerrarModal()">Cancelar</button>
+                    <button type="button" class="btn btn-secondary" onclick="cerrarModal()" data-i18n="cancelar">Cancelar</button>
                     <button type="submit" class="btn btn-primary" id="btnGuardarCategoria">
-                        <i class="bi bi-save me-1"></i> Guardar
+                        <i class="bi bi-save me-1"></i> <span data-i18n="guardar">Guardar</span>
                     </button>
                 </div>
             </form>
@@ -68,10 +68,21 @@
     </div>
 </div>
 
-
+<script src="js/idiomas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
+
+            let idiomaActual = localStorage.getItem('idioma') || 'es';
+                $('#btn-idioma-texto').text(idiomaActual === 'es' ? 'English' : 'Español');
+
+                $('#btn-idioma').on('click', function (e) {
+                    e.preventDefault();
+                    let nuevo = (localStorage.getItem('idioma') || 'es') === 'es' ? 'en' : 'es';
+                    localStorage.setItem('idioma', nuevo);
+                    location.reload();
+                });
+
 (function () {
     const token = localStorage.getItem('token');
     const ENDPOINT = 'category'; 
@@ -80,7 +91,7 @@
         document.getElementById('formCategoria').reset();
         document.getElementById('id_categoria').value = '';
         document.getElementById('modalCategoriaLabel').innerText = 'Nueva Categoría';
-        
+        document.getElementById('nombre').value = '';
         const modal = document.getElementById('modalCategoria');
         modal.classList.add('show');
         modal.style.display = 'block';

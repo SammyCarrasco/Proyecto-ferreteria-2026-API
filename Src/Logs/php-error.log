@@ -2470,4 +2470,86 @@ Stack trace:
 [25-Jul-2026 18:01:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [25-Jul-2026 18:02:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [25-Jul-2026 18:02:31 America/Tegucigalpa] CotizacionModel::reservarInventario Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'
+<<<<<<< Updated upstream
 >>>>>>> b50d0bff7dae733814184a820f06fb5b4ffba278
+=======
+[26-Jul-2026 18:00:02 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:00:02 America/Tegucigalpa] clienteModel::getAll PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.ConsultarClientes does not exist in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:87
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(87): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(42): App\Models\clienteModel::getAll()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(24): App\Controllers\ClienteController->getAll()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[26-Jul-2026 18:00:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:00:07 America/Tegucigalpa] productoModel::getCatalogo -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.sp_obtener_catalogo_productos does not exist
+[26-Jul-2026 18:00:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:00:10 America/Tegucigalpa] InventarioModel::getStock SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.ConsultarInventario does not exist
+[26-Jul-2026 18:00:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:00:11 America/Tegucigalpa] CategoryModel::get -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.ConsultarCategorias does not exist
+[26-Jul-2026 18:00:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:00:12 America/Tegucigalpa] AlmacenModel::getAll SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.ConsultarAlmacenes does not exist
+[26-Jul-2026 18:00:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:00:14 America/Tegucigalpa] CategoryModel::get -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.ConsultarCategorias does not exist
+[26-Jul-2026 18:00:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:00:14 America/Tegucigalpa] AdminProductoModel::get -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.ConsultarProductos does not exist
+[26-Jul-2026 18:00:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:00:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:00:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:00:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:00:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:01:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:01:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:01:08 America/Tegucigalpa] AlmacenModel::getAll SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.ConsultarAlmacenes does not exist
+[26-Jul-2026 18:01:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:01:09 America/Tegucigalpa] InventarioModel::getStock SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.ConsultarInventario does not exist
+[26-Jul-2026 18:01:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:01:09 America/Tegucigalpa] CategoryModel::get -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.ConsultarCategorias does not exist
+[26-Jul-2026 18:01:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:01:11 America/Tegucigalpa] productoModel::getCatalogo -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.sp_obtener_catalogo_productos does not exist
+[26-Jul-2026 18:09:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:13:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:13:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:13:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:13:08 America/Tegucigalpa] userModel::registrarUsuario -> SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE ferreteria_prueba.RegistrarEmpleado; expected 6, got 8
+[26-Jul-2026 18:13:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:15:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:15:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:15:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:15:40 America/Tegucigalpa] userModel::registrarUsuario -> SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE ferreteria_prueba.RegistrarEmpleado; expected 6, got 8
+[26-Jul-2026 18:15:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:15:54 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:16:36 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:16:36 America/Tegucigalpa] clienteModel::getAll PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.ConsultarClientes does not exist in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php:87
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\clienteModel.php(87): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\ClienteController.php(42): App\Models\clienteModel::getAll()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\clientes.php(24): App\Controllers\ClienteController->getAll()
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(50): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[26-Jul-2026 18:16:49 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:16:52 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+>>>>>>> Stashed changes
+[26-Jul-2026 18:47:41 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:47:41 America/Tegucigalpa] AlmacenModel::getAll SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.ConsultarAlmacenes does not exist
+[26-Jul-2026 18:47:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:47:42 America/Tegucigalpa] productoModel::getCatalogo -> SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.sp_obtener_catalogo_productos does not exist
+[26-Jul-2026 18:50:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:58:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:58:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:58:33 America/Tegucigalpa] CotizacionModel::seleccionarCliente SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.sp_seleccionar_cliente does not exist
+[26-Jul-2026 18:58:33 America/Tegucigalpa] CotizacionModel::seleccionarCliente SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.sp_seleccionar_cliente does not exist
+[26-Jul-2026 18:58:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:58:38 America/Tegucigalpa] CotizacionModel::seleccionarCliente SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.sp_seleccionar_cliente does not exist
+[26-Jul-2026 18:58:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:58:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:58:47 America/Tegucigalpa] CotizacionModel::seleccionarCliente SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.sp_seleccionar_cliente does not exist
+[26-Jul-2026 18:58:47 America/Tegucigalpa] CotizacionModel::seleccionarCliente SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.sp_seleccionar_cliente does not exist
+[26-Jul-2026 18:58:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 18:58:50 America/Tegucigalpa] CotizacionModel::seleccionarCliente SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria_prueba.sp_seleccionar_cliente does not exist
+[26-Jul-2026 19:05:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 19:05:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 19:05:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 19:05:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 19:07:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 19:07:19 America/Tegucigalpa] CotizacionModel::reservarInventario Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subtotal' in 'field list'

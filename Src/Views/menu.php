@@ -39,8 +39,10 @@
         <div class="grupo-titulo">Ventas</div>
         <a class="nav-link" data-modulo="clientes" data-fragmento="form/form_clientes.php" ><i class="bi bi-person-lines-fill"></i> Clientes</a>
         <a class="nav-link" data-modulo="cotizacion" data-fragmento="form/form_cotizacion.php"><i class="bi bi-file-earmark-text"></i> Cotizaciones</a>
+         <a class="nav-link" data-modulo="cotizacion_detalle" data-fragmento="form/form_cotizacion_detalle.php"><i class="bi bi-cart-plus"></i> Detalle Cotización</a>
         <a class="nav-link" data-modulo="venta" data-fragmento="form/form_venta.php"><i class="bi bi-cart-check"></i> Ventas</a>
 
+        
         <div class="grupo-titulo">Inventario</div>
         <a class="nav-link" data-modulo="catalogo" data-fragmento="form/form_catalogo.php"><i class="bi bi-grid-3x3-gap"></i> Catálogo</a>
         <a class="nav-link" data-modulo="productos" data-fragmento="form/form_productos.php" data-solo-admin="1"><i class="bi bi-box-seam"></i> Productos</a>

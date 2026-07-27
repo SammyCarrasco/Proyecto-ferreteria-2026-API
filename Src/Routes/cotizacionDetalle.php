@@ -15,3 +15,5 @@ $app = new CotizacionDetalleController($method, $route, $params, $data, $headers
 $app->agregarProducto("cotizacionDetalle");   
 $app->modificarCantidad("cotizacionDetalle"); 
 $app->eliminarProducto("cotizacionDetalle");  
+$app->crearCotizacion("cotizacionDetalle");
+$app->consultarCotizacion("cotizacionDetalle");

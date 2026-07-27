@@ -1,7 +1,7 @@
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
-        <h4 class="mb-0 fw-bold text-dark"><i class="bi bi-file-earmark-text text-primary me-2"></i>Cotizaciones — Detalle</h4>
-        <small class="text-muted">Crear, buscar y modificar productos de una cotización</small>
+        <h4 class="mb-0 fw-bold text-dark"><i class="bi bi-file-earmark-text text-primary me-2"></i><span data-i18n="cotizaciones_detalle">Cotizaciones — Detalle</span></h4>
+        <small class="text-muted"><span data-i18n="crear_buscar_modificar_productos_cotizacion"> Crear, buscar y modificar productos de una cotización</span></small>
     </div>
 </div>
 
@@ -9,20 +9,20 @@
     <div class="card-body">
         <div class="row g-2 align-items-end mb-2">
             <div class="col-md-3">
-                <label class="form-label small">ID Cliente</label>
+                <label class="form-label small"><span data-i18n="id_cliente">ID Cliente</span></label>
                 <input type="number" class="form-control form-control-sm" id="cot-id-cliente" value="1">
             </div>
             <div class="col-md-3">
-                <label class="form-label small">ID Empleado</label>
+                <label class="form-label small"><span data-i18n="id_empleado">ID Empleado</span></label>
                 <input type="number" class="form-control form-control-sm" id="cot-id-empleado" value="1">
             </div>
             <div class="col-md-auto">
                 <button class="btn btn-primary btn-sm" id="btn-crear-cotizacion">
-                    <i class="bi bi-plus-circle"></i> Nueva cotización
+                    <i class="bi bi-plus-circle"></i><span data-i18n="nueva_cotizacion"> Nueva cotización</span>
                 </button>
             </div>
             <div class="col-md-3">
-                <label class="form-label small">Cargar cotización existente (ID)</label>
+                <label class="form-label small"><span data-i18n="cargar_cotizacion_existente_id">Cargar cotización existente (ID)</span></label>
                 <div class="input-group input-group-sm">
                     <input type="number" class="form-control" id="cot-id-buscar">
                     <button class="btn btn-outline-secondary" id="btn-buscar-cotizacion">Cargar</button>
@@ -35,7 +35,7 @@
 
 <div class="card mb-3" id="cot-panel-activa" style="display:none;">
     <div class="card-header bg-white d-flex justify-content-between align-items-center">
-        <span><i class="bi bi-receipt"></i> Cotización #<span id="cot-id-actual"></span>
+        <span><i class="bi bi-receipt"></i><span data-i18n="cotizacion"> Cotización</span> #<span id="cot-id-actual"></span>
             — <span id="cot-cliente-nombre" class="text-muted"></span>
             <span class="badge" id="cot-estado-badge"></span>
         </span>
@@ -45,24 +45,24 @@
 
         <div class="row g-2 align-items-end mb-3 border-bottom pb-3">
             <div class="col-md-2">
-                <label class="form-label small">ID Producto</label>
+                <label class="form-label small"><span data-i18n="id_producto">ID Producto</span></label>
                 <input type="number" class="form-control form-control-sm" id="det-id-producto" value="1">
             </div>
             <div class="col-md-2">
-                <label class="form-label small">ID Almacén</label>
+                <label class="form-label small"><span data-i18n="id_almacen">ID Almacén</span></label>
                 <input type="number" class="form-control form-control-sm" id="det-id-almacen" value="1">
             </div>
             <div class="col-md-2">
-                <label class="form-label small">Cantidad</label>
+                <label class="form-label small"><span data-i18n="cantidad">Cantidad</span></label>
                 <input type="number" class="form-control form-control-sm" id="det-cantidad" value="1" min="1">
             </div>
             <div class="col-md-2">
-                <label class="form-label small">Precio unitario</label>
+                <label class="form-label small"><span data-i18n="precio_unitario">Precio unitario</span></label>
                 <input type="number" step="0.01" class="form-control form-control-sm" id="det-precio" value="150.00">
             </div>
             <div class="col-md-auto">
                 <button class="btn btn-success btn-sm" id="btn-agregar-producto">
-                    <i class="bi bi-cart-plus"></i> Agregar a la cotización
+                    <i class="bi bi-cart-plus"></i><span data-i18n="agregar_a_la_cotizacion"> Agregar a la cotización</span>
                 </button>
             </div>
         </div>
@@ -70,24 +70,24 @@
         <table class="table table-sm align-middle">
             <thead>
                 <tr>
-                    <th>Producto</th>
-                    <th>Almacén</th>
-                    <th style="width:110px;">Cantidad</th>
-                    <th>Precio unit.</th>
+                    <th><span data-i18n="producto">Producto</span></th>
+                    <th><span data-i18n="almacen">Almacén</span></th>
+                    <th style="width:110px;"><span data-i18n="cantidad">Cantidad</span></th>
+                    <th><span data-i18n="precio_unit">Precio unit.</span></th>
                     <th>Subtotal</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody id="cot-detalle-body">
-                <tr><td colspan="6" class="text-center text-muted">Sin productos agregados todavía.</td></tr>
+                <tr><td colspan="6" class="text-center text-muted"><span data-i18n="sin_productos_agregados_todavia">Sin productos agregados todavía.</td></span></tr>
             </tbody>
         </table>
-        <div class="alert alert-warning py-2 small" id="cot-detalle-vacio-aviso" style="display:none;">
-            Esta cotización ya fue facturada — no se puede modificar.
+        <div class="alert alert-warning py-2 small" id="cot-detalle-vacio-aviso" style="display:none;"><span data-i18n="cotizacion_ya_facturada_no_modificar">
+            Esta cotización ya fue facturada — no se puede modificar.</span> 
         </div>
     </div>
 </div>
-
+<script src="js/idiomas.js"> </script>
 <script>
 (function () {
     let idCotizacionActual = null;

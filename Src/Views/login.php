@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ferretería 2026 - Iniciar sesión</title>
+    <title>EL Yunque - Iniciar sesión</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <style>
@@ -13,10 +13,16 @@
 </head>
 <body>
 
+
     <div class="login-card">
-        <h3><i class="bi bi-hammer"></i> <span data-i18n="titulo_app">Ferretería 2026</span></h3>
+        <h3><i class="bi bi-tools"></i>El Yunque</h3>
 
         <div id="mensaje-error" class="alert alert-danger d-none"></div>
+
+         <div class="topbar">
+          <a href="#" id="btn-idioma" class="text-decoration-none">🌐 <span id="btn-idioma-texto"></span></a>
+        
+         </div>
 
         <form id="form-login">
             <div class="mb-3">
@@ -35,6 +41,16 @@
     <script src="js/idiomas.js"></script>
 
     <script>
+                let idiomaActual = localStorage.getItem('idioma') || 'es';
+                $('#btn-idioma-texto').text(idiomaActual === 'es' ? 'English' : 'Español');
+
+                $('#btn-idioma').on('click', function (e) {
+                    e.preventDefault();
+                    let nuevo = (localStorage.getItem('idioma') || 'es') === 'es' ? 'en' : 'es';
+                    localStorage.setItem('idioma', nuevo);
+                    location.reload();
+                });
+
         $('#form-login').off('submit').on('submit', function (e) {
             e.preventDefault();
 

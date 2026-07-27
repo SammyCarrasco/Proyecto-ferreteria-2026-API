@@ -34,7 +34,7 @@
     </script>
 
     <div class="sidebar">
-        <div class="brand"><i class="bi bi-hammer"></i> <span data-i18n="titulo_app">Ferretería 2026</span></div>
+        <div class="brand"><i class="bi bi-hammer"></i>El Yunque</div>
 
         <div class="grupo-titulo" data-i18n="grupo_ventas">Ventas</div>
         <a class="nav-link" data-modulo="clientes" data-fragmento="form/form_clientes.php"><i class="bi bi-person-lines-fill"></i> <span data-i18n="menu_clientes">Clientes</span></a>
@@ -58,6 +58,8 @@
 
     <div class="topbar">
         <span id="titulo-modulo" data-i18n="menu_panel_principal">Panel principal</span>
+            <a href="#" id="btn-idioma" class="text-decoration-none">🌐 <span id="btn-idioma-texto"></span></a>
+            
         <span>
             <span id="user-info"></span>
             &nbsp;|&nbsp;
@@ -78,6 +80,17 @@
             if (typeof SESSION_NOMBRE !== 'undefined') {
                 $('#user-info').text(SESSION_NOMBRE + ' (' + SESSION_ROL + ')');
             }
+
+            // Botón de idioma: muestra el idioma AL QUE VAS A CAMBIAR (no el actual)
+            let idiomaActual = localStorage.getItem('idioma') || 'es';
+            $('#btn-idioma-texto').text(idiomaActual === 'es' ? 'English' : 'Español');
+
+            $('#btn-idioma').on('click', function (e) {
+                e.preventDefault();
+                let nuevo = (localStorage.getItem('idioma') || 'es') === 'es' ? 'en' : 'es';
+                localStorage.setItem('idioma', nuevo);
+                location.reload();
+            });
 
             $('#btn-logout').on('click', function(e) {
                 e.preventDefault();

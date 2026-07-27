@@ -2876,6 +2876,7 @@ Stack trace:
 [26-Jul-2026 19:05:54 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [26-Jul-2026 19:05:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 >>>>>>> Stashed changes
+<<<<<<< Updated upstream
 >>>>>>> 9a8d75c973ffc9292b23eefa29b8e51edb4f466a
 [26-Jul-2026 22:43:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [26-Jul-2026 22:44:00 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
@@ -3834,3 +3835,420 @@ Stack trace:
 [27-Jul-2026 16:44:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [27-Jul-2026 16:44:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
 [27-Jul-2026 16:44:47 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+=======
+[26-Jul-2026 20:52:23 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 20:52:23 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 20:52:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 20:52:49 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 20:52:49 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 20:52:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 20:52:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 20:53:29 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 20:53:29 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 20:53:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 20:53:43 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 21:27:52 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:27:52 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 21:27:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:27:55 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 21:27:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:28:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:28:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:28:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:28:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:28:24 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:28:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:28:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:28:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:28:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:28:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:28:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:28:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:28:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:28:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:29:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:29:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:29:11 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 21:32:49 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:32:49 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 21:32:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:32:50 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 21:32:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:32:53 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 21:32:54 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 21:32:54 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 22:11:54 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 22:11:54 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 22:11:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 22:11:59 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 22:12:00 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 22:12:00 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 22:12:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 22:12:19 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 22:13:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 22:13:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 22:13:33 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 22:13:36 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 22:13:36 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 22:13:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 22:13:51 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 22:13:51 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 22:21:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 22:21:35 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 22:22:06 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 22:22:06 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 22:23:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 22:23:20 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 22:26:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 22:26:08 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[26-Jul-2026 22:26:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[26-Jul-2026 22:26:16 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 06:43:24 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:43:24 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 06:43:54 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:43:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:43:55 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 06:43:57 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:45:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:45:10 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:45:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:45:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:46:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:46:55 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 06:47:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:47:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:47:26 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 06:48:13 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:48:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:48:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:48:44 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 06:48:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:48:59 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 06:49:18 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:18 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:18 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 06:49:20 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:37 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:37 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:41 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:49:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:51:21 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 06:51:23 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 07:04:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 07:04:09 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 07:31:39 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 07:31:39 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 07:33:46 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 07:33:46 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 07:34:19 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 07:34:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 07:34:22 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 07:51:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 07:51:32 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 08:10:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 09:49:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 09:49:11 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 10:31:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 10:31:26 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 10:32:00 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 10:32:01 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 10:32:01 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 10:32:52 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 10:32:52 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 10:59:34 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 10:59:34 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 10:59:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 10:59:38 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 11:08:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:08:50 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 11:08:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:08:53 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 11:08:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:08:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:09:03 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:09:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:09:33 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:11:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:11:32 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 11:11:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:11:35 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 11:11:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:11:38 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:11:40 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:11:43 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:11:43 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 11:39:12 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:39:12 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 11:39:15 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:39:15 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 11:39:16 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 11:39:16 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 12:41:13 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 12:41:13 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 12:41:25 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 14:36:48 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Class "App\Config\Connection" not found in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php:17
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\dashboardController.php(42): App\Models\dashboardModel::totalVentas()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\dashboard.php(30): App\Controllers\dashboardController::getDashboard('dashboard')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(52): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php on line 17
+[27-Jul-2026 14:58:36 America/Tegucigalpa] PHP Fatal error:  Uncaught Error: Call to undefined method App\Models\dashboardModel::getConexion() in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php:22
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\dashboardController.php(42): App\Models\dashboardModel::totalVentas()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\dashboard.php(30): App\Controllers\dashboardController::getDashboard('dashboard')
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(52): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php on line 22
+[27-Jul-2026 15:05:57 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:05:57 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:05:57 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:05:57 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:05:57 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:05:57 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:05:57 America/Tegucigalpa] dashboardModel::ventasMensuales PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarVentasMensuales does not exist in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php:191
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php(191): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\dashboardController.php(52): App\Models\dashboardModel::ventasMensuales()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\dashboard.php(30): App\Controllers\dashboardController::getDashboard('dashboard')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(52): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[27-Jul-2026 15:05:57 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:17:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:17:26 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 15:17:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:17:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:17:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:17:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:17:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:17:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:17:26 America/Tegucigalpa] dashboardModel::ventasMensuales PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarVentasMensuales does not exist in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php:191
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php(191): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\dashboardController.php(52): App\Models\dashboardModel::ventasMensuales()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\dashboard.php(30): App\Controllers\dashboardController::getDashboard('dashboard')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(52): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[27-Jul-2026 15:17:26 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:31:28 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:31:52 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:31:52 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:31:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:31:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:31:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:31:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:31:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:31:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:31:56 America/Tegucigalpa] dashboardModel::ventasMensuales PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarVentasMensuales does not exist in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php:191
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php(191): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\dashboardController.php(52): App\Models\dashboardModel::ventasMensuales()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\dashboard.php(30): App\Controllers\dashboardController::getDashboard('dashboard')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(52): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[27-Jul-2026 15:31:56 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:32:21 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:32:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:32:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:32:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:32:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:32:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:32:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:32:22 America/Tegucigalpa] dashboardModel::ventasMensuales PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarVentasMensuales does not exist in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php:191
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php(191): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\dashboardController.php(52): App\Models\dashboardModel::ventasMensuales()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\dashboard.php(30): App\Controllers\dashboardController::getDashboard('dashboard')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(52): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[27-Jul-2026 15:32:22 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:43:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:43:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:43:07 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 15:43:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:43:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:43:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:43:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:43:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:43:07 America/Tegucigalpa] dashboardModel::ventasMensuales PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarVentasMensuales does not exist in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php:191
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php(191): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\dashboardController.php(52): App\Models\dashboardModel::ventasMensuales()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\dashboard.php(30): App\Controllers\dashboardController::getDashboard('dashboard')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(52): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[27-Jul-2026 15:43:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:47:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:47:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:47:50 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 15:47:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:47:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:47:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:47:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:47:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:47:50 America/Tegucigalpa] dashboardModel::ventasMensuales PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarVentasMensuales does not exist in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php:191
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php(191): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\dashboardController.php(52): App\Models\dashboardModel::ventasMensuales()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\dashboard.php(30): App\Controllers\dashboardController::getDashboard('dashboard')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(52): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[27-Jul-2026 15:47:50 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:47:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:48:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:48:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:48:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:48:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:48:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:48:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:48:04 America/Tegucigalpa] dashboardModel::ventasMensuales PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarVentasMensuales does not exist in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php:191
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php(191): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\dashboardController.php(52): App\Models\dashboardModel::ventasMensuales()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\dashboard.php(30): App\Controllers\dashboardController::getDashboard('dashboard')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(52): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[27-Jul-2026 15:48:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:48:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:48:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:48:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:48:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:48:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:48:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:48:17 America/Tegucigalpa] dashboardModel::ventasMensuales PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarVentasMensuales does not exist in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php:191
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php(191): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\dashboardController.php(52): App\Models\dashboardModel::ventasMensuales()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\dashboard.php(30): App\Controllers\dashboardController::getDashboard('dashboard')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(52): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[27-Jul-2026 15:48:17 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:53:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:53:45 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 15:53:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:53:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:53:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:53:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:53:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:53:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:53:45 America/Tegucigalpa] dashboardModel::ventasMensuales PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarVentasMensuales does not exist in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php:191
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php(191): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\dashboardController.php(52): App\Models\dashboardModel::ventasMensuales()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\dashboard.php(30): App\Controllers\dashboardController::getDashboard('dashboard')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(52): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[27-Jul-2026 15:53:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:57:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:57:05 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 15:57:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:57:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:57:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:57:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:57:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:57:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 15:57:05 America/Tegucigalpa] dashboardModel::ventasMensuales PDOException: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE ferreteria.ConsultarVentasMensuales does not exist in C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php:191
+Stack trace:
+#0 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Models\dashboardModel.php(191): PDOStatement->execute()
+#1 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Controllers\dashboardController.php(52): App\Models\dashboardModel::ventasMensuales()
+#2 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Src\Routes\dashboard.php(30): App\Controllers\dashboardController::getDashboard('dashboard')
+#3 C:\xampp\htdocs\Proyecto-ferreteria-2026-API\Public\index.php(52): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+[27-Jul-2026 15:57:05 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:04:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:04:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:04:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:04:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:04:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:04:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:04:44 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:05:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:05:14 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 16:05:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:05:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:05:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:05:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:05:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:05:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:05:14 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:32 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:35 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:42 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:45 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:38:48 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:50:31 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:50:31 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 16:50:57 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:50:58 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:50:58 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 16:50:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:50:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:50:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:50:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:50:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:50:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:50:59 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:04 America/Tegucigalpa] traducciones -> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ferreteria.traducciones' doesn't exist
+[27-Jul-2026 16:51:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:04 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:08 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:18 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:51:53 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:52:03 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:52:03 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:52:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:52:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:52:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:52:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:52:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:52:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:52:07 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:52:11 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:52:54 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:52:55 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:53:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:53:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:53:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:53:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:53:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:53:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+[27-Jul-2026 16:53:09 America/Tegucigalpa] Conexión a la base de datos establecida correctamente.
+>>>>>>> Stashed changes

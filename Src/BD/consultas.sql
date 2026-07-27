@@ -108,6 +108,28 @@ INSERT IGNORE INTO traducciones (clave, es, en) VALUES
 ('acciones', 'Acciones', 'Actions'),
 ('cancelar', 'Cancelar', 'Cancel'),
 ('guardar', 'Guardar', 'Save');
+INSERT IGNORE INTO traducciones (clave, es, en) VALUES
+('cat_titulo', 'Gestión de Categorías', 'Category Management'),
+('cat_subtitulo', 'Administración y registro de categorías de productos', 'Product category management and registration'),
+('cat_btn_nueva', 'Nueva Categoría', 'New Category'),
+('tbl_id', 'ID', 'ID'),
+('tbl_nombre', 'Nombre', 'Name'),
+('tbl_descripcion', 'Descripción', 'Description'),
+('tbl_acciones', 'Acciones', 'Actions'),
+('modal_cat_titulo_nueva', 'Nueva Categoría', 'New Category'),
+('modal_cat_titulo_editar', 'Editar Categoría', 'Edit Category'),
+('lbl_nombre', 'Nombre', 'Name'),
+('lbl_descripcion', 'Descripción', 'Description'),
+('ph_nombre', 'Ej. Herramientas', 'E.g. Tools'),
+('ph_descripcion', 'Descripción...', 'Description...'),
+('btn_cancelar', 'Cancelar', 'Cancel'),
+('btn_guardar', 'Guardar', 'Save'),
+('btn_guardando', 'Guardando...', 'Saving...'),
+('btn_editar', 'Editar', 'Edit'),
+('btn_eliminar', 'Eliminar', 'Delete'),
+('msg_cargando', 'Cargando categorías...', 'Loading categories...'),
+('msg_error_consultar', 'Error al consultar datos.', 'Error fetching data.'),
+('msg_sin_categorias', 'No hay categorías registradas.', 'No categories registered.');
 
 /*reportes*/
 INSERT IGNORE INTO traducciones (clave, es, en) VALUES
@@ -169,3 +191,4 @@ INSERT IGNORE INTO traducciones (clave, es, en) VALUES
 ('emp_lbl_confirmaclave', 'Confirmar Contraseña', 'Confirm Password'),
 ('emp_btn_cancelar', 'Cancelar', 'Cancel'),
 ('emp_btn_guardar', 'Guardar Empleado', 'Save Employee');
+

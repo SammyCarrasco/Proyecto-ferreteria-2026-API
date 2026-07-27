@@ -112,17 +112,22 @@ class CotizacionController {
                 break;
 
             case 'reservar_inventario':
-                $val = $this->validarProductos();
-                if (!$val['status']) {
-                    echo json_encode(ResponseHTTP::status400($val['message']));
-                    break;
-                }
-                echo json_encode(CotizacionModel::reservarInventario($this->data['productos']));
-                break;
+    $valCliente = $this->validarCliente();
+    $valProductos = $this->validarProductos();
 
-            default:
-                echo json_encode(ResponseHTTP::status400("Acción no válida o no especificada."));
-                break;
+    if (!$valCliente['status']) {
+        echo json_encode(ResponseHTTP::status400($valCliente['message']));
+        break;
+    }
+
+    if (!$valProductos['status']) {
+        echo json_encode(ResponseHTTP::status400($valProductos['message']));
+        break;
+    }
+
+    // CAMBIO AQUÍ: pasar $this->data completo
+    echo json_encode(CotizacionModel::reservarInventario($this->data));
+    break;
         }
     }
 }

@@ -21,7 +21,7 @@
 
     $lista = ['auth', 'user', 'productos', 'category', 'reportes', 'cotizacionDetalle',
      'adminproductos', 'venta', 'inventario', 'almacenes', 'catalogo', 
-     'clientes', 'Cotizacion', 'login', 'menu', 'sesion_guardar', 'form'];
+     'clientes', 'cotizacion', 'login', 'menu', 'sesion_guardar', 'form'];
 
     if (!in_array($modulo, $lista)) {
         echo json_encode(ResponseHTTP::status404("La ruta ingresada no existe!"));

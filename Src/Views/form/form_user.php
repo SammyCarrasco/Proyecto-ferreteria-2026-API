@@ -5,11 +5,13 @@
     <!-- Encabezado -->
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
-            <h4 class="mb-0 fw-bold text-dark"><i class="bi bi-people-fill text-primary me-2"></i>Gestión de Empleados</h4>
-            <small class="text-muted">Administración y registro de vendedores y personal del sistema</small>
+            <h4 class="mb-0 fw-bold text-dark">
+                <i class="bi bi-people-fill text-primary me-2"></i><span data-i18n="emp_titulo_modulo">Gestión de Empleados</span>
+            </h4>
+            <small class="text-muted" data-i18n="emp_subtitulo_modulo">Administración y registro de vendedores y personal del sistema</small>
         </div>
         <button class="btn btn-primary" id="btnNuevoEmpleado">
-            <i class="bi bi-person-plus-fill me-1"></i> Nuevo Empleado
+            <i class="bi bi-person-plus-fill me-1"></i> <span data-i18n="emp_btn_nuevo">Nuevo Empleado</span>
         </button>
     </div>
 
@@ -21,19 +23,19 @@
                     <thead class="table-light">
                         <tr>
                             <th>#</th>
-                            <th>Identidad</th>
-                            <th>Nombre Completo</th>
-                            <th>Correo Electrónico</th>
-                            <th>Rol</th>
-                            <th>Fecha Registro</th>
-                            <th class="text-end">Acciones</th>
+                            <th data-i18n="emp_th_identidad">Identidad</th>
+                            <th data-i18n="emp_th_nombre">Nombre Completo</th>
+                            <th data-i18n="emp_th_correo">Correo Electrónico</th>
+                            <th data-i18n="emp_th_rol">Rol</th>
+                            <th data-i18n="emp_th_fecha">Fecha Registro</th>
+                            <th class="text-end" data-i18n="emp_th_acciones">Acciones</th>
                         </tr>
                     </thead>
                     <tbody id="tbodyEmpleados">
                         <tr>
                             <td colspan="7" class="text-center py-4 text-muted">
                                 <div class="spinner-border spinner-border-sm text-primary me-2" role="status"></div>
-                                Cargando empleados...
+                                <span data-i18n="emp_msg_cargando">Cargando empleados...</span>
                             </td>
                         </tr>
                     </tbody>
@@ -48,7 +50,9 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border-0 shadow">
             <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title" id="modalEmpleadoLabel"><i class="bi bi-person-plus me-2"></i>Registrar Empleado</h5>
+                <h5 class="modal-title" id="modalEmpleadoLabel">
+                    <i class="bi bi-person-plus me-2"></i><span data-i18n="emp_modal_nuevo">Registrar Empleado</span>
+                </h5>
                 <button type="button" class="btn-close btn-close-white" id="btnCerrarModalX" aria-label="Close"></button>
             </div>
             <form id="formEmpleado">
@@ -56,51 +60,53 @@
                     <input type="hidden" id="id_empleado" name="id_empleado">
 
                     <div class="mb-3">
-                        <label for="identidad" class="form-label font-weight-bold">N° de Identidad</label>
+                        <label for="identidad" class="form-label font-weight-bold" data-i18n="emp_lbl_identidad">N° de Identidad</label>
                         <input type="text" class="form-control" id="identidad" name="identidad" placeholder="Ej. 0801199000000" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="nombre" class="form-label font-weight-bold">Nombre Completo</label>
+                        <label for="nombre" class="form-label font-weight-bold" data-i18n="emp_lbl_nombre">Nombre Completo</label>
                         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej. Carlos Mendoza" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="correo" class="form-label font-weight-bold">Correo Electrónico</label>
+                        <label for="correo" class="form-label font-weight-bold" data-i18n="emp_lbl_correo">Correo Electrónico</label>
                         <input type="email" class="form-control" id="correo" name="correo" placeholder="ejemplo@ferreteria.com" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="rol" class="form-label font-weight-bold">Rol del Sistema</label>
+                        <label for="rol" class="form-label font-weight-bold" data-i18n="emp_lbl_rol">Rol del Sistema</label>
                         <select class="form-select" id="rol" name="rol" required>
-                            <option value="" disabled selected>Seleccione un rol...</option>
-                            <option value="Administrador">Administrador</option>
-                            <option value="Normal">Normal</option>
+                            <option value="" disabled selected data-i18n="emp_opt_select_rol">Seleccione un rol...</option>
+                            <option value="Administrador" data-i18n="emp_opt_admin">Administrador</option>
+                            <option value="Normal" data-i18n="emp_opt_normal">Normal</option>
                         </select>
                     </div>
 
                     <div class="row" id="seccionClaves">
                         <div class="col-md-6 mb-3">
-                            <label for="clave" class="form-label">Contraseña</label>
+                            <label for="clave" class="form-label" data-i18n="emp_lbl_clave">Contraseña</label>
                             <input type="password" class="form-control" id="clave" name="clave" placeholder="••••••••">
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="confirmaclave" class="form-label">Confirmar Contraseña</label>
+                            <label for="confirmaclave" class="form-label" data-i18n="emp_lbl_confirmaclave">Confirmar Contraseña</label>
                             <input type="password" class="form-control" id="confirmaclave" name="confirmaclave" placeholder="••••••••">
                         </div>
                     </div>
                 </div>
 
                 <div class="modal-footer bg-light">
-                    <button type="button" class="btn btn-secondary" id="btnCancelarModal">Cancelar</button>
+                    <button type="button" class="btn btn-secondary" id="btnCancelarModal" data-i18n="emp_btn_cancelar">Cancelar</button>
                     <button type="submit" class="btn btn-primary" id="btnGuardarEmpleado">
-                        <i class="bi bi-save me-1"></i> Guardar Empleado
+                        <i class="bi bi-save me-1"></i> <span data-i18n="emp_btn_guardar">Guardar Empleado</span>
                     </button>
                 </div>
             </form>
         </div>
     </div>
 </div>
+
+<script src="js/idiomas.js"></script>
 
 <script>
     (function () {
@@ -133,8 +139,8 @@
                         empleadosData.forEach((emp, index) => {
                             let esAdmin = (emp.rol === 'Administrador' || emp.rol == '1' || emp.id_rol == '1');
                             let badgeRol = esAdmin
-                                ? '<span class="badge bg-danger-subtle text-danger">Administrador</span>' 
-                                : '<span class="badge bg-info-subtle text-info">Normal</span>';
+                                ? '<span class="badge bg-danger-subtle text-danger" data-i18n="emp_opt_admin">Administrador</span>' 
+                                : '<span class="badge bg-info-subtle text-info" data-i18n="emp_opt_normal">Normal</span>';
 
                             html += `
                                 <tr>
@@ -156,12 +162,16 @@
                             `;
                         });
                     } else {
-                        html = '<tr><td colspan="7" class="text-center py-4 text-muted">No se encontraron empleados registrados.</td></tr>';
+                        html = '<tr><td colspan="7" class="text-center py-4 text-muted" data-i18n="emp_msg_sin_datos">No se encontraron empleados registrados.</td></tr>';
                     }
                     $('#tbodyEmpleados').html(html);
+
+                    // Traducir los badges y mensajes generados dinámicamente
+                    if (typeof traducirPagina === 'function') traducirPagina();
                 },
                 error: function () {
-                    $('#tbodyEmpleados').html('<tr><td colspan="7" class="text-center py-4 text-danger"><i class="bi bi-exclamation-triangle me-2"></i>Error al consultar los empleados.</td></tr>');
+                    $('#tbodyEmpleados').html('<tr><td colspan="7" class="text-center py-4 text-danger"><i class="bi bi-exclamation-triangle me-2"></i><span data-i18n="emp_msg_error_consulta">Error al consultar los empleados.</span></td></tr>');
+                    if (typeof traducirPagina === 'function') traducirPagina();
                 }
             });
         }
@@ -173,8 +183,11 @@
             e.preventDefault();
             $('#formEmpleado')[0].reset();
             $('#id_empleado').val('');
-            $('#modalEmpleadoLabel').html('<i class="bi bi-person-plus me-2"></i>Registrar Empleado');
+            
+            $('#modalEmpleadoLabel').html('<i class="bi bi-person-plus me-2"></i><span data-i18n="emp_modal_nuevo">Registrar Empleado</span>');
             $('#clave, #confirmaclave').prop('required', true);
+            
+            if (typeof traducirPagina === 'function') traducirPagina();
             abrirModal();
         });
 
@@ -202,8 +215,10 @@
                 if (valRol == '2') valRol = 'Normal';
                 $('#rol').val(valRol);
 
-                $('#clave, #confirmaclave').val('');
-                $('#modalEmpleadoLabel').html('<i class="bi bi-pencil-square me-2"></i>Editar Empleado');
+                $('#clave, #confirmaclave').val('').prop('required', false);
+                $('#modalEmpleadoLabel').html('<i class="bi bi-pencil-square me-2"></i><span data-i18n="emp_modal_editar">Editar Empleado</span>');
+                
+                if (typeof traducirPagina === 'function') traducirPagina();
                 abrirModal();
             }
         });
@@ -222,7 +237,6 @@
                 return;
             }
 
-            // Calculamos tanto el texto como el valor numérico para que el model PHP no lo ignore
             let idRolNum = (rolSeleccionado === 'Administrador' || rolSeleccionado === '1') ? '1' : '2';
 
             let payload = {
@@ -270,7 +284,7 @@
             });
         });
 
-        // 6. BOTÓN ELIMINAR (CON ALERTA ELABORADA SWEETALERT2)
+        // 6. BOTÓN ELIMINAR (CON ALERTA SWEETALERT2)
         $(document).off('click', '.btn-eliminar').on('click', '.btn-eliminar', function (e) {
             e.preventDefault();
             let id = $(this).data('id');
@@ -315,5 +329,15 @@
                 }
             });
         });
+
+        let idiomaActual = localStorage.getItem('idioma') || 'es';
+                $('#btn-idioma-texto').text(idiomaActual === 'es' ? 'English' : 'Español');
+
+                $('#btn-idioma').on('click', function (e) {
+                    e.preventDefault();
+                    let nuevo = (localStorage.getItem('idioma') || 'es') === 'es' ? 'en' : 'es';
+                    localStorage.setItem('idioma', nuevo);
+                    location.reload();
+                });
     })();
 </script>

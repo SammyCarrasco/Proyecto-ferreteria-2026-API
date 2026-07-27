@@ -81,3 +81,30 @@ INSERT IGNORE INTO traducciones (clave, es, en) VALUES
 ('id_empleado_col', 'id_empleado', 'employee_id'),
 ('calcule_totales_para_generar_registro', 'Calcule los totales en el Paso 3 y 4 para generar el registro de la cotización', 'Calculate totals in Steps 3 and 4 to generate the quote record'),
 ('confirmar_y_reservar', 'Confirmar y Reservar', 'Confirm and Reserve');
+
+/*clientes*/
+INSERT IGNORE INTO traducciones (clave, es, en) VALUES 
+('gestion_de_clientes', 'Gestión de Clientes', 'Customer Management'),
+('administracion_y_registro_clientes', 'Administración y registro de clientes', 'Customer administration and registration'),
+('nuevo_cliente', 'Nuevo Cliente', 'New Customer'),
+('id', 'ID', 'ID'),
+('rtn', 'RTN', 'Tax ID / RTN'),
+('nombre', 'Nombre', 'Name'),
+('telefono', 'Teléfono', 'Phone'),
+('fecha_registro', 'Fecha Registro', 'Registration Date'),
+('acciones', 'Acciones', 'Actions'),
+('cancelar', 'Cancelar', 'Cancel'),
+('guardar', 'Guardar', 'Save');
+
+
+/*categorias*/
+INSERT IGNORE INTO traducciones (clave, es, en) VALUES 
+('gestion_de_categorias', 'Gestión de Categorías', 'Category Management'),
+('administracion_registro_categorias', 'Administración y registro de categorías de productos', 'Product category administration and registration'),
+('nueva_categoria', 'Nueva Categoría', 'New Category'),
+('id', 'ID', 'ID'),
+('nombre', 'Nombre', 'Name'),
+('descripcion', 'Descripción', 'Description'),
+('acciones', 'Acciones', 'Actions'),
+('cancelar', 'Cancelar', 'Cancel'),
+('guardar', 'Guardar', 'Save');

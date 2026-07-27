@@ -26,7 +26,7 @@ class CotizacionDetalleController {
         $base = strtolower(self::$params[0] ?? '');
        // print_r($base);
         //print_r($endpoint);
-        if (self::$method === 'post' && $endpoint === $base) {
+        if (self::$method === 'post' && $endpoint === $base && count(self::$params) === 1) {
 
             if (empty(self::$data['id_cotizacion']) || empty(self::$data['id_producto']) ||
                 empty(self::$data['id_almacen']) || empty(self::$data['cantidad']) ||
@@ -86,6 +86,31 @@ class CotizacionDetalleController {
             }
 
             echo json_encode(cotizacionDetalleModel::eliminarProducto($id_detalle));
+            exit;
+        }
+    }
+    /* CREAR CABECERA DE COTIZACIÓN (POST)  */
+    final public function crearCotizacion($endpoint) {
+        if (self::$method === 'post' && (self::$params[1] ?? '') === 'nueva') {
+
+            if (empty(self::$data['id_cliente']) || empty(self::$data['id_empleado'])) {
+                echo json_encode(ResponseHTTP::status400('Debe indicar id_cliente e id_empleado.'));
+                exit;
+            }
+
+            echo json_encode(cotizacionDetalleModel::crearCabecera(
+                self::$data['id_cliente'],
+                self::$data['id_empleado']
+            ));
+            exit;
+        }
+    }
+
+    /* CONSULTAR COTIZACIÓN CON SU DETALLE (GET) */
+    final public function consultarCotizacion($endpoint) {
+        if (self::$method === 'get' && isset(self::$params[1]) && is_numeric(self::$params[1])) {
+
+            echo json_encode(cotizacionDetalleModel::consultarConDetalle(self::$params[1]));
             exit;
         }
     }

@@ -20,9 +20,7 @@ class InventarioController {
         $this->headers = $headers;
     }
 
-    /**
-     * Valida los campos exactos de la tabla inventario.
-     */
+    /* Valida los campos exactos de la tabla inventario.*/
     private function validarInventario() {
         if (empty($this->data)) {
             return [
@@ -35,7 +33,6 @@ class InventarioController {
         $camposRequeridos = ['id_producto', 'id_almacen', 'stock_disponible', 'stock_reservado'];
 
         foreach ($camposRequeridos as $campo) {
-            // Usamos isset() porque el valor '0' es completamente válido para el stock
             if (!isset($this->data[$campo]) || $this->data[$campo] === '') {
                 return [
                     "status" => false,
@@ -43,7 +40,6 @@ class InventarioController {
                 ];
             }
 
-            // Validar que todos sean números enteros y no sean negativos
             if (!is_numeric($this->data[$campo]) || $this->data[$campo] < 0) {
                 return [
                     "status" => false,
@@ -51,7 +47,6 @@ class InventarioController {
                 ];
             }
         }
-
         return ["status" => true];
     }
 
@@ -105,8 +100,6 @@ class InventarioController {
                 break;
 
             case 'delete':
-                // Al ser clave primaria compuesta, lo ideal es enviar los IDs en el cuerpo (JSON)
-                // en lugar de depender de un solo parámetro en la URL.
                 $validacion = $this->validarClavesPrimarias();
                 if (!$validacion['status']) {
                     echo json_encode(ResponseHTTP::status400($validacion['message']));

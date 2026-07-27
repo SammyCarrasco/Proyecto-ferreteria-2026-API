@@ -33,7 +33,7 @@ class UserController {
             if (empty(self::$data['nombre']) || empty(self::$data['dni']) || empty(self::$data['email']) || 
                 empty(self::$data['rol']) || empty(self::$data['clave']) || empty(self::$data['confirmarclave'])) {
                 echo json_encode(responseHTTP::status400('Todos los campos son requeridos, proceda a llenarlos.'));
-                exit;
+                exit; 
             } else if (!preg_match(self::$validar_texto, self::$data['nombre'])) {
                 echo json_encode(responseHTTP::status400('En el campo nombre debe ingresar solo texto.'));
                 exit;

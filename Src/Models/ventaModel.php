@@ -32,7 +32,19 @@ class ventaModel extends connectionDB {
                 ':id_cotizacion' => self::getIdCotizacion(),
                 ':id_empleado'   => self::getIdEmpleado()
             ]);
-            return responseHTTP::status200('Venta registrada exitosamente!!!');
+            $stmt->closeCursor();
+
+            // Traemos los datos de la venta recien generada (nro_factura, subtotal, ISV, total)
+            $stmt2 = $con->prepare(
+                "SELECT id_venta, nro_factura, fecha, id_cotizacion, id_empleado, subtotal, isv, total
+                 FROM ventas WHERE id_cotizacion = :id_cotizacion"
+            );
+            $stmt2->execute([':id_cotizacion' => self::getIdCotizacion()]);
+            $venta = $stmt2->fetch(\PDO::FETCH_ASSOC);
+
+            $respuesta = responseHTTP::status200('Venta registrada exitosamente!!!');
+            $respuesta['data'] = $venta;
+            return $respuesta;
         } catch (\PDOException $e) {
             error_log("ventaModel::procesarVenta -> " . $e->getMessage());
             return responseHTTP::status400($e->getMessage());

@@ -2,10 +2,10 @@
 
 namespace App\Models;
 
-use App\BD\connectionDB;
-use App\Config\responseHTTP;
+use App\BD\ConnectionDB;
+use App\Config\ResponseHTTP;
 
-class cotizacionDetalleModel extends connectionDB {
+class cotizacionDetalleModel extends ConnectionDB {
 
     // Atributos correspondientes a cotizaciones_detalle
     private static $id_detalle;
@@ -32,29 +32,29 @@ class cotizacionDetalleModel extends connectionDB {
     final public static function getCantidad()        { return self::$cantidad; }
     final public static function getPrecioUnitario()  { return self::$precio_unitario; }
 
-    /**
-     * Agregar un producto a la cotización (reserva stock)
-     */
     final public static function agregarProducto() {
-        try {
-            $con = self::getConnection();
-           
-                    
-            $query = "CALL sp_registrar_cotizacion_detalle(:id_cotizacion, :id_producto, :id_almacen, :cantidad, :precio_unitario)";
-            $stmt = $con->prepare($query);
-            $stmt->execute([
-                ':id_cotizacion'   => self::getIdCotizacion(),
-                ':id_producto'     => self::getIdProducto(),
-                ':id_almacen'      => self::getIdAlmacen(),
-                ':cantidad'        => self::getCantidad(),
-                ':precio_unitario' => self::getPrecioUnitario()
-            ]);
-            return responseHTTP::status200('Producto agregado a la cotización exitosamente!!!');
-        } catch (\PDOException $e) {
-            error_log("cotizacionDetalleModel::agregarProducto -> " . $e->getMessage());
-            return responseHTTP::status400($e->getMessage());
+    try {
+        $con = self::getConnection();
+        $query = "CALL sp_registrar_cotizacion_detalle(:id_cotizacion, :id_producto, :id_almacen, :cantidad, :precio_unitario)";
+        $stmt = $con->prepare($query);
+        $stmt->execute([
+            ':id_cotizacion'   => self::getIdCotizacion(),
+            ':id_producto'     => self::getIdProducto(),
+            ':id_almacen'      => self::getIdAlmacen(),
+            ':cantidad'        => self::getCantidad(),
+            ':precio_unitario' => self::getPrecioUnitario()
+        ]);
+        return responseHTTP::status200('Producto agregado a la cotización exitosamente!!!');
+    } catch (\PDOException $e) {
+        error_log("cotizacionDetalleModel::agregarProducto -> " . $e->getMessage());
+
+        if (strpos($e->getMessage(), 'Existencias insuficientes') !== false) {
+            return responseHTTP::status400('No hay suficiente stock disponible para este producto en el almacén seleccionado.');
         }
+
+        return responseHTTP::status400('No se pudo agregar el producto. Verifica los datos e intenta de nuevo.');
     }
+}
 
     /**
      * Modificar la cantidad de un producto ya cotizado
@@ -92,4 +92,65 @@ class cotizacionDetalleModel extends connectionDB {
             return responseHTTP::status400($e->getMessage());
         }
     }
+   
+    final public static function crearCabecera($idCliente, $idEmpleado) {
+        try {
+            $con = self::getConnection();
+            $stmt = $con->prepare(
+                "INSERT INTO cotizaciones (fecha, total, estado, id_cliente, id_empleado)
+                 VALUES (NOW(), 0.00, 'Pendiente', :id_cliente, :id_empleado)"
+            );
+            $stmt->execute([
+                ':id_cliente'  => $idCliente,
+                ':id_empleado' => $idEmpleado
+            ]);
+            $idCotizacion = $con->lastInsertId();
+
+            return responseHTTP::status200([
+                "mensaje"       => "Cotización creada en estado Pendiente.",
+                "id_cotizacion" => (int)$idCotizacion
+            ]);
+        } catch (\PDOException $e) {
+            error_log("cotizacionDetalleModel::crearCabecera -> " . $e->getMessage());
+            return responseHTTP::status400($e->getMessage());
+        }
+    }
+
+    
+    
+    final public static function consultarConDetalle($idCotizacion) {
+        try {
+            $con = self::getConnection();
+
+            $stmt = $con->prepare(
+                "SELECT c.id_cotizacion, c.fecha, c.total, c.estado, c.id_cliente, c.id_empleado,
+                        cl.nombre AS cliente
+                 FROM cotizaciones c
+                 INNER JOIN clientes cl ON cl.id_cliente = c.id_cliente
+                 WHERE c.id_cotizacion = :id"
+            );
+            $stmt->execute([':id' => $idCotizacion]);
+            $cabecera = $stmt->fetch(\PDO::FETCH_ASSOC);
+
+            if (!$cabecera) {
+                return responseHTTP::status400("No existe una cotización con ese id.");
+            }
+
+            $stmt2 = $con->prepare(
+                "SELECT cd.id_detalle, cd.id_producto, cd.id_almacen, cd.cantidad, cd.precio_unitario,
+                        (cd.cantidad * cd.precio_unitario) AS subtotal,
+                        p.nombre AS producto
+                 FROM cotizaciones_detalle cd
+                 INNER JOIN productos p ON p.id_producto = cd.id_producto
+                 WHERE cd.id_cotizacion = :id"
+            );
+            $stmt2->execute([':id' => $idCotizacion]);
+            $cabecera['detalle'] = $stmt2->fetchAll(\PDO::FETCH_ASSOC);
+
+            return responseHTTP::status200($cabecera);
+        } catch (\PDOException $e) {
+            error_log("cotizacionDetalleModel::consultarConDetalle -> " . $e->getMessage());
+            return responseHTTP::status400($e->getMessage());
+        }
+    } 
 }

@@ -4,12 +4,12 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h4 class="mb-0 fw-bold text-dark">
-                <i class="bi bi-box-seam-fill text-primary me-2"></i>Administración de Productos
+                <i class="bi bi-box-seam-fill text-primary me-2"></i><span data-i18n="administracion_de_productos">Administración de Productos</span>
             </h4>
-            <small class="text-muted">Gestión del catálogo de productos de la ferretería</small>
+            <small class="text-muted"><span data-i18n="gestion_catalogo_productos">Gestión del catálogo de productos de la ferretería</span></small>
         </div>
         <button type="button" class="btn btn-primary" onclick="abrirModalNuevoProducto()">
-            <i class="bi bi-plus-lg me-1"></i> Nuevo Producto
+            <i class="bi bi-plus-lg me-1"></i><span data-i18n="nuevo_producto">  Nuevo Producto</span>
         </button>
     </div>
  
@@ -17,14 +17,14 @@
     <div class="card border-0 shadow-sm mb-3">
         <div class="card-body d-flex flex-wrap gap-2 align-items-end">
             <div>
-                <label class="form-label fw-bold mb-0">Consultar por ID</label>
+                <label class="form-label fw-bold mb-0"><span data-i18n="consultar_por_id">Consultar por ID</span></label>
                 <input type="number" min="1" step="1" id="buscarIdProducto" class="form-control" style="width:150px" placeholder="Ej. 2">
             </div>
             <button class="btn btn-outline-primary" onclick="consultarProductoPorId()">
-                <i class="bi bi-search me-1"></i> Consultar por ID
+                <i class="bi bi-search me-1"></i> <span data-i18n="consultar_por_id">Consultar por ID</span>
             </button>
             <button class="btn btn-outline-secondary" onclick="cargarProductosTodos()">
-                <i class="bi bi-list-ul me-1"></i> Consultar Todos
+                <i class="bi bi-list-ul me-1"></i> <span data-i18n="consultar_todo">Consultar Todos</span>
             </button>
         </div>
         <div id="resultadoProductoId" class="px-3 pb-3"></div>
@@ -37,15 +37,15 @@
                 <table class="table table-hover align-middle mb-0" id="tablaProductosAdmin">
                     <thead class="table-light">
                         <tr>
-                            <th>#</th>
+                            <th >#</th>
                             <th>ID</th>
-                            <th>Código</th>
-                            <th>Nombre</th>
-                            <th>Categoría</th>
-                            <th>Unidad</th>
-                            <th>Precio Compra</th>
-                            <th>Precio Venta</th>
-                            <th class="text-center">Acciones</th>
+                            <th ><span data-i18n="codigo">Código</span></th>
+                            <th><span data-i18n="nombre">Nombre</span></th>
+                            <th><span data-i18n="categoria">Categoría</span></th>
+                            <th><span data-i18n="unidad">Unidad</span></th>
+                            <th><span data-i18n="precio_compra">Precio Compra</span></th>
+                            <th><span data-i18n="precio_venta">Precio Venta</span></th>
+                            <th class="text-center"><span data-i18n="acciones">Acciones</span></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -62,7 +62,7 @@
     <div class="modal-dialog">
         <div class="modal-content border-0 shadow">
             <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title fw-bold" id="modalProductoAdminLabel">Nuevo Producto</h5>
+                <h5 class="modal-title fw-bold" id="modalProductoAdminLabel"><span data-i18n="nuevo_producto"> Nuevo Producto</h5>
                 <button type="button" class="btn-close btn-close-white" onclick="cerrarModalProducto()"></button>
             </div>
             <form id="formProductoAdmin" onsubmit="guardarProductoAdmin(event)">
@@ -70,49 +70,49 @@
                     <input type="hidden" id="id_producto" name="id_producto">
  
                     <div class="mb-3">
-                        <label for="codigo" class="form-label fw-bold">Código <span class="text-danger">*</span></label>
+                        <label for="codigo" class="form-label fw-bold"><span data-i18n="codigo"> Código </span><span class="text-danger">*</span></label>
                         <input type="text" class="form-control" id="codigo" name="codigo" required placeholder="Ej. 612720">
                     </div>
                     <div class="mb-3">
-                        <label for="nombreProducto" class="form-label fw-bold">Nombre <span class="text-danger">*</span></label>
+                        <label for="nombreProducto" class="form-label fw-bold"><span data-i18n="nombre"> Nombre </span><span class="text-danger">*</span></label>
                         <input type="text" class="form-control" id="nombreProducto" name="nombre" required placeholder="Ej. Martillo 16oz">
                     </div>
                     <div class="row">
                         <div class="col-6 mb-3">
-                            <label for="precio_compra" class="form-label fw-bold">Precio Compra <span class="text-danger">*</span></label>
+                            <label for="precio_compra" class="form-label fw-bold"><span data-i18n="precio_compra"> Precio Compra </span><span class="text-danger">*</span></label>
                             <input type="number" step="0.01" min="0" class="form-control" id="precio_compra" name="precio_compra" required>
                         </div>
                         <div class="col-6 mb-3">
-                            <label for="precio_venta" class="form-label fw-bold">Precio Venta <span class="text-danger">*</span></label>
+                            <label for="precio_venta" class="form-label fw-bold"><span data-i18n="precio_compra"> Precio Venta </span><span class="text-danger">*</span></label>
                             <input type="number" step="0.01" min="0" class="form-control" id="precio_venta" name="precio_venta" required>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="fotografia" class="form-label fw-bold">Fotografía (URL, opcional)</label>
+                        <label for="fotografia" class="form-label fw-bold"><span data-i18n="fotografia_url_opcional"> Fotografía (URL, opcional)</span></label>
                         <input type="text" class="form-control" id="fotografia" name="fotografia" placeholder="https://...">
                     </div>
                     <div class="row">
                         <div class="col-6 mb-3">
-                            <label for="id_categoria" class="form-label fw-bold">Categoría <span class="text-danger">*</span></label>
+                            <label for="id_categoria" class="form-label fw-bold"><span data-i18n="categoria"> Categoría</span><span class="text-danger">*</span></label>
                             <select class="form-select" id="id_categoria" name="id_categoria" required>
-                                <option value="">Cargando...</option>
+                                <option value=""><span data-i18n="cargando"> Cargando...</span></option>
                             </select>
                         </div>
                         <div class="col-6 mb-3">
-                            <label for="id_unidad" class="form-label fw-bold">Unidad de Medida <span class="text-danger">*</span></label>
+                            <label for="id_unidad" class="form-label fw-bold"><span data-i18n="unidad_de_medida"> Unidad de Medida</span> <span class="text-danger">*</span></label>
                             <select class="form-select" id="id_unidad" name="id_unidad" required>
-                                <option value="1">Unidad</option>
-                                <option value="2">Metro</option>
-                                <option value="3">Libra</option>
-                                <option value="4">Caja</option>
+                                <option value="1"><span data-i18n="unidad"> Unidad</span></option>
+                                <option value="2"><span data-i18n="metro"> Metro</span></option>
+                                <option value="3"><span data-i18n="libra"> Libra</span></option>
+                                <option value="4"><span data-i18n="caja"> Caja</span></option>
                             </select>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer bg-light">
-                    <button type="button" class="btn btn-secondary" onclick="cerrarModalProducto()">Cancelar</button>
+                    <button type="button" class="btn btn-secondary" onclick="cerrarModalProducto()"><span data-i18n="cancelar"> Cancelar</span></button>
                     <button type="submit" class="btn btn-primary" id="btnGuardarProductoAdmin">
-                        <i class="bi bi-save me-1"></i> Guardar
+                        <i class="bi bi-save me-1"></i> <span data-i18n="guardar"> Guardar</span>
                     </button>
                 </div>
             </form>
@@ -122,6 +122,7 @@
  
 <!--libreria de SweetAlert2 por si no esta en el layout global-->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/idiomas.js"></script>
 <script>
 const tokenProductos = localStorage.getItem('token');
 const ENDPOINT_PRODUCTOS = 'adminproductos';

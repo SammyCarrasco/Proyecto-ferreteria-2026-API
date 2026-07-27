@@ -19,9 +19,9 @@
 
     $modulo = basename($url[0], '.php');
 
-    $lista = ['auth', 'user', 'productos', 'category', 'reportes', 'cotizacionDetalle',
+    $lista = ['auth', 'user', 'traducciones', 'productos', 'category', 'reportes', 'cotizacionDetalle',
      'adminproductos', 'venta', 'inventario', 'almacenes', 'catalogo', 
-     'clientes', 'cotizacion', 'login', 'menu', 'sesion_guardar', 'form'];
+     'clientes', 'cotizacion', 'login', 'menu', 'sesion_guardar', 'form', 'idioma'];
 
     if (!in_array($modulo, $lista)) {
         echo json_encode(ResponseHTTP::status404("La ruta ingresada no existe!"));
@@ -32,6 +32,8 @@
 
     if ($modulo === 'login') {
         $file = dirname(__DIR__) . '/Src/Views/login.php';
+    } else if ($modulo === 'idioma') {
+    $file = dirname(__DIR__) . '/Src/Views/idioma.php';
     } else if ($caso !== null && $caso !== false && $caso !== "") {
         // 1. Busca primero en la subcarpeta form con el prefijo form_ (ej: Src/Views/form/form_user.php)
         $fileForm = dirname(__DIR__) . '/Src/Views/form/form_' . $modulo . '.php';

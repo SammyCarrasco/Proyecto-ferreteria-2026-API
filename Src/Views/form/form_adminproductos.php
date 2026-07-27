@@ -124,10 +124,15 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="js/idiomas.js"></script>
 <script>
+
+(function () {
+
+    // TODO el código JavaScript del módulo
 const tokenProductos = localStorage.getItem('token');
 const ENDPOINT_PRODUCTOS = 'adminproductos';
 const ENDPOINT_CATEGORIAS = 'category';
- 
+
+
 function abrirModalNuevoProducto() {
     document.getElementById('formProductoAdmin').reset();
     document.getElementById('id_producto').value = '';
@@ -368,4 +373,9 @@ function consultarProductoPorId() {
 // Carga inicial
 cargarCategoriasSelect();
 cargarProductosTodos();
+
+
+})();
+
+
 </script>

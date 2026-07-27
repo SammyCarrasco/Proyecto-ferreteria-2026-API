@@ -21,7 +21,7 @@
 
     $lista = ['auth', 'user', 'traducciones', 'productos', 'category', 'reportes', 'cotizacionDetalle',
      'adminproductos', 'venta', 'inventario', 'almacenes', 'catalogo', 
-     'clientes', 'Cotizacion','cotizacion', 'login', 'menu', 'sesion_guardar', 'form', 'cotizacion_detalle', 'idioma'];
+     'clientes', 'Cotizacion','cotizacion', 'login', 'menu', 'sesion_guardar', 'form', 'cotizacion_detalle', 'idioma','dashboard'];
 
     if (!in_array($modulo, $lista)) {
         echo json_encode(ResponseHTTP::status404("La ruta ingresada no existe!"));
@@ -55,9 +55,6 @@
         echo json_encode(ResponseHTTP::status404("La vista o ruta solicitada no existe."));
         exit;
     }
-
-    
-
 
 /*	
     //print_r($_GET); 

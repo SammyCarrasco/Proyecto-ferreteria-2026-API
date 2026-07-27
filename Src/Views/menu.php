@@ -35,7 +35,19 @@
     </script>
 
     <div class="sidebar">
+<<<<<<< Updated upstream
         <div class="brand"><i class="bi bi-hammer"></i>El Yunque</div>
+=======
+        <div class="brand"><i class="bi bi-hammer"></i> <span data-i18n="titulo_app">Ferretería 2026</span></div>
+<div class="grupo-titulo">Inicio</div>
+
+<a class="nav-link active"
+   data-modulo="dashboard"
+   data-fragmento="form/form_dashboard.php">
+    <i class="bi bi-speedometer2"></i>
+    Dashboard
+</a>
+>>>>>>> Stashed changes
 
         <div class="grupo-titulo" data-i18n="grupo_ventas">Ventas</div>
         <a class="nav-link" data-modulo="clientes" data-fragmento="form/form_clientes.php"><i class="bi bi-person-lines-fill"></i> <span data-i18n="menu_clientes">Clientes</span></a>
@@ -72,9 +84,6 @@
 
     <div class="main-content">
         <div id="contenido-dinamico">
-            <div class="alert alert-secondary" data-i18n="menu_seleccion_texto">Selecciona un módulo del menú para comenzar.</div>
-        </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/idiomas.js"></script>
@@ -105,7 +114,10 @@
                 let mod = window.location.hash.replace('#', '');
                 let link = $('.nav-link[data-modulo="' + mod + '"]');
                 if (link.length) link.trigger('click');
-            }
+            }else {
+    $('.nav-link[data-modulo="dashboard"]').trigger('click');
+}
+
         });
 
         function cargarModulo(modulo, fragmento) {

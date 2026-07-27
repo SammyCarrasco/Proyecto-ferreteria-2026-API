@@ -192,3 +192,32 @@ INSERT IGNORE INTO traducciones (clave, es, en) VALUES
 ('emp_btn_cancelar', 'Cancelar', 'Cancel'),
 ('emp_btn_guardar', 'Guardar Empleado', 'Save Employee');
 
+
+
+INSERT IGNORE INTO traducciones (clave, es, en) VALUES
+('inicio', 'Inicio', 'Home'),
+('ventas', 'Ventas', 'Sales'),
+('clientes', 'Clientes', 'Customers'),
+('productos', 'Productos', 'Products'),
+('categorias', 'Categorías', 'Categories'),
+('inventario', 'Inventario', 'Inventory'),
+('reportes', 'Reportes', 'Reports'),
+('empleados', 'Empleados', 'Employees'),
+('producto_categoria', 'Producto / Categoría', 'Product / Category'),
+('producto_almacen', 'Producto / Almacén', 'Product / Warehouse'),
+('total_productos', 'Total Productos', 'Total Products'),
+('valor_inversion', 'Valor Inversión', 'Investment Value'),
+('dashboard_principal', 'Dashboard Principal', 'Main Dashboard'),
+('total_cotizaciones', 'Total Cotizaciones', 'Total Quotes'),
+('total_clientes', 'Total Clientes', 'Total Customers'),
+('total_productos', 'Total Productos', 'Total Products'),
+('stock_total', 'Stock Total', 'Total Stock'),
+('resumen_general_de_la_fereteria', 'Resumen General de la Ferretería', 'General Overview of the Hardware Store'),
+('cotizaciones', 'Cotizaciones', 'Quotes'),
+('cotizacion', 'Cotización', 'Quote'),
+('facturas', 'Facturas', 'Invoices'),
+('isv', 'ISV', 'Sales Tax'),
+('ganancias', 'Ganancias', 'Profits'),
+('inversion', 'Inversión', 'Investment'),
+('stock_invetario', 'Stock Inventario', 'Inventory Stock');
+('ventas_mensuales', 'Ventas Mensuales', 'Monthly Sales');

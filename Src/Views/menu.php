@@ -36,8 +36,16 @@
 
     <div class="sidebar">
         <div class="brand"><i class="bi bi-hammer"></i>El Yunque</div>
+<div class="grupo-titulo"><span data-i18n="inicio">Inicio</span></div>
 
-        <div class="grupo-titulo" data-i18n="grupo_ventas">Ventas</div>
+<a class="nav-link active"
+   data-modulo="dashboard"
+   data-fragmento="form/form_dashboard.php">
+    <i class="bi bi-speedometer2"></i>
+    Dashboard
+</a>
+
+        <div class="grupo-titulo" data-i18n="grupo_ventas"> Ventas</div>
         <a class="nav-link" data-modulo="clientes" data-fragmento="form/form_clientes.php"><i class="bi bi-person-lines-fill"></i> <span data-i18n="menu_clientes">Clientes</span></a>
         <a class="nav-link" data-modulo="cotizacion" data-fragmento="form/form_cotizacion.php"><i class="bi bi-file-earmark-text"></i> <span data-i18n="menu_cotizaciones">Cotizaciones</span></a>
          <a class="nav-link" data-modulo="cotizacion_detalle" data-fragmento="form/form_cotizacion_detalle.php"><i class="bi bi-cart-plus"></i> Detalle Cotización</a>
@@ -72,9 +80,6 @@
 
     <div class="main-content">
         <div id="contenido-dinamico">
-            <div class="alert alert-secondary" data-i18n="menu_seleccion_texto">Selecciona un módulo del menú para comenzar.</div>
-        </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/idiomas.js"></script>
@@ -105,7 +110,10 @@
                 let mod = window.location.hash.replace('#', '');
                 let link = $('.nav-link[data-modulo="' + mod + '"]');
                 if (link.length) link.trigger('click');
-            }
+            }else {
+    $('.nav-link[data-modulo="dashboard"]').trigger('click');
+}
+
         });
 
         function cargarModulo(modulo, fragmento) {

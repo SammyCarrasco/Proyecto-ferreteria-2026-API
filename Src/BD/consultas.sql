@@ -225,3 +225,4 @@ INSERT IGNORE INTO traducciones (clave, es, en) VALUES
 ('ventas_mensuales', 'Ventas Mensuales', 'Monthly Sales');
 
 select * from cotizaciones_detalle;
+select * from traducciones;

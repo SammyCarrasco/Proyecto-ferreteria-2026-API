@@ -1,3 +1,5 @@
 /vendor
 /Logs
 .env
+
+php-error.log

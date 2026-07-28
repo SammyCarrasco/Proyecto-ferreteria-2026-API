@@ -48,7 +48,7 @@
         <div class="grupo-titulo" data-i18n="grupo_ventas"> Ventas</div>
         <a class="nav-link" data-modulo="clientes" data-fragmento="form/form_clientes.php"><i class="bi bi-person-lines-fill"></i> <span data-i18n="menu_clientes">Clientes</span></a>
         <a class="nav-link" data-modulo="cotizacion" data-fragmento="form/form_cotizacion.php"><i class="bi bi-file-earmark-text"></i> <span data-i18n="menu_cotizaciones">Cotizaciones</span></a>
-         <a class="nav-link" data-modulo="cotizacion_detalle" data-fragmento="form/form_cotizacion_detalle.php"><i class="bi bi-cart-plus"></i> Detalle Cotización</a>
+         <a class="nav-link" data-modulo="cotizacion_detalle" data-fragmento="form/form_cotizacion_detalle.php"><i class="bi bi-cart-plus"></i> <span data-i18n="cotizaciones_detalle">Detalle Cotización</span></a>
         <a class="nav-link" data-modulo="venta" data-fragmento="form/form_venta.php"><i class="bi bi-cart-check"></i> <span data-i18n="menu_ventas">Ventas</span></a>
 
         
@@ -68,10 +68,10 @@
     </div>
 
     <div class="topbar">
-        <span id="titulo-modulo" data-i18n="menu_panel_principal">Panel principal</span>
+       <!-- <span id="titulo-modulo" data-i18n="menu_panel_principal">Panel principal</span>
             <a href="#" id="btn-idioma" class="text-decoration-none">🌐 <span id="btn-idioma-texto"></span></a>
 
-        <span>
+        <span>  --->
             <span id="user-info"></span>
             &nbsp;|&nbsp;
             <a href="#" id="btn-logout" class="text-danger text-decoration-none"><i class="bi bi-box-arrow-right"></i> <span data-i18n="menu_salir">Salir</span></a>

@@ -94,28 +94,35 @@ class cotizacionDetalleModel extends ConnectionDB {
     }
    
     final public static function crearCabecera($idCliente, $idEmpleado) {
-        try {
-            $con = self::getConnection();
-            $stmt = $con->prepare(
-                "INSERT INTO cotizaciones (fecha, total, estado, id_cliente, id_empleado)
-                 VALUES (NOW(), 0.00, 'Pendiente', :id_cliente, :id_empleado)"
-            );
-            $stmt->execute([
-                ':id_cliente'  => $idCliente,
-                ':id_empleado' => $idEmpleado
-            ]);
-            $idCotizacion = $con->lastInsertId();
+    try {
+        $con = self::getConnection();
+        $stmt = $con->prepare(
+            "INSERT INTO cotizaciones (fecha, total, estado, id_cliente, id_empleado)
+             VALUES (NOW(), 0.00, 'Pendiente', :id_cliente, :id_empleado)"
+        );
+        $stmt->execute([
+            ':id_cliente'  => $idCliente,
+            ':id_empleado' => $idEmpleado
+        ]);
+        $idCotizacion = $con->lastInsertId();
 
-            return responseHTTP::status200([
-                "mensaje"       => "Cotización creada en estado Pendiente.",
-                "id_cotizacion" => (int)$idCotizacion
-            ]);
-        } catch (\PDOException $e) {
-            error_log("cotizacionDetalleModel::crearCabecera -> " . $e->getMessage());
-            return responseHTTP::status400($e->getMessage());
+        return responseHTTP::status200([
+            "mensaje"       => "Cotización creada en estado Pendiente.",
+            "id_cotizacion" => (int)$idCotizacion
+        ]);
+    } catch (\PDOException $e) {
+        error_log("cotizacionDetalleModel::crearCabecera -> " . $e->getMessage());
+
+        if (strpos($e->getMessage(), 'id_cliente') !== false) {
+            return responseHTTP::status400('El ID de cliente ingresado no existe.');
         }
-    }
+        if (strpos($e->getMessage(), 'id_empleado') !== false) {
+            return responseHTTP::status400('El ID de empleado ingresado no existe.');
+        }
 
+        return responseHTTP::status400('No se pudo crear la cotización. Verifica los datos ingresados.');
+    }
+}
     
     
     final public static function consultarConDetalle($idCotizacion) {

@@ -118,11 +118,13 @@
     </div>
 </div>
 
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="js/idiomas.js"></script>
 <script>
+console.log("CLIENTES CARGADO");
 
-                let idiomaActual = localStorage.getItem('idioma') || 'es';
+              /*  let idiomaActual = localStorage.getItem('idioma') || 'es';
                 $('#btn-idioma-texto').text(idiomaActual === 'es' ? 'English' : 'Español');
 
                 $('#btn-idioma').on('click', function (e) {
@@ -131,8 +133,10 @@
                     localStorage.setItem('idioma', nuevo);
                     location.reload();
                 });
+                */
 
 (function(){
+   // console.log('IIFE de clientes ejecutándose, hora:', new Date().toISOString());
     const token = localStorage.getItem('token');
     
     // Depuración para ver qué rol tiene la sesión actual en la consola (F12)
@@ -188,6 +192,7 @@
         $.ajax({
             url: ENDPOINT,
             type: 'GET',
+            cache: false,
             headers: {
                 'Authorization': 'Bearer ' + token
             },

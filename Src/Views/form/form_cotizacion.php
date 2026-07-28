@@ -187,7 +187,7 @@
 <script src="js/idiomas.js"></script>
 <script>
 
-                let idiomaActual = localStorage.getItem('idioma') || 'es';
+             /*   let idiomaActual = localStorage.getItem('idioma') || 'es';
                 $('#btn-idioma-texto').text(idiomaActual === 'es' ? 'English' : 'Español');
 
                 $('#btn-idioma').on('click', function (e) {
@@ -196,7 +196,7 @@
                     localStorage.setItem('idioma', nuevo);
                     location.reload();
                 });
-
+            */
     (function () {
         let idClienteValido = null;
         let carritoProductos = []; 

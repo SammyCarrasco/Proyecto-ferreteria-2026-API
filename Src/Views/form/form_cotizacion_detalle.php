@@ -25,7 +25,7 @@
                 <label class="form-label small"><span data-i18n="cargar_cotizacion_existente_id">Cargar cotización existente (ID)</span></label>
                 <div class="input-group input-group-sm">
                     <input type="number" class="form-control" id="cot-id-buscar">
-                    <button class="btn btn-outline-secondary" id="btn-buscar-cotizacion">Cargar</button>
+                    <button class="btn btn-outline-secondary" id="btn-buscar-cotizacion"><span data-i18n="btn_cargar_cotizacion">Cargar</span></button>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
             — <span id="cot-cliente-nombre" class="text-muted"></span>
             <span class="badge" id="cot-estado-badge"></span>
         </span>
-        <strong>Total: L. <span id="cot-total">0.00</span></strong>
+        <strong><span data-i18n="label_total_cotizacion">Total</span>: L. <span id="cot-total">0.00</span></strong>
     </div>
     <div class="card-body">
 
@@ -74,7 +74,7 @@
                     <th><span data-i18n="almacen">Almacén</span></th>
                     <th style="width:110px;"><span data-i18n="cantidad">Cantidad</span></th>
                     <th><span data-i18n="precio_unit">Precio unit.</span></th>
-                    <th>Subtotal</th>
+                    <th><span data-i18n="th_subtotal_cotizacion">Subtotal</span></th>
                     <th></th>
                 </tr>
             </thead>
@@ -92,7 +92,12 @@
 (function () {
     let idCotizacionActual = null;
 
-    
+    function aplicarTraduccion() {
+        if (typeof traducirPagina === 'function') {
+            traducirPagina();
+        }
+    }
+
     function apiCall(route, method, data) {
         return $.ajax({
             url: route,
@@ -135,7 +140,7 @@
 
                 let filas = '';
                 if (!c.detalle || c.detalle.length === 0) {
-                    filas = '<tr><td colspan="6" class="text-center text-muted">Sin productos agregados todavía.</td></tr>';
+                    filas = '<tr><td colspan="6" class="text-center text-muted"><span data-i18n="sin_productos_agregados_todavia">Sin productos agregados todavía.</span></td></tr>';
                 } else {
                     c.detalle.forEach(function (d) {
                         filas += '<tr data-id-detalle="' + d.id_detalle + '">' +
@@ -152,6 +157,7 @@
                     });
                 }
                 $('#cot-detalle-body').html(filas);
+                aplicarTraduccion();
             })
             .fail(function (xhr) {
                 mostrarMensaje('danger', 'No se pudo cargar la cotización (' + xhr.status + ').');
@@ -159,8 +165,25 @@
     }
 
     $('#btn-crear-cotizacion').on('click', function () {
-        let idCliente = $('#cot-id-cliente').val();
-        let idEmpleado = $('#cot-id-empleado').val();
+        let idCliente = $('#cot-id-cliente').val().trim();
+        let idEmpleado = $('#cot-id-empleado').val().trim();
+
+        $('#cot-id-cliente, #cot-id-empleado').removeClass('is-invalid');
+
+        if (!idCliente || !idEmpleado) {
+            if (!idCliente) $('#cot-id-cliente').addClass('is-invalid');
+            if (!idEmpleado) $('#cot-id-empleado').addClass('is-invalid');
+            mostrarMensaje('warning', 'Debes ingresar el ID Cliente y el ID Empleado antes de crear una cotización.');
+            return;
+        }
+        if (parseInt(idCliente) <= 0 || parseInt(idEmpleado) <= 0) {
+            mostrarMensaje('warning', 'El ID Cliente y el ID Empleado deben ser números positivos.');
+            return;
+        }
+
+        let $btn = $(this);
+        let htmlOriginal = $btn.html();
+        $btn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-1"></span>Creando...');
 
         apiCall('cotizacionDetalle/nueva', 'POST', { id_cliente: idCliente, id_empleado: idEmpleado })
             .done(function (resp) {
@@ -173,14 +196,50 @@
                 cargarCotizacion(resp.message.id_cotizacion);
             })
             .fail(function (xhr) {
-                mostrarMensaje('danger', 'Error al crear la cotización (' + xhr.status + ').');
+                let msg = (xhr.responseJSON && xhr.responseJSON.message) ? xhr.responseJSON.message : 'No se pudo crear la cotización. Verifica que el ID Cliente y el ID Empleado existan.';
+                mostrarMensaje('danger', msg);
+            })
+            .always(function () {
+                $btn.prop('disabled', false).html(htmlOriginal);
+                aplicarTraduccion();
             });
     });
 
     $('#btn-buscar-cotizacion').on('click', function () {
-        let id = $('#cot-id-buscar').val();
-        if (!id) { mostrarMensaje('warning', 'Ingresa un ID de cotización.'); return; }
-        cargarCotizacion(id);
+        let id = $('#cot-id-buscar').val().trim();
+        $('#cot-id-buscar').removeClass('is-invalid');
+
+        if (!id) {
+            $('#cot-id-buscar').addClass('is-invalid');
+            mostrarMensaje('warning', 'Ingresa el número de una cotización para cargarla.');
+            return;
+        }
+        if (parseInt(id) <= 0) {
+            mostrarMensaje('warning', 'El ID de la cotización debe ser un número positivo.');
+            return;
+        }
+
+        let $btn = $('#btn-buscar-cotizacion');
+        let textoOriginal = $btn.html();
+        $btn.prop('disabled', true).text('Buscando...');
+
+        apiCall('cotizacionDetalle/' + id, 'GET')
+            .done(function (resp) {
+                if (resp.status !== 'OK') {
+                    $('#cot-panel-activa').hide();
+                    mostrarMensaje('danger', 'La cotización #' + id + ' no existe.');
+                    return;
+                }
+                cargarCotizacion(id);
+            })
+            .fail(function (xhr) {
+                $('#cot-panel-activa').hide();
+                mostrarMensaje('danger', 'La cotización #' + id + ' no existe o no se pudo consultar.');
+            })
+            .always(function () {
+                $btn.prop('disabled', false).html(textoOriginal);
+                aplicarTraduccion();
+            });
     });
 
     $('#btn-agregar-producto').on('click', function () {
@@ -232,5 +291,16 @@
                 mostrarMensaje('danger', msg);
             });
     });
+
+    // Traducir al cargar y monitorear cambios de idioma
+    aplicarTraduccion();
+    let ultimoIdiomaCot = localStorage.getItem('idioma');
+    setInterval(function () {
+        let actual = localStorage.getItem('idioma');
+        if (actual !== ultimoIdiomaCot) {
+            ultimoIdiomaCot = actual;
+            aplicarTraduccion();
+        }
+    }, 500);
 })();
 </script>

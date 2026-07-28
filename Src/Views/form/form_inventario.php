@@ -1,4 +1,3 @@
-
 <div class="container-fluid">
     <!-- Encabezado -->
     <div class="d-flex justify-content-between align-items-center mb-4">
@@ -94,6 +93,7 @@
     const token = localStorage.getItem('token');
     const ENDPOINT = 'inventario'; 
 
+    // Abrir modal para nuevo registro
     function abrirModalNueva() {
         document.getElementById('formInventario').reset();
         document.getElementById('id_inventario').value = '';
@@ -110,6 +110,7 @@
         document.body.classList.add('modal-open');
     }
 
+    // Cerrar modal
     function cerrarModal() {
         const modal = document.getElementById('modalInventario');
         if (modal) {
@@ -122,8 +123,13 @@
         if (backdrop) backdrop.remove();
     }
 
+    // Cargar inventario desde API
     function cargarInventario() {
-        $('#tablaInventario tbody').html('<tr><td colspan="6" class="text-center py-4 text-muted"><div class="spinner-border spinner-border-sm text-primary me-2"></div><span data-i18n="msg_cargando">Cargando inventario...</span></td></tr>');
+        $('#tablaInventario tbody').html(
+            '<tr><td colspan="6" class="text-center py-4 text-muted">' +
+            '<div class="spinner-border spinner-border-sm text-primary me-2"></div>' +
+            '<span data-i18n="msg_cargando">Cargando inventario...</span></td></tr>'
+        );
 
         if (typeof traducirPagina === 'function') traducirPagina();
 
@@ -145,16 +151,21 @@
             },
             error: function (xhr) {
                 console.error('Error al cargar:', xhr.responseText);
-                $('#tablaInventario tbody').html('<tr><td colspan="6" class="text-center py-4 text-danger" data-i18n="msg_error_consultar">Error al consultar inventario.</td></tr>');
+                $('#tablaInventario tbody').html(
+                    '<tr><td colspan="6" class="text-center py-4 text-danger" data-i18n="msg_error_consultar">Error al consultar inventario.</td></tr>'
+                );
                 if (typeof traducirPagina === 'function') traducirPagina();
             }
         });
     }
 
-        function renderTabla(data) {
+        // Renderizar tabla con traducción
+    function renderTabla(data) {
         let html = '';
         if (!Array.isArray(data) || data.length === 0) {
-            $('#tablaInventario tbody').html('<tr><td colspan="6" class="text-center py-4 text-muted" data-i18n="msg_sin_inventario">No hay productos en inventario.</td></tr>');
+            $('#tablaInventario tbody').html(
+                '<tr><td colspan="6" class="text-center py-4 text-muted" data-i18n="msg_sin_inventario">No hay productos en inventario.</td></tr>'
+            );
             if (typeof traducirPagina === 'function') traducirPagina();
             return;
         }
@@ -191,6 +202,7 @@
         if (typeof traducirPagina === 'function') traducirPagina();
     }
 
+    // Preparar edición de un registro
     function prepararEdicion(inv) {
         document.getElementById('id_inventario').value = inv.id;
         document.getElementById('id_producto').value = inv.id_producto;
@@ -210,7 +222,8 @@
         document.body.classList.add('modal-open');
     }
 
-        function guardarInventario(e) {
+        // Guardar inventario (crear/editar)
+    function guardarInventario(e) {
         if (e) e.preventDefault();
 
         const id = document.getElementById('id_inventario').value;
@@ -228,7 +241,10 @@
             payload.id_inventario = id;
         }
 
-        $('#btnGuardarInventario').prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-1"></span><span data-i18n="btn_guardando">Guardando...</span>');
+        $('#btnGuardarInventario').prop('disabled', true).html(
+            '<span class="spinner-border spinner-border-sm me-1"></span>' +
+            '<span data-i18n="btn_guardando">Guardando...</span>'
+        );
         if (typeof traducirPagina === 'function') traducirPagina();
 
         $.ajax({
@@ -261,12 +277,15 @@
                 });
             },
             complete: function () {
-                $('#btnGuardarInventario').prop('disabled', false).html('<i class="bi bi-save me-1"></i> <span data-i18n="btn_guardar">Guardar</span>');
+                $('#btnGuardarInventario').prop('disabled', false).html(
+                    '<i class="bi bi-save me-1"></i> <span data-i18n="btn_guardar">Guardar</span>'
+                );
                 if (typeof traducirPagina === 'function') traducirPagina();
             }
         });
     }
 
+    // Eliminar inventario
     function eliminarInventario(id_producto, id_almacen) {
         Swal.fire({
             title: '¿Eliminar registro?',
@@ -310,7 +329,8 @@
             }
         });
     }
-    // 1. Carga inicial
+
+        // 1. Carga inicial
     cargarInventario();
 
     // 2. Traducción inicial
@@ -337,7 +357,7 @@
         guardarInventario(e);
     });
 
-    // 4. Lógica del botón de idioma
+    // 4. Botón de idioma
     let idiomaActual = localStorage.getItem('idioma') || 'es';
     $('#btn-idioma-texto').text(idiomaActual === 'es' ? 'English' : 'Español');
 

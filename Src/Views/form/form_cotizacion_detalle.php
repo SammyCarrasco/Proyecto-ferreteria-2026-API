@@ -1,35 +1,52 @@
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
         <h4 class="mb-0 fw-bold text-dark"><i class="bi bi-file-earmark-text text-primary me-2"></i><span data-i18n="cotizaciones_detalle">Cotizaciones — Detalle</span></h4>
-        <small class="text-muted"><span data-i18n="crear_buscar_modificar_productos_cotizacion"> Crear, buscar y modificar productos de una cotización</span></small>
+        <small class="text-muted"><span data-i18n="crear_buscar_modificar_productos_cotizacion"> Buscar y modificar productos de una cotización</span></small>
     </div>
 </div>
 
 <div class="card mb-3">
     <div class="card-body">
-        <div class="row g-2 align-items-end mb-2">
-            <div class="col-md-3">
-                <label class="form-label small"><span data-i18n="id_cliente">ID Cliente</span></label>
-                <input type="number" class="form-control form-control-sm" id="cot-id-cliente" value="1">
-            </div>
-            <div class="col-md-3">
-                <label class="form-label small"><span data-i18n="id_empleado">ID Empleado</span></label>
-                <input type="number" class="form-control form-control-sm" id="cot-id-empleado" value="1">
-            </div>
-            <div class="col-md-auto">
-                <button class="btn btn-primary btn-sm" id="btn-crear-cotizacion">
-                    <i class="bi bi-plus-circle"></i><span data-i18n="nueva_cotizacion"> Nueva cotización</span>
-                </button>
-            </div>
-            <div class="col-md-3">
+        <div class="row g-2 align-items-end">
+            <div class="col-md-4">
                 <label class="form-label small"><span data-i18n="cargar_cotizacion_existente_id">Cargar cotización existente (ID)</span></label>
                 <div class="input-group input-group-sm">
                     <input type="number" class="form-control" id="cot-id-buscar">
                     <button class="btn btn-outline-secondary" id="btn-buscar-cotizacion"><span data-i18n="btn_cargar_cotizacion">Cargar</span></button>
                 </div>
             </div>
+            <div class="col-md-auto">
+                <button class="btn btn-outline-primary btn-sm" type="button" id="btn-toggle-pendientes">
+                    <i class="bi bi-list-check"></i> <span data-i18n="btn_ver_pendientes">Ver cotizaciones pendientes</span>
+                </button>
+            </div>
         </div>
         <div id="cot-mensaje"></div>
+
+        <div class="mt-3" id="panelPendientes" style="display:none;">
+            <div class="border rounded p-2">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <strong class="small"><span data-i18n="cotizaciones_pendientes_titulo">Cotizaciones pendientes</span></strong>
+                    <button class="btn btn-outline-secondary btn-sm" id="btn-recargar-pendientes">
+                        <i class="bi bi-arrow-clockwise"></i> <span data-i18n="btn_recargar">Recargar</span>
+                    </button>
+                </div>
+                <table class="table table-sm table-hover align-middle mb-0">
+                    <thead>
+                        <tr>
+                            <th><span data-i18n="cotizacion">Cotización</span></th>
+                            <th><span data-i18n="th_cliente_venta">Cliente</span></th>
+                            <th><span data-i18n="fecha_col">Fecha</span></th>
+                            <th><span data-i18n="label_total_cotizacion">Total</span></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="cot-pendientes-body">
+                        <tr><td colspan="5" class="text-center text-muted"><span data-i18n="cargando_pendientes">Cargando cotizaciones pendientes...</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -91,6 +108,7 @@
 <script>
 (function () {
     let idCotizacionActual = null;
+    let pendientesYaCargadas = false;
 
     function aplicarTraduccion() {
         if (typeof traducirPagina === 'function') {
@@ -118,6 +136,64 @@
         return '<span class="badge ' + clase + '">' + estado + '</span>';
     }
 
+    // ==========================================
+    // CARGA LA LISTA DE COTIZACIONES PENDIENTES
+    // ==========================================
+    function cargarListaPendientes() {
+        $('#cot-pendientes-body').html('<tr><td colspan="5" class="text-center text-muted"><span data-i18n="cargando_pendientes">Cargando cotizaciones pendientes...</span></td></tr>');
+        aplicarTraduccion();
+
+        apiCall('cotizacionDetalle/pendientes', 'GET')
+            .done(function (resp) {
+                if (resp.status !== 'OK' || !Array.isArray(resp.message) || resp.message.length === 0) {
+                    $('#cot-pendientes-body').html('<tr><td colspan="5" class="text-center text-muted"><span data-i18n="sin_pendientes">No hay cotizaciones pendientes por el momento.</span></td></tr>');
+                    aplicarTraduccion();
+                    return;
+                }
+
+                let filas = '';
+                resp.message.forEach(function (c) {
+                    filas += '<tr>' +
+                        '<td>#' + c.id_cotizacion + '</td>' +
+                        '<td>' + c.cliente + '</td>' +
+                        '<td>' + c.fecha + '</td>' +
+                        '<td>L. ' + parseFloat(c.total).toFixed(2) + '</td>' +
+                        '<td class="text-end">' +
+                            '<button class="btn btn-sm btn-primary btn-ver-cotizacion" data-id="' + c.id_cotizacion + '">' +
+                                '<i class="bi bi-eye"></i> <span data-i18n="btn_ver_cotizacion">Ver cotización</span>' +
+                            '</button>' +
+                        '</td>' +
+                        '</tr>';
+                });
+                $('#cot-pendientes-body').html(filas);
+                aplicarTraduccion();
+            })
+            .fail(function () {
+                $('#cot-pendientes-body').html('<tr><td colspan="5" class="text-center text-danger">No se pudo cargar la lista de cotizaciones pendientes.</td></tr>');
+            });
+    }
+
+    $('#btn-toggle-pendientes').on('click', function () {
+        $('#panelPendientes').slideToggle(200);
+        if (!pendientesYaCargadas) {
+            pendientesYaCargadas = true;
+            cargarListaPendientes();
+        }
+    });
+
+    $('#btn-recargar-pendientes').on('click', cargarListaPendientes);
+
+    $('#cot-pendientes-body').on('click', '.btn-ver-cotizacion', function () {
+        let id = $(this).data('id');
+        $('#cot-id-buscar').val(id);
+        cargarCotizacion(id);
+        $('#panelPendientes').slideUp(200);
+        $('html, body').animate({ scrollTop: $('#cot-panel-activa').offset().top - 20 }, 300);
+    });
+
+    // ==========================================
+    // CARGA UNA COTIZACIÓN ESPECÍFICA CON SU DETALLE
+    // ==========================================
     function cargarCotizacion(id) {
         apiCall('cotizacionDetalle/' + id, 'GET')
             .done(function (resp) {
@@ -163,47 +239,6 @@
                 mostrarMensaje('danger', 'No se pudo cargar la cotización (' + xhr.status + ').');
             });
     }
-
-    $('#btn-crear-cotizacion').on('click', function () {
-        let idCliente = $('#cot-id-cliente').val().trim();
-        let idEmpleado = $('#cot-id-empleado').val().trim();
-
-        $('#cot-id-cliente, #cot-id-empleado').removeClass('is-invalid');
-
-        if (!idCliente || !idEmpleado) {
-            if (!idCliente) $('#cot-id-cliente').addClass('is-invalid');
-            if (!idEmpleado) $('#cot-id-empleado').addClass('is-invalid');
-            mostrarMensaje('warning', 'Debes ingresar el ID Cliente y el ID Empleado antes de crear una cotización.');
-            return;
-        }
-        if (parseInt(idCliente) <= 0 || parseInt(idEmpleado) <= 0) {
-            mostrarMensaje('warning', 'El ID Cliente y el ID Empleado deben ser números positivos.');
-            return;
-        }
-
-        let $btn = $(this);
-        let htmlOriginal = $btn.html();
-        $btn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-1"></span>Creando...');
-
-        apiCall('cotizacionDetalle/nueva', 'POST', { id_cliente: idCliente, id_empleado: idEmpleado })
-            .done(function (resp) {
-                if (resp.status !== 'OK') {
-                    mostrarMensaje('danger', resp.message);
-                    return;
-                }
-                mostrarMensaje('success', 'Cotización #' + resp.message.id_cotizacion + ' creada (Pendiente).');
-                $('#cot-id-buscar').val(resp.message.id_cotizacion);
-                cargarCotizacion(resp.message.id_cotizacion);
-            })
-            .fail(function (xhr) {
-                let msg = (xhr.responseJSON && xhr.responseJSON.message) ? xhr.responseJSON.message : 'No se pudo crear la cotización. Verifica que el ID Cliente y el ID Empleado existan.';
-                mostrarMensaje('danger', msg);
-            })
-            .always(function () {
-                $btn.prop('disabled', false).html(htmlOriginal);
-                aplicarTraduccion();
-            });
-    });
 
     $('#btn-buscar-cotizacion').on('click', function () {
         let id = $('#cot-id-buscar').val().trim();

@@ -7,7 +7,7 @@ use App\Config\responseHTTP;
 
 class ventaModel extends connectionDB {
 
-    // Atributos correspondientes a ventas
+    
     private static $id_cotizacion;
     private static $id_empleado;
 
@@ -20,9 +20,7 @@ class ventaModel extends connectionDB {
     final public static function getIdCotizacion() { return self::$id_cotizacion; }
     final public static function getIdEmpleado()   { return self::$id_empleado; }
 
-    /**
-     * Procesar la venta: convierte una cotización Pendiente en una factura
-     */
+    
     final public static function procesarVenta() {
         try {
             $con = self::getConnection();
@@ -34,7 +32,7 @@ class ventaModel extends connectionDB {
             ]);
             $stmt->closeCursor();
 
-            // Traemos los datos de la venta recien generada (nro_factura, subtotal, ISV, total)
+            // Traemos los datos de la venta recien generada
             $stmt2 = $con->prepare(
                 "SELECT id_venta, nro_factura, fecha, id_cotizacion, id_empleado, subtotal, isv, total
                  FROM ventas WHERE id_cotizacion = :id_cotizacion"
@@ -47,7 +45,15 @@ class ventaModel extends connectionDB {
             return $respuesta;
         } catch (\PDOException $e) {
             error_log("ventaModel::procesarVenta -> " . $e->getMessage());
-            return responseHTTP::status400($e->getMessage());
+
+            if (strpos($e->getMessage(), 'id_empleado') !== false) {
+                return responseHTTP::status400('El ID de empleado ingresado no existe.');
+            }
+            if (strpos($e->getMessage(), 'id_cotizacion') !== false) {
+                return responseHTTP::status400('El ID de cotización ingresado no existe.');
+            }
+
+            return responseHTTP::status400('No se pudo procesar la venta. Verifica los datos ingresados.');
         }
     }
 }

@@ -355,9 +355,10 @@
                                         <td>L ${precio}</td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-success btnAgregarProd" 
-                                                    data-id="${idProd}" 
-                                                    data-nombre="${prod.nombre}" 
-                                                    data-precio="${precio}">
+                                             data-id="${idProd}" 
+                                             data-nombre="${prod.nombre}" 
+                                             data-precio="${precio}"
+                                             data-almacen="${prod.id_almacen}">
                                                 <i class="bi bi-plus-circle me-1"></i> Agregar
                                             </button>
                                         </td>
@@ -379,22 +380,24 @@
 
         // AGREGAR PRODUCTO AL CARRITO
         $(document).off('click', '.btnAgregarProd').on('click', '.btnAgregarProd', function () {
-            let id = $(this).data('id');
-            let nombre = $(this).data('nombre');
-            let precio = parseFloat($(this).data('precio')) || 0;
+        let id = $(this).data('id');
+        let nombre = $(this).data('nombre');
+        let precio = parseFloat($(this).data('precio')) || 0;
+        let almacen = $(this).data('almacen');
 
-            let prodExistente = carritoProductos.find(p => p.id_producto === id);
+         let prodExistente = carritoProductos.find(p => p.id_producto === id);
 
-            if (prodExistente) {
-                prodExistente.cantidad += 1;
-            } else {
-                carritoProductos.push({
-                    id_producto: id,
-                    nombre: nombre,
-                    precio: precio,
-                    cantidad: 1
-                });
-            }
+         if (prodExistente) {
+         prodExistente.cantidad += 1;
+         } else {
+        carritoProductos.push({
+            id_producto: id,
+            id_almacen: almacen,
+            nombre: nombre,
+            precio: precio,
+            cantidad: 1
+        });
+    }
 
             renderizarTablaCotizacion();
             $('#cardPaso3').css({ 'opacity': '1', 'pointer-events': 'auto' });

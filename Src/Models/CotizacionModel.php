@@ -187,25 +187,25 @@ class CotizacionModel extends ConnectionDB {
         // -------------------------------------------------------------
         // 2. RESERVAR INVENTARIO VÍA STORED PROCEDURE Y GUARDAR DETALLE
         // -------------------------------------------------------------
-        $sqlDet = "INSERT INTO cotizaciones_detalle (id_cotizacion, id_producto, cantidad, precio_unitario, subtotal) 
-                   VALUES (:id_cotizacion, :id_producto, :cantidad, :precio_unitario, :subtotal)";
-        $stmtDet = $con->prepare($sqlDet);
+        $sqlDet = "INSERT INTO cotizaciones_detalle (id_cotizacion, id_producto, id_almacen, cantidad, precio_unitario) 
+           VALUES (:id_cotizacion, :id_producto, :id_almacen, :cantidad, :precio_unitario)";
+           $stmtDet = $con->prepare($sqlDet);
 
-        foreach ($productos as $item) {
-            $idProd  = $item['id_producto'] ?? null;
-            $cant    = (int)($item['cantidad'] ?? 0);
-            $precioU = floatval($item['precio'] ?? 0);
-            $sub     = $cant * $precioU;
+          foreach ($productos as $item) {
+          $idProd   = $item['id_producto'] ?? null;
+          $idAlma   = $item['id_almacen'] ?? null;
+          $cant     = (int)($item['cantidad'] ?? 0);
+          $precioU  = floatval($item['precio'] ?? 0);
 
-            if ($idProd !== null && $cant > 0) {
-                // A. Insertar Renglón en Cotizaciones Detalle
-                $stmtDet->execute([
-                    ':id_cotizacion'   => $idCotizacion,
-                    ':id_producto'     => $idProd,
-                    ':cantidad'        => $cant,
-                    ':precio_unitario' => $precioU,
-                    ':subtotal'        => $sub
-                ]);
+          if ($idProd !== null && $idAlma !== null && $cant > 0) {
+        // A. Insertar Renglón en Cotizaciones Detalle
+           $stmtDet->execute([
+            ':id_cotizacion'   => $idCotizacion,
+            ':id_producto'     => $idProd,
+            ':id_almacen'      => $idAlma,
+            ':cantidad'        => $cant,
+            ':precio_unitario' => $precioU
+        ]);
 
                 // B. Ejecutar Stored Procedure de Inventario
                 try {

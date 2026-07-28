@@ -56,9 +56,7 @@ class cotizacionDetalleModel extends ConnectionDB {
     }
 }
 
-    /**
-     * Modificar la cantidad de un producto ya cotizado
-     */
+    
     final public static function modificarCantidad() {
         try {
             $con = self::getConnection();
@@ -75,9 +73,7 @@ class cotizacionDetalleModel extends ConnectionDB {
         }
     }
 
-    /**
-     * Eliminar un producto de la cotización (libera reserva)
-     */
+    
     final public static function eliminarProducto($id_detalle) {
         try {
             $con = self::getConnection();
@@ -92,39 +88,7 @@ class cotizacionDetalleModel extends ConnectionDB {
             return responseHTTP::status400($e->getMessage());
         }
     }
-   
-    final public static function crearCabecera($idCliente, $idEmpleado) {
-    try {
-        $con = self::getConnection();
-        $stmt = $con->prepare(
-            "INSERT INTO cotizaciones (fecha, total, estado, id_cliente, id_empleado)
-             VALUES (NOW(), 0.00, 'Pendiente', :id_cliente, :id_empleado)"
-        );
-        $stmt->execute([
-            ':id_cliente'  => $idCliente,
-            ':id_empleado' => $idEmpleado
-        ]);
-        $idCotizacion = $con->lastInsertId();
 
-        return responseHTTP::status200([
-            "mensaje"       => "Cotización creada en estado Pendiente.",
-            "id_cotizacion" => (int)$idCotizacion
-        ]);
-    } catch (\PDOException $e) {
-        error_log("cotizacionDetalleModel::crearCabecera -> " . $e->getMessage());
-
-        if (strpos($e->getMessage(), 'id_cliente') !== false) {
-            return responseHTTP::status400('El ID de cliente ingresado no existe.');
-        }
-        if (strpos($e->getMessage(), 'id_empleado') !== false) {
-            return responseHTTP::status400('El ID de empleado ingresado no existe.');
-        }
-
-        return responseHTTP::status400('No se pudo crear la cotización. Verifica los datos ingresados.');
-    }
-}
-    
-    
     final public static function consultarConDetalle($idCotizacion) {
         try {
             $con = self::getConnection();
@@ -160,4 +124,25 @@ class cotizacionDetalleModel extends ConnectionDB {
             return responseHTTP::status400($e->getMessage());
         }
     } 
+
+    
+    final public static function listarPendientes() {
+        try {
+            $con = self::getConnection();
+            $stmt = $con->prepare(
+                "SELECT c.id_cotizacion, c.fecha, c.total, cl.nombre AS cliente
+                 FROM cotizaciones c
+                 INNER JOIN clientes cl ON cl.id_cliente = c.id_cliente
+                 WHERE c.estado = 'Pendiente'
+                 ORDER BY c.fecha DESC"
+            );
+            $stmt->execute();
+            $lista = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+
+            return responseHTTP::status200($lista);
+        } catch (\PDOException $e) {
+            error_log("cotizacionDetalleModel::listarPendientes -> " . $e->getMessage());
+            return responseHTTP::status400('No se pudo consultar las cotizaciones pendientes.');
+        }
+    }
 }

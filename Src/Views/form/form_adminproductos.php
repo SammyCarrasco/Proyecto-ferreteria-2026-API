@@ -12,7 +12,7 @@
             <i class="bi bi-plus-lg me-1"></i><span data-i18n="nuevo_producto">  Nuevo Producto</span>
         </button>
     </div>
- 
+
     <!--consultar-->
     <div class="card border-0 shadow-sm mb-3">
         <div class="card-body d-flex flex-wrap gap-2 align-items-end">
@@ -29,7 +29,7 @@
         </div>
         <div id="resultadoProductoId" class="px-3 pb-3"></div>
     </div>
- 
+
     <!--tabla-->
     <div class="card border-0 shadow-sm">
         <div class="card-body">
@@ -54,21 +54,21 @@
                 </table>
             </div>
         </div>
-    </div
+    </div>
 </div>
- 
+
 <!--modal producto-->
 <div class="modal fade" id="modalProductoAdmin" tabindex="-1" aria-labelledby="modalProductoAdminLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content border-0 shadow">
             <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title fw-bold" id="modalProductoAdminLabel"><span data-i18n="nuevo_producto"> Nuevo Producto</h5>
+                <h5 class="modal-title fw-bold" id="modalProductoAdminLabel"><span data-i18n="nuevo_producto"> Nuevo Producto</span></h5>
                 <button type="button" class="btn-close btn-close-white" onclick="cerrarModalProducto()"></button>
             </div>
             <form id="formProductoAdmin" onsubmit="guardarProductoAdmin(event)">
                 <div class="modal-body">
                     <input type="hidden" id="id_producto" name="id_producto">
- 
+
                     <div class="mb-3">
                         <label for="codigo" class="form-label fw-bold"><span data-i18n="codigo"> Código </span><span class="text-danger">*</span></label>
                         <input type="text" class="form-control" id="codigo" name="codigo" required placeholder="Ej. 612720">
@@ -83,7 +83,7 @@
                             <input type="number" step="0.01" min="0" class="form-control" id="precio_compra" name="precio_compra" required>
                         </div>
                         <div class="col-6 mb-3">
-                            <label for="precio_venta" class="form-label fw-bold"><span data-i18n="precio_compra"> Precio Venta </span><span class="text-danger">*</span></label>
+                            <label for="precio_venta" class="form-label fw-bold"><span data-i18n="precio_venta"> Precio Venta </span><span class="text-danger">*</span></label>
                             <input type="number" step="0.01" min="0" class="form-control" id="precio_venta" name="precio_venta" required>
                         </div>
                     </div>
@@ -119,25 +119,21 @@
         </div>
     </div>
 </div>
- 
+
 <!--libreria de SweetAlert2 por si no esta en el layout global-->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="js/idiomas.js"></script>
 <script>
-
 (function () {
-
-    // TODO el código JavaScript del módulo
+    // todo el coigo JavaScript del modulo
 const tokenProductos = localStorage.getItem('token');
 const ENDPOINT_PRODUCTOS = 'adminproductos';
 const ENDPOINT_CATEGORIAS = 'category';
-
-
 function abrirModalNuevoProducto() {
     document.getElementById('formProductoAdmin').reset();
     document.getElementById('id_producto').value = '';
     document.getElementById('modalProductoAdminLabel').innerText = 'Nuevo Producto';
- 
+
     const modal = document.getElementById('modalProductoAdmin');
     modal.classList.add('show');
     modal.style.display = 'block';
@@ -148,7 +144,7 @@ function cerrarModalProducto() {
     modal.classList.remove('show');
     modal.style.display = 'none';
     document.body.classList.remove('modal-open');
- 
+
     const backdrop = document.querySelector('.modal-backdrop');
     if (backdrop) backdrop.remove();
 }
@@ -235,7 +231,7 @@ function prepararEdicionProducto(p) {
     document.getElementById('id_categoria').value = p.id_categoria;
     document.getElementById('id_unidad').value = p.id_unidad;
     document.getElementById('modalProductoAdminLabel').innerText = 'Editar Producto';
- 
+
     const modal = document.getElementById('modalProductoAdmin');
     modal.classList.add('show');
     modal.style.display = 'block';
@@ -258,7 +254,7 @@ function guardarProductoAdmin(e) {
     if (esEdicion) {
         payload.id_producto = parseInt(id);
     }
- 
+
     $('#btnGuardarProductoAdmin').prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-1"></span>Guardando...');
     $.ajax({
         url: ENDPOINT_PRODUCTOS,
@@ -374,8 +370,14 @@ function consultarProductoPorId() {
 cargarCategoriasSelect();
 cargarProductosTodos();
 
-
+/*como el codigo esta encerrado en la funcion, los botones del HTML ya no ven esas funciones,
+por eso las saque hacia afuera para que sigan funcionando*/
+window.abrirModalNuevoProducto = abrirModalNuevoProducto;
+window.cerrarModalProducto = cerrarModalProducto;
+window.consultarProductoPorId = consultarProductoPorId;
+window.cargarProductosTodos = cargarProductosTodos;
+window.prepararEdicionProducto = prepararEdicionProducto;
+window.eliminarProductoAdmin = eliminarProductoAdmin;
+window.guardarProductoAdmin = guardarProductoAdmin;
 })();
-
-
 </script>

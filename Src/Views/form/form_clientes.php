@@ -140,7 +140,7 @@ console.log("CLIENTES CARGADO");
     const token = localStorage.getItem('token');
     
     // Depuración para ver qué rol tiene la sesión actual en la consola (F12)
-    const rolUsuario = localStorage.getItem('rol') || localStorage.getItem('tipo_usuario') || localStorage.getItem('id_rol') || localStorage.getItem('tipo');
+    /*const rolUsuario = localStorage.getItem('rol') || localStorage.getItem('tipo_usuario') || localStorage.getItem('id_rol') || localStorage.getItem('tipo');
     console.log("Rol detectado en Clientes:", rolUsuario);
 
     // Validación de rol de seguridad para administradores
@@ -152,7 +152,7 @@ console.log("CLIENTES CARGADO");
             </div>
         `;
         return; // Detiene la ejecución para bloquear la vista
-    }
+    }*/
 
     const ENDPOINT = 'clientes';
 

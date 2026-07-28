@@ -194,6 +194,8 @@ INSERT IGNORE INTO traducciones (clave, es, en) VALUES
 
 
 
+
+/*dashboard*/
 INSERT IGNORE INTO traducciones (clave, es, en) VALUES
 ('inicio', 'Inicio', 'Home'),
 ('ventas', 'Ventas', 'Sales'),
@@ -219,5 +221,7 @@ INSERT IGNORE INTO traducciones (clave, es, en) VALUES
 ('isv', 'ISV', 'Sales Tax'),
 ('ganancias', 'Ganancias', 'Profits'),
 ('inversion', 'Inversión', 'Investment'),
-('stock_invetario', 'Stock Inventario', 'Inventory Stock');
+('stock_invetario', 'Stock Inventario', 'Inventory Stock'),
 ('ventas_mensuales', 'Ventas Mensuales', 'Monthly Sales');
+
+select * from cotizaciones_detalle;

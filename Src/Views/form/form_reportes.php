@@ -97,10 +97,11 @@
                             <thead class="table-light">
                                 <tr>
                                     <th>#</th>
-                                    <th data-i18n="rep_th_cotizacion">Cotización</th>
-                                    <th data-i18n="rep_th_cliente">Cliente</th>
                                     <th data-i18n="rep_th_fecha">Fecha</th>
                                     <th data-i18n="rep_th_monto">Monto</th>
+                                    <th data-i18n="rep_th_estado">Estado</th>
+                                    <th data-i18n="rep_th_cliente">Cliente</th>
+                                    <th data-i18n="rep_th_usuario">Empleado</th>
                                 </tr>
                             </thead>
                             <tbody></tbody>
@@ -131,10 +132,9 @@
                         <table class="table table-hover align-middle mb-0" id="tablaGanancias">
                             <thead class="table-light">
                                 <tr>
-                                    <th data-i18n="rep_th_detalle_prod">Detalle / Producto</th>
-                                    <th data-i18n="rep_th_costo">Costo</th>
-                                    <th data-i18n="rep_th_venta">Venta</th>
-                                    <th data-i18n="rep_th_ganancia">Ganancia</th>
+                                    <th data-i18n="rep_th_total_venta">Total Venta</th>
+                                    <th data-i18n="rep_th_costo_total">Costo Total</th>
+                                    <th data-i18n="rep_th_ganancia_neta">Ganancia Neta</th>
                                 </tr>
                             </thead>
                             <tbody></tbody>
@@ -148,9 +148,12 @@
                         <table class="table table-hover align-middle mb-0" id="tablaInversion">
                             <thead class="table-light">
                                 <tr>
-                                    <th data-i18n="rep_th_cat_almacen">Categoría / Almacén</th>
-                                    <th data-i18n="rep_th_tot_productos">Total Productos</th>
-                                    <th data-i18n="rep_th_valor_inversion">Valor Inversión</th>
+                                    <th data-i18n="rep_th_id">ID</th>
+                                    <th data-i18n="rep_th_codigo">Código</th>
+                                    <th data-i18n="rep_th_producto">Producto</th>
+                                    <th data-i18n="rep_th_precio_costo">Precio Costo</th>
+                                    <th data-i18n="rep_th_stock">Stock</th>
+                                    <th data-i18n="rep_th_total_invertido">Total Invertido</th>
                                 </tr>
                             </thead>
                             <tbody></tbody>

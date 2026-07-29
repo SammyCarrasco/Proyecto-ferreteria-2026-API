@@ -31,7 +31,7 @@ INSERT INTO traducciones (clave, es, en) VALUES
 
 
 /*Form_adminproducts*/
-INSERT INTO traducciones (clave, es, en) VALUES 
+INSERT IGNORE INTO traducciones (clave, es, en) VALUES 
 ('codigo', 'Código', 'Code'),
 ('nombre', 'Nombre', 'Name'),
 ('categoria', 'Categoría', 'Category'),
@@ -43,13 +43,18 @@ INSERT INTO traducciones (clave, es, en) VALUES
 ('fotografia_url_opcional', 'Fotografía (URL, opcional)', 'Photograph (URL, optional)'),
 ('unidad_de_medida', 'Unidad de Medida', 'Unit of Measure'),
 ('metro', 'Metro', 'Meter'),
+('pieza', 'Pieza', 'Piece'),
+('kilogramo', 'Kilogramo', 'Kilogram'),
 ('libra', 'Libra', 'Pound'),
 ('caja', 'Caja', 'Box'),
 ('guardar', 'Guardar', 'Save'),
 ('cancelar', 'Cancelar', 'Cancel'),
 ('consultar_por_id', 'Consultar por ID', 'Search by ID'),
 ('gestion_catalogo_productos', 'Gestión del catálogo de productos de la ferretería', 'Hardware store product catalog management'),
-('administracion_de_productos', 'Administración de Productos', 'Product Management');
+('administracion_de_productos', 'Administración de Productos', 'Product Management'),
+('pieza', 'Pieza', 'Piece'),
+('kilogramo', 'Kilogramo', 'Kilogram');
+
 
 /*cotizaciones*/
 INSERT IGNORE INTO traducciones (clave, es, en) VALUES 
@@ -307,3 +312,5 @@ INSERT IGNORE INTO traducciones (clave, es, en) VALUES
 ('lbl_subtotal_factura', 'Subtotal:', 'Subtotal:'),
 ('lbl_isv_factura', 'ISV (15%):', 'Tax (15%):'),
 ('lbl_total_factura', 'Total:', 'Total:');
+
+select * from unidades_medida;

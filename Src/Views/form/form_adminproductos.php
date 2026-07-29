@@ -101,10 +101,13 @@
                         <div class="col-6 mb-3">
                             <label for="id_unidad" class="form-label fw-bold"><span data-i18n="unidad_de_medida"> Unidad de Medida</span> <span class="text-danger">*</span></label>
                             <select class="form-select" id="id_unidad" name="id_unidad" required>
-                                <option value="1"><span data-i18n="unidad"> Unidad</span></option>
+                                <option value="8"><span data-i18n="unidad"> Unidad</span></option>
                                 <option value="2"><span data-i18n="metro"> Metro</span></option>
-                                <option value="3"><span data-i18n="libra"> Libra</span></option>
-                                <option value="4"><span data-i18n="caja"> Caja</span></option>
+                                <option value="9"><span data-i18n="libra"> Libra</span></option>
+                                <option value="10"><span data-i18n="caja"> Caja</span></option>
+                                <option value="3"><span data-i18n="kilogramo"> Kilogramo</span></option>
+                                <option value="1"><span data-i18n="pieza"> Pieza</span></option>
+                
                             </select>
                         </div>
                     </div>

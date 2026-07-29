@@ -58,37 +58,41 @@ class cotizacionDetalleModel extends ConnectionDB {
 
     
     final public static function modificarCantidad() {
-        try {
-            $con = self::getConnection();
-            $query = "CALL sp_modificar_cantidad_cotizacion_detalle(:id_detalle, :cantidad)";
-            $stmt = $con->prepare($query);
-            $stmt->execute([
-                ':id_detalle' => self::getIdDetalle(),
-                ':cantidad'   => self::getCantidad()
-            ]);
-            return responseHTTP::status200('Cantidad actualizada exitosamente!!!');
-        } catch (\PDOException $e) {
-            error_log("cotizacionDetalleModel::modificarCantidad -> " . $e->getMessage());
-            return responseHTTP::status400($e->getMessage());
+    try {
+        $con = self::getConnection();
+        $query = "CALL sp_modificar_cantidad_cotizacion_detalle(:id_detalle, :cantidad)";
+        $stmt = $con->prepare($query);
+        $stmt->execute([
+            ':id_detalle' => self::getIdDetalle(),
+            ':cantidad'   => self::getCantidad()
+        ]);
+        return responseHTTP::status200('Cantidad actualizada exitosamente!!!');
+    } catch (\PDOException $e) {
+        error_log("cotizacionDetalleModel::modificarCantidad -> " . $e->getMessage());
+
+        if (strpos($e->getMessage(), 'Existencias insuficientes') !== false) {
+            return responseHTTP::status400('Existencias insuficientes para aumentar la cantidad.');
         }
+
+        return responseHTTP::status400('No se pudo actualizar la cantidad. Verifica los datos e intenta de nuevo.');
     }
+}
 
     
     final public static function eliminarProducto($id_detalle) {
-        try {
-            $con = self::getConnection();
-            $query = "CALL sp_eliminar_producto_cotizacion_detalle(:id_detalle)";
-            $stmt = $con->prepare($query);
-            $stmt->execute([
-                ':id_detalle' => $id_detalle
-            ]);
-            return responseHTTP::status200('Producto eliminado de la cotización exitosamente!!!');
-        } catch (\PDOException $e) {
-            error_log("cotizacionDetalleModel::eliminarProducto -> " . $e->getMessage());
-            return responseHTTP::status400($e->getMessage());
-        }
+    try {
+        $con = self::getConnection();
+        $query = "CALL sp_eliminar_producto_cotizacion_detalle(:id_detalle)";
+        $stmt = $con->prepare($query);
+        $stmt->execute([
+            ':id_detalle' => $id_detalle
+        ]);
+        return responseHTTP::status200('Producto eliminado de la cotización exitosamente!!!');
+    } catch (\PDOException $e) {
+        error_log("cotizacionDetalleModel::eliminarProducto -> " . $e->getMessage());
+        return responseHTTP::status400('No se pudo eliminar el producto. Verifica los datos e intenta de nuevo.');
     }
-
+}
     final public static function consultarConDetalle($idCotizacion) {
         try {
             $con = self::getConnection();

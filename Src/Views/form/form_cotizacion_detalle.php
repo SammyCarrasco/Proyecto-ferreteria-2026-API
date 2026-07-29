@@ -1,7 +1,7 @@
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
         <h4 class="mb-0 fw-bold text-dark"><i class="bi bi-file-earmark-text text-primary me-2"></i><span data-i18n="cotizaciones_detalle">Cotizaciones — Detalle</span></h4>
-        <small class="text-muted"><span data-i18n="crear_buscar_modificar_productos_cotizacion"> Buscar y modificar productos de una cotización</span></small>
+       <small class="text-muted"><span data-i18n="crear_buscar_modificar_productos_cotizacion"> Buscar una cotización existente y agregar, modificar o eliminar sus productos</span></small>
     </div>
 </div>
 

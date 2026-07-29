@@ -265,3 +265,45 @@ INSERT IGNORE INTO traducciones (clave, es, en) VALUES
 ('ph_stock_res', 'Ej. 10', 'e.g. 10'),
 ('btn_cancelar', 'Cancelar', 'Cancel'),
 ('btn_guardar', 'Guardar', 'Save');
+
+/**COTIZACION DETALLE**/
+INSERT IGNORE INTO traducciones (clave, es, en) VALUES 
+('cotizaciones_detalle', 'Cotizaciones — Detalle', 'Quotes — Details'),
+('crear_buscar_modificar_productos_cotizacion', 'Buscar y modificar productos de una cotización', 'Search and modify products of a quote'),
+('cargar_cotizacion_existente_id', 'Cargar cotización existente (ID)', 'Load existing quote (ID)'),
+('btn_cargar_cotizacion', 'Cargar', 'Load'),
+('btn_ver_pendientes', 'Ver cotizaciones pendientes', 'View pending quotes'),
+('cotizaciones_pendientes_titulo', 'Cotizaciones pendientes', 'Pending quotes'),
+('btn_recargar', 'Recargar', 'Reload'),
+('cotizacion', 'Cotización', 'Quote'),
+('th_cliente_venta', 'Cliente', 'Customer'),
+('fecha_col', 'Fecha', 'Date'),
+('label_total_cotizacion', 'Total', 'Total'),
+('cargando_pendientes', 'Cargando cotizaciones pendientes...', 'Loading pending quotes...'),
+('id_producto', 'ID Producto', 'Product ID'),
+('id_almacen', 'ID Almacén', 'Warehouse ID'),
+('cantidad', 'Cantidad', 'Quantity'),
+('precio_unitario', 'Precio unitario', 'Unit price'),
+('agregar_a_la_cotizacion', 'Agregar a la cotización', 'Add to quote'),
+('producto', 'Producto', 'Product'),
+('almacen', 'Almacén', 'Warehouse'),
+('precio_unit', 'Precio unit.', 'Unit price'),
+('th_subtotal_cotizacion', 'Subtotal', 'Subtotal'),
+('sin_productos_agregados_todavia', 'Sin productos agregados todavía.', 'No products added yet.'),
+('cotizacion_ya_facturada_no_modificar', 'Esta cotización ya fue facturada — no se puede modificar.', 'This quote has already been invoiced — cannot be modified.');
+
+/***VENTAS***/
+INSERT IGNORE INTO traducciones (clave, es, en) VALUES 
+('ventas_titulo', 'Ventas', 'Sales'),
+('ventas_subtitulo', 'Facturar una cotización pendiente', 'Invoice a pending quote'),
+('id_cotizacion_venta', 'ID Cotización (debe estar Pendiente)', 'Quote ID (must be Pending)'),
+('id_empleado_factura', 'ID Empleado que factura', 'Billing Employee ID'),
+('btn_ver_cotizacion', 'Ver cotización', 'View quote'),
+('btn_facturar', 'Facturar', 'Invoice'),
+('th_estado_actual', 'Estado actual', 'Current status'),
+('th_total_facturar', 'Total a facturar', 'Total to invoice'),
+('factura_generada', 'Factura generada', 'Invoice generated'),
+('lbl_no_factura', 'No. Factura:', 'Invoice No.:'),
+('lbl_subtotal_factura', 'Subtotal:', 'Subtotal:'),
+('lbl_isv_factura', 'ISV (15%):', 'Tax (15%):'),
+('lbl_total_factura', 'Total:', 'Total:');

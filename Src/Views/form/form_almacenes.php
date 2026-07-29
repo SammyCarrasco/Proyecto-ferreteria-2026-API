@@ -78,6 +78,8 @@
 
 <script>
 (function () {
+
+
     const token = localStorage.getItem('token');
     const ENDPOINT = 'almacenes'; 
 

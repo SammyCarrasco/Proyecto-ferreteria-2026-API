@@ -88,6 +88,7 @@
     </div>
 </div>
 
+<script src="js/idiomas.js"></script>
 <script>
 (function () {
     const token = localStorage.getItem('token');

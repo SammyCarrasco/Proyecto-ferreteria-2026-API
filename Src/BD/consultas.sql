@@ -226,3 +226,42 @@ INSERT IGNORE INTO traducciones (clave, es, en) VALUES
 
 select * from cotizaciones_detalle;
 select * from traducciones;
+
+/***Almacenes****/
+INSERT IGNORE INTO traducciones (clave, es, en) VALUES 
+('alm_titulo', 'Gestión de Almacenes', 'Warehouse Management'),
+('alm_subtitulo', 'Administración y registro de almacenes', 'Warehouse administration and registration'),
+('alm_btn_nuevo', 'Nuevo Almacén', 'New Warehouse'),
+('tbl_id', 'ID', 'ID'),
+('tbl_nombre', 'Nombre', 'Name'),
+('tbl_ubicacion', 'Ubicación', 'Location'),
+('tbl_acciones', 'Acciones', 'Actions'),
+('modal_almacen_titulo_nueva', 'Nuevo Almacén', 'New Warehouse'),
+('lbl_nombre', 'Nombre', 'Name'),
+('ph_nombre', 'Ej. Almacén Central', 'e.g. Central Warehouse'),
+('lbl_ubicacion', 'Ubicación', 'Location'),
+('ph_ubicacion', 'Ej. Calle Principal #123', 'e.g. Main Street #123'),
+('btn_cancelar', 'Cancelar', 'Cancel'),
+('btn_guardar', 'Guardar', 'Save');
+
+/***INVENTARIO***/
+INSERT IGNORE INTO traducciones (clave, es, en) VALUES 
+('inv_titulo', 'Gestión de Inventario', 'Inventory Management'),
+('inv_subtitulo', 'Control de productos en almacenes', 'Product control in warehouses'),
+('inv_btn_nuevo', 'Asociar Producto', 'Associate Product'),
+('tbl_producto', 'Producto', 'Product'),
+('tbl_almacen', 'Almacén', 'Warehouse'),
+('tbl_stock_disp', 'Stock Disponible', 'Available Stock'),
+('tbl_stock_res', 'Stock Reservado', 'Reserved Stock'),
+('tbl_acciones', 'Acciones', 'Actions'),
+('modal_inv_titulo_nuevo', 'Asociar Producto', 'Associate Product'),
+('lbl_producto', 'ID Producto', 'Product ID'),
+('ph_producto', 'Ej. 101', 'e.g. 101'),
+('lbl_almacen', 'ID Almacén', 'Warehouse ID'),
+('ph_almacen', 'Ej. 5', 'e.g. 5'),
+('lbl_stock_disp', 'Stock Disponible', 'Available Stock'),
+('ph_stock_disp', 'Ej. 50', 'e.g. 50'),
+('lbl_stock_res', 'Stock Reservado', 'Reserved Stock'),
+('ph_stock_res', 'Ej. 10', 'e.g. 10'),
+('btn_cancelar', 'Cancelar', 'Cancel'),
+('btn_guardar', 'Guardar', 'Save');
